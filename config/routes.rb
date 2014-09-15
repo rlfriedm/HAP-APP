@@ -1,6 +1,9 @@
 HAPApp::Application.routes.draw do
-  root :to => 'Users#index'
+  get "trails/index"
+
+  root :to => 'Trails#index'
   resources :users
+  resources :trails
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
