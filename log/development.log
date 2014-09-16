@@ -450,3 +450,1506 @@ Served asset /users.js - 304 Not Modified (3ms)
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-15 19:53:24 -0400
 Served asset /application.js - 304 Not Modified (47ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-15 20:25:48 -0400
+Connecting to database specified by database.yml
+Processing by StaticPagesController#login as HTML
+  Rendered static_pages/login.html.erb within layouts/application (9.0ms)
+Warning. Error encountered while saving cache c:/Sites/HAP-APP/tmp/cache/sass/3b019d168aaff4ea19b1ff410b838696b9e5d315/static_pages.css.scssc: can't dump anonymous class #<Class:0x41f8b60>
+Compiled static_pages.css  (9ms)  (pid 11256)
+Compiled application.css  (43ms)  (pid 11256)
+Compiled static_pages.js  (521ms)  (pid 11256)
+Compiled application.js  (556ms)  (pid 11256)
+Completed 200 OK in 845.0ms (Views: 845.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-15 20:28:09 -0400
+Connecting to database specified by database.yml
+Processing by StaticPagesController#login as HTML
+  Rendered static_pages/login.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 120.0ms (Views: 120.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-15 20:28:10 -0400
+Served asset /application.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2014-09-15 20:28:10 -0400
+Served asset /static_pages.css - 200 OK (4ms)
+
+
+Started GET "/assets/trails.css?body=1" for 127.0.0.1 at 2014-09-15 20:28:10 -0400
+Served asset /trails.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-15 20:28:10 -0400
+Served asset /users.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-15 20:28:10 -0400
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2014-09-15 20:28:10 -0400
+Served asset /static_pages.js - 200 OK (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-15 20:28:10 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/trails.js?body=1" for 127.0.0.1 at 2014-09-15 20:28:10 -0400
+Served asset /trails.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-15 20:28:10 -0400
+Served asset /users.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-15 20:28:10 -0400
+Served asset /application.js - 304 Not Modified (47ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-15 20:28:50 -0400
+Processing by StaticPagesController#login as HTML
+  Rendered static_pages/login.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 13.0ms (Views: 13.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-15 20:28:50 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2014-09-15 20:28:50 -0400
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trails.css?body=1" for 127.0.0.1 at 2014-09-15 20:28:50 -0400
+Served asset /trails.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-15 20:28:50 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-15 20:28:50 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-15 20:28:50 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trails.js?body=1" for 127.0.0.1 at 2014-09-15 20:28:51 -0400
+Served asset /trails.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2014-09-15 20:28:51 -0400
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-15 20:28:51 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-15 20:28:51 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-15 20:32:06 -0400
+Processing by StaticPagesController#login as HTML
+  Rendered static_pages/login.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 14.0ms (Views: 14.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2014-09-15 20:32:06 -0400
+Served asset /static_pages.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-15 20:32:06 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-15 20:32:06 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trails.css?body=1" for 127.0.0.1 at 2014-09-15 20:32:06 -0400
+Served asset /trails.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-15 20:32:06 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-15 20:32:06 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2014-09-15 20:32:06 -0400
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trails.js?body=1" for 127.0.0.1 at 2014-09-15 20:32:06 -0400
+Served asset /trails.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-15 20:32:06 -0400
+Served asset /users.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-15 20:32:06 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-15 23:57:44 -0400
+Connecting to database specified by database.yml
+Processing by StaticPagesController#login as HTML
+  Rendered static_pages/login.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 168.0ms (Views: 168.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/trails.css?body=1" for 127.0.0.1 at 2014-09-15 23:57:46 -0400
+Served asset /trails.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2014-09-15 23:57:46 -0400
+Served asset /static_pages.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-15 23:57:46 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-15 23:57:46 -0400
+Served asset /jquery.js - 304 Not Modified (39ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-15 23:57:46 -0400
+Served asset /users.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-15 23:57:46 -0400
+Served asset /application.css - 304 Not Modified (8ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2014-09-15 23:57:46 -0400
+Served asset /static_pages.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/trails.js?body=1" for 127.0.0.1 at 2014-09-15 23:57:46 -0400
+Served asset /trails.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-15 23:57:46 -0400
+Served asset /users.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-15 23:57:46 -0400
+Served asset /application.js - 304 Not Modified (43ms)
+
+
+Started GET "/static_pages/signup" for 127.0.0.1 at 2014-09-15 23:57:51 -0400
+Processing by StaticPagesController#signup as HTML
+  Rendered static_pages/signup.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 12.0ms (Views: 11.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-15 23:57:51 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2014-09-15 23:57:52 -0400
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trails.css?body=1" for 127.0.0.1 at 2014-09-15 23:57:52 -0400
+Served asset /trails.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-15 23:57:52 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-15 23:57:52 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-15 23:57:52 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2014-09-15 23:57:52 -0400
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trails.js?body=1" for 127.0.0.1 at 2014-09-15 23:57:52 -0400
+Served asset /trails.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-15 23:57:52 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-15 23:57:52 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-15 23:58:07 -0400
+Processing by StaticPagesController#login as HTML
+  Rendered static_pages/login.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 13.0ms (Views: 13.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-15 23:58:07 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trails.css?body=1" for 127.0.0.1 at 2014-09-15 23:58:07 -0400
+Served asset /trails.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2014-09-15 23:58:07 -0400
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-15 23:58:07 -0400
+Served asset /users.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-15 23:58:08 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-15 23:58:08 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2014-09-15 23:58:08 -0400
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-15 23:58:08 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trails.js?body=1" for 127.0.0.1 at 2014-09-15 23:58:08 -0400
+Served asset /trails.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-15 23:58:08 -0400
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/static_pages/signup" for 127.0.0.1 at 2014-09-15 23:58:21 -0400
+Processing by StaticPagesController#signup as HTML
+  Rendered static_pages/signup.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 13.0ms (Views: 12.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-15 23:58:21 -0400
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2014-09-15 23:58:21 -0400
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trails.css?body=1" for 127.0.0.1 at 2014-09-15 23:58:21 -0400
+Served asset /trails.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-15 23:58:21 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-15 23:58:21 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-15 23:58:21 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2014-09-15 23:58:22 -0400
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trails.js?body=1" for 127.0.0.1 at 2014-09-15 23:58:22 -0400
+Served asset /trails.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-15 23:58:22 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-15 23:58:22 -0400
+Served asset /application.js - 304 Not Modified (1ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-16 00:07:03 -0400
+Connecting to database specified by database.yml
+Processing by StaticPagesController#login as HTML
+  Rendered static_pages/login.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 124.0ms (Views: 123.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-16 00:07:04 -0400
+Served asset /application.css - 304 Not Modified (21ms)
+
+
+Started GET "/assets/trails.css?body=1" for 127.0.0.1 at 2014-09-16 00:07:04 -0400
+Served asset /trails.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2014-09-16 00:07:04 -0400
+Served asset /static_pages.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-16 00:07:04 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-16 00:07:04 -0400
+Served asset /jquery.js - 304 Not Modified (43ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-16 00:07:04 -0400
+Served asset /users.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2014-09-16 00:07:04 -0400
+Served asset /static_pages.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/trails.js?body=1" for 127.0.0.1 at 2014-09-16 00:07:04 -0400
+Served asset /trails.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-16 00:07:04 -0400
+Served asset /users.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-16 00:07:04 -0400
+Served asset /application.js - 304 Not Modified (50ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-09-16 00:07:06 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 14.0ms (Views: 13.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-16 00:07:06 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2014-09-16 00:07:07 -0400
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trails.css?body=1" for 127.0.0.1 at 2014-09-16 00:07:07 -0400
+Served asset /trails.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-16 00:07:07 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-16 00:07:07 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-16 00:07:07 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2014-09-16 00:07:07 -0400
+Served asset /static_pages.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/trails.js?body=1" for 127.0.0.1 at 2014-09-16 00:07:07 -0400
+Served asset /trails.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-16 00:07:07 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-16 00:07:07 -0400
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-16 09:31:26 -0400
+Connecting to database specified by database.yml
+Processing by StaticPagesController#login as HTML
+  Rendered static_pages/login.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 204.0ms (Views: 204.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-16 09:31:27 -0400
+Served asset /application.css - 304 Not Modified (14ms)
+
+
+Started GET "/assets/trails.css?body=1" for 127.0.0.1 at 2014-09-16 09:31:27 -0400
+Served asset /trails.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2014-09-16 09:31:27 -0400
+Served asset /static_pages.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-16 09:31:27 -0400
+Served asset /jquery.js - 304 Not Modified (43ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-16 09:31:27 -0400
+Served asset /users.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-16 09:31:28 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2014-09-16 09:31:28 -0400
+Served asset /static_pages.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/trails.js?body=1" for 127.0.0.1 at 2014-09-16 09:31:28 -0400
+Served asset /trails.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-16 09:31:28 -0400
+Served asset /users.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-16 09:31:28 -0400
+Served asset /application.js - 304 Not Modified (50ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-09-16 09:31:34 -0400
+Processing by UsersController#new as HTML
+ERROR: compiling _app_views_users_new_html_erb___931150747_45356388 RAISED c:/Sites/HAP-APP/app/views/users/new.html.erb:7: syntax error, unexpected keyword_ensure, expecting keyword_end
+c:/Sites/HAP-APP/app/views/users/new.html.erb:9: syntax error, unexpected $end, expecting keyword_end
+Function body:           def _app_views_users_new_html_erb___931150747_45356388(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "users/new";_old_output_buffer = @output_buffer;;@output_buffer = output_buffer || ActionView::OutputBuffer.new;@output_buffer.safe_concat('<h1>signup</h1>
+');@output_buffer.append=  form_for User.new do |f|@output_buffer.safe_concat('
+');@output_buffer.safe_concat('	');@output_buffer.append= ( f.label :user );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('	');@output_buffer.append= ( f.text_field :user );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('	');@output_buffer.append= ( f.submit );@output_buffer.safe_concat('
+');@output_buffer.to_s
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+
+Backtrace: c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.19/lib/action_view/template.rb:297:in `module_eval'
+c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.19/lib/action_view/template.rb:297:in `compile'
+c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.19/lib/action_view/template.rb:244:in `block in compile!'
+<internal:prelude>:10:in `synchronize'
+c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.19/lib/action_view/template.rb:232:in `compile!'
+c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.19/lib/action_view/template.rb:144:in `block in render'
+c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/activesupport-3.2.19/lib/active_support/notifications.rb:125:in `instrument'
+c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.19/lib/action_view/template.rb:143:in `render'
+c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.19/lib/action_view/renderer/template_renderer.rb:47:in `block (2 levels) in render_template'
+c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.19/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/activesupport-3.2.19/lib/active_support/notifications.rb:123:in `block in instrument'
+c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/activesupport-3.2.19/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/activesupport-3.2.19/lib/active_support/notifications.rb:123:in `instrument'
+c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.19/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.19/lib/action_view/renderer/template_renderer.rb:46:in `block in render_template'
+c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.19/lib/action_view/renderer/template_renderer.rb:54:in `render_with_layout'
+c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.19/lib/action_view/renderer/template_renderer.rb:45:in `render_template'
+c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.19/lib/action_view/renderer/template_renderer.rb:18:in `render'
+c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.19/lib/action_view/renderer/renderer.rb:36:in `render_template'
+c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.19/lib/action_view/renderer/renderer.rb:17:in `render'
+c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.19/lib/abstract_controller/rendering.rb:110:in `_render_template'
+c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.19/lib/action_controller/metal/streaming.rb:225:in `_render_template'
+c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.19/lib/abstract_controller/rendering.rb:103:in `render_to_body'
+c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.19/lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.19/lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.19/lib/abstract_controller/rendering.rb:88:in `render'
+c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.19/lib/action_controller/metal/rendering.rb:16:in `render'
+c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.19/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/activesupport-3.2.19/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+c:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/activesupport-3.2.19/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.19/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.19/lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/activerecord-3.2.19/lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.19/lib/action_controller/metal/instrumentation.rb:39:in `render'
+c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.19/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.19/lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.19/lib/abstract_controller/base.rb:167:in `process_action'
+c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.19/lib/action_controller/metal/rendering.rb:10:in `process_action'
+c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.19/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/activesupport-3.2.19/lib/active_support/callbacks.rb:414:in `_run__775446180__process_action__555756792__callbacks'
+c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/activesupport-3.2.19/lib/active_support/callbacks.rb:405:in `__run_callback'
+c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/activesupport-3.2.19/lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/activesupport-3.2.19/lib/active_support/callbacks.rb:81:in `run_callbacks'
+c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.19/lib/abstract_controller/callbacks.rb:17:in `process_action'
+c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.19/lib/action_controller/metal/rescue.rb:29:in `process_action'
+c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.19/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/activesupport-3.2.19/lib/active_support/notifications.rb:123:in `block in instrument'
+c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/activesupport-3.2.19/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/activesupport-3.2.19/lib/active_support/notifications.rb:123:in `instrument'
+c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.19/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.19/lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/activerecord-3.2.19/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.19/lib/abstract_controller/base.rb:121:in `process'
+c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.19/lib/abstract_controller/rendering.rb:45:in `process'
+c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.19/lib/action_controller/metal.rb:203:in `dispatch'
+c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.19/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.19/lib/action_controller/metal.rb:246:in `block in action'
+c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.19/lib/action_dispatch/routing/route_set.rb:73:in `call'
+c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.19/lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.19/lib/action_dispatch/routing/route_set.rb:36:in `call'
+c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/journey-1.0.4/lib/journey/router.rb:68:in `block in call'
+c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/journey-1.0.4/lib/journey/router.rb:56:in `each'
+c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/journey-1.0.4/lib/journey/router.rb:56:in `call'
+c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.19/lib/action_dispatch/routing/route_set.rb:608:in `call'
+c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.19/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/rack-1.4.5/lib/rack/etag.rb:23:in `call'
+c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/rack-1.4.5/lib/rack/conditionalget.rb:25:in `call'
+c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.19/lib/action_dispatch/middleware/head.rb:14:in `call'
+c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.19/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.19/lib/action_dispatch/middleware/flash.rb:242:in `call'
+c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/rack-1.4.5/lib/rack/session/abstract/id.rb:210:in `context'
+c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/rack-1.4.5/lib/rack/session/abstract/id.rb:205:in `call'
+c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.19/lib/action_dispatch/middleware/cookies.rb:341:in `call'
+c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/activerecord-3.2.19/lib/active_record/query_cache.rb:64:in `call'
+c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/activerecord-3.2.19/lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.19/lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/activesupport-3.2.19/lib/active_support/callbacks.rb:405:in `_run__520062405__call__171044372__callbacks'
+c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/activesupport-3.2.19/lib/active_support/callbacks.rb:405:in `__run_callback'
+c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/activesupport-3.2.19/lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/activesupport-3.2.19/lib/active_support/callbacks.rb:81:in `run_callbacks'
+c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.19/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.19/lib/action_dispatch/middleware/reloader.rb:65:in `call'
+c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.19/lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.19/lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.19/lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/railties-3.2.19/lib/rails/rack/logger.rb:32:in `call_app'
+c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/railties-3.2.19/lib/rails/rack/logger.rb:16:in `block in call'
+c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/activesupport-3.2.19/lib/active_support/tagged_logging.rb:22:in `tagged'
+c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/railties-3.2.19/lib/rails/rack/logger.rb:16:in `call'
+c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.19/lib/action_dispatch/middleware/request_id.rb:22:in `call'
+c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/rack-1.4.5/lib/rack/methodoverride.rb:21:in `call'
+c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/rack-1.4.5/lib/rack/runtime.rb:17:in `call'
+c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/activesupport-3.2.19/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/rack-1.4.5/lib/rack/lock.rb:15:in `call'
+c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.19/lib/action_dispatch/middleware/static.rb:63:in `call'
+c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/railties-3.2.19/lib/rails/engine.rb:484:in `call'
+c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/railties-3.2.19/lib/rails/application.rb:231:in `call'
+c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/rack-1.4.5/lib/rack/content_length.rb:14:in `call'
+c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/railties-3.2.19/lib/rails/rack/log_tailer.rb:17:in `call'
+c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/rack-1.4.5/lib/rack/handler/webrick.rb:59:in `service'
+c:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+c:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+c:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+  Rendered users/new.html.erb within layouts/application (48.0ms)
+Completed 500 Internal Server Error in 54.0ms
+
+ActionView::Template::Error (c:/Sites/HAP-APP/app/views/users/new.html.erb:7: syntax error, unexpected keyword_ensure, expecting keyword_end
+c:/Sites/HAP-APP/app/views/users/new.html.erb:9: syntax error, unexpected $end, expecting keyword_end):
+    4: 	<%= f.text_field :user %>
+    5: 	<%= f.submit %>
+  actionpack (3.2.19) lib/action_view/template.rb:297:in `module_eval'
+  actionpack (3.2.19) lib/action_view/template.rb:297:in `compile'
+  actionpack (3.2.19) lib/action_view/template.rb:244:in `block in compile!'
+  <internal:prelude>:10:in `synchronize'
+  actionpack (3.2.19) lib/action_view/template.rb:232:in `compile!'
+  actionpack (3.2.19) lib/action_view/template.rb:144:in `block in render'
+  activesupport (3.2.19) lib/active_support/notifications.rb:125:in `instrument'
+  actionpack (3.2.19) lib/action_view/template.rb:143:in `render'
+  actionpack (3.2.19) lib/action_view/renderer/template_renderer.rb:47:in `block (2 levels) in render_template'
+  actionpack (3.2.19) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (3.2.19) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.19) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.19) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.19) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionpack (3.2.19) lib/action_view/renderer/template_renderer.rb:46:in `block in render_template'
+  actionpack (3.2.19) lib/action_view/renderer/template_renderer.rb:54:in `render_with_layout'
+  actionpack (3.2.19) lib/action_view/renderer/template_renderer.rb:45:in `render_template'
+  actionpack (3.2.19) lib/action_view/renderer/template_renderer.rb:18:in `render'
+  actionpack (3.2.19) lib/action_view/renderer/renderer.rb:36:in `render_template'
+  actionpack (3.2.19) lib/action_view/renderer/renderer.rb:17:in `render'
+  actionpack (3.2.19) lib/abstract_controller/rendering.rb:110:in `_render_template'
+  actionpack (3.2.19) lib/action_controller/metal/streaming.rb:225:in `_render_template'
+  actionpack (3.2.19) lib/abstract_controller/rendering.rb:103:in `render_to_body'
+  actionpack (3.2.19) lib/action_controller/metal/renderers.rb:28:in `render_to_body'
+  actionpack (3.2.19) lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
+  actionpack (3.2.19) lib/abstract_controller/rendering.rb:88:in `render'
+  actionpack (3.2.19) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (3.2.19) lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
+  activesupport (3.2.19) lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
+  c:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+  activesupport (3.2.19) lib/active_support/core_ext/benchmark.rb:5:in `ms'
+  actionpack (3.2.19) lib/action_controller/metal/instrumentation.rb:40:in `block in render'
+  actionpack (3.2.19) lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+  activerecord (3.2.19) lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+  actionpack (3.2.19) lib/action_controller/metal/instrumentation.rb:39:in `render'
+  actionpack (3.2.19) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (3.2.19) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (3.2.19) lib/abstract_controller/base.rb:167:in `process_action'
+  actionpack (3.2.19) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (3.2.19) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (3.2.19) lib/active_support/callbacks.rb:414:in `_run__775446180__process_action__555756792__callbacks'
+  activesupport (3.2.19) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.19) lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+  activesupport (3.2.19) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.19) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (3.2.19) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (3.2.19) lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+  activesupport (3.2.19) lib/active_support/notifications.rb:123:in `block in instrument'
+  activesupport (3.2.19) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (3.2.19) lib/active_support/notifications.rb:123:in `instrument'
+  actionpack (3.2.19) lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+  actionpack (3.2.19) lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+  activerecord (3.2.19) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (3.2.19) lib/abstract_controller/base.rb:121:in `process'
+  actionpack (3.2.19) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.19) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.19) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.19) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.19) lib/action_dispatch/routing/route_set.rb:73:in `call'
+  actionpack (3.2.19) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.19) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.19) lib/action_dispatch/routing/route_set.rb:608:in `call'
+  actionpack (3.2.19) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.5) lib/rack/etag.rb:23:in `call'
+  rack (1.4.5) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.19) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.19) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.19) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.19) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  activerecord (3.2.19) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.19) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.19) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.19) lib/active_support/callbacks.rb:405:in `_run__520062405__call__171044372__callbacks'
+  activesupport (3.2.19) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.19) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.19) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.19) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.19) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.19) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.19) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.19) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.19) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.19) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.19) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.19) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.19) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.19) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.19) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.19) lib/rails/engine.rb:484:in `call'
+  railties (3.2.19) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.19) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  c:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  c:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  c:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.19/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.0ms)
+  Rendered c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.19/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.19/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (28.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-09-16 09:32:28 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (240.0ms)
+Completed 500 Internal Server Error in 245.0ms
+
+ActionView::Template::Error (undefined method `user' for #<User:0x42091e0>):
+    1: <h1>signup</h1>
+    2: <%= form_for User.new do |f|%>
+    3: 	<%= f.label :user %>
+    4: 	<%= f.text_field :user %>
+    5: 	<%= f.submit %>
+    6: <% end %>
+  app/views/users/new.html.erb:4:in `block in _app_views_users_new_html_erb___931150747_34221756'
+  app/views/users/new.html.erb:2:in `_app_views_users_new_html_erb___931150747_34221756'
+
+
+  Rendered c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.19/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.19/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+  Rendered c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.19/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (31.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-09-16 09:53:29 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (4.0ms)
+Completed 500 Internal Server Error in 19.0ms
+
+ActionView::Template::Error (undefined method `user' for #<User:0x40f6f38>):
+    1: <h1>signup</h1>
+    2: <%= form_for User.new do |f|%>
+    3: 	<%= f.label :user %>
+    4: 	<%= f.text_field :user %>
+    5: 	<%= f.submit %>
+    6: <% end %>
+  app/views/users/new.html.erb:4:in `block in _app_views_users_new_html_erb___931150747_34221756'
+  app/views/users/new.html.erb:2:in `_app_views_users_new_html_erb___931150747_34221756'
+
+
+  Rendered c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.19/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.19/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.19/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (51.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-09-16 09:55:10 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (5.0ms)
+Completed 500 Internal Server Error in 12.0ms
+
+ActionView::Template::Error (undefined method `user' for #<User:0x4221618>):
+    1: <h1>signup</h1>
+    2: <%= form_for User.new do |f| %>
+    3: 	<%= f.label :user %>
+    4: 	<%= f.text_field :user %>
+    5: 	<%= f.submit %>
+    6: <% end %>
+  app/views/users/new.html.erb:4:in `block in _app_views_users_new_html_erb___931150747_34235904'
+  app/views/users/new.html.erb:2:in `_app_views_users_new_html_erb___931150747_34235904'
+
+
+  Rendered c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.19/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.19/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+  Rendered c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.19/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (27.0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-16 09:59:17 -0400
+Connecting to database specified by database.yml
+Processing by StaticPagesController#login as HTML
+  Rendered static_pages/login.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 222.0ms (Views: 222.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-16 10:00:26 -0400
+Connecting to database specified by database.yml
+Processing by StaticPagesController#login as HTML
+  Rendered static_pages/login.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 118.0ms (Views: 117.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2014-09-16 10:00:27 -0400
+Served asset /static_pages.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-16 10:00:27 -0400
+Served asset /application.css - 304 Not Modified (9ms)
+
+
+Started GET "/assets/trails.css?body=1" for 127.0.0.1 at 2014-09-16 10:00:27 -0400
+Served asset /trails.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-16 10:00:27 -0400
+Served asset /users.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-16 10:00:27 -0400
+Served asset /jquery.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-16 10:00:27 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (39ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2014-09-16 10:00:27 -0400
+Served asset /static_pages.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/trails.js?body=1" for 127.0.0.1 at 2014-09-16 10:00:27 -0400
+Served asset /trails.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-16 10:00:27 -0400
+Served asset /users.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-16 10:00:27 -0400
+Served asset /application.js - 304 Not Modified (11ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-09-16 10:00:32 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (205.0ms)
+Completed 500 Internal Server Error in 212.0ms
+
+ActionView::Template::Error (undefined method `user' for #<User:0x3ae2190>):
+    1: <h1>signup</h1>
+    2: <%= form_for User.new do |f| %>
+    3: 	<%= f.label :user %>
+    4: 	<%= f.text_field :user %>
+    5: 	<%= f.submit %>
+    6: <% end %>
+  app/views/users/new.html.erb:4:in `block in _app_views_users_new_html_erb___60520821_35087112'
+  app/views/users/new.html.erb:2:in `_app_views_users_new_html_erb___60520821_35087112'
+
+
+  Rendered c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.19/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.0ms)
+  Rendered c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.19/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.19/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (26.0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-09-16 10:01:57 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 14.0ms (Views: 14.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-16 10:01:57 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-16 10:01:57 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-16 10:01:57 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2014-09-16 10:01:57 -0400
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trails.css?body=1" for 127.0.0.1 at 2014-09-16 10:01:57 -0400
+Served asset /trails.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-16 10:01:57 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2014-09-16 10:01:57 -0400
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-16 10:01:57 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trails.js?body=1" for 127.0.0.1 at 2014-09-16 10:01:57 -0400
+Served asset /trails.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-16 10:01:57 -0400
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2014-09-16 10:02:24 -0400
+
+AbstractController::ActionNotFound (The action 'create' could not be found for UsersController):
+  actionpack (3.2.19) lib/abstract_controller/base.rb:116:in `process'
+  actionpack (3.2.19) lib/abstract_controller/rendering.rb:45:in `process'
+  actionpack (3.2.19) lib/action_controller/metal.rb:203:in `dispatch'
+  actionpack (3.2.19) lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+  actionpack (3.2.19) lib/action_controller/metal.rb:246:in `block in action'
+  actionpack (3.2.19) lib/action_dispatch/routing/route_set.rb:73:in `call'
+  actionpack (3.2.19) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (3.2.19) lib/action_dispatch/routing/route_set.rb:36:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.19) lib/action_dispatch/routing/route_set.rb:608:in `call'
+  actionpack (3.2.19) lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+  rack (1.4.5) lib/rack/etag.rb:23:in `call'
+  rack (1.4.5) lib/rack/conditionalget.rb:35:in `call'
+  actionpack (3.2.19) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.19) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  actionpack (3.2.19) lib/action_dispatch/middleware/flash.rb:242:in `call'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:210:in `context'
+  rack (1.4.5) lib/rack/session/abstract/id.rb:205:in `call'
+  actionpack (3.2.19) lib/action_dispatch/middleware/cookies.rb:341:in `call'
+  activerecord (3.2.19) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.19) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.19) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.19) lib/active_support/callbacks.rb:405:in `_run__985161600__call__85817409__callbacks'
+  activesupport (3.2.19) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.19) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.19) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.19) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.19) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.19) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.19) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.19) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.19) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.19) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.19) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.19) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.19) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.19) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.19) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.19) lib/rails/engine.rb:484:in `call'
+  railties (3.2.19) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.19) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  c:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  c:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  c:/RailsInstaller/Ruby1.9.3/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.19/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (1.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2014-09-16 10:05:17 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nuglDjcUeQDL1Rf0mYOG74C4zEmkQbwq1OMZMJBz8Hg=", "user"=>{"username"=>"Sample User", "email"=>"sampleEmail@sample.com"}, "commit"=>"Create User"}
+  Rendered text template (0.0ms)
+Completed 200 OK in 15.0ms (Views: 14.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-16 10:09:49 -0400
+Processing by StaticPagesController#login as HTML
+  Rendered static_pages/login.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 17.0ms (Views: 16.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2014-09-16 10:09:49 -0400
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-16 10:09:50 -0400
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/trails.css?body=1" for 127.0.0.1 at 2014-09-16 10:09:50 -0400
+Served asset /trails.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-16 10:09:50 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-16 10:09:50 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-16 10:09:50 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2014-09-16 10:09:50 -0400
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trails.js?body=1" for 127.0.0.1 at 2014-09-16 10:09:50 -0400
+Served asset /trails.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-16 10:09:50 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-16 10:09:50 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-09-16 10:09:52 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 28.0ms (Views: 26.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-16 10:09:52 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trails.css?body=1" for 127.0.0.1 at 2014-09-16 10:09:53 -0400
+Served asset /trails.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2014-09-16 10:09:53 -0400
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-16 10:09:53 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-16 10:09:53 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-16 10:09:53 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2014-09-16 10:09:53 -0400
+Served asset /static_pages.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/trails.js?body=1" for 127.0.0.1 at 2014-09-16 10:09:53 -0400
+Served asset /trails.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-16 10:09:53 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-16 10:09:53 -0400
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2014-09-16 10:10:04 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nuglDjcUeQDL1Rf0mYOG74C4zEmkQbwq1OMZMJBz8Hg=", "user"=>{"username"=>"asdfasdfasdf", "email"=>"asdfasedfasdf@asadfasdfasdf.com"}, "commit"=>"Create User"}
+Completed 500 Internal Server Error in 2.0ms
+
+NameError (uninitialized constant UsersController::Task):
+  app/controllers/users_controller.rb:7:in `create'
+
+
+  Rendered c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.19/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.19/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.19/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (26.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-16 10:10:29 -0400
+Processing by StaticPagesController#login as HTML
+  Rendered static_pages/login.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 10.0ms (Views: 10.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-16 10:10:29 -0400
+Served asset /users.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-16 10:10:29 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2014-09-16 10:10:29 -0400
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-16 10:10:29 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trails.css?body=1" for 127.0.0.1 at 2014-09-16 10:10:29 -0400
+Served asset /trails.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-16 10:10:29 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trails.js?body=1" for 127.0.0.1 at 2014-09-16 10:10:29 -0400
+Served asset /trails.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2014-09-16 10:10:29 -0400
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-16 10:10:29 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-16 10:10:29 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-16 10:10:36 -0400
+Processing by StaticPagesController#login as HTML
+  Rendered static_pages/login.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 13.0ms (Views: 11.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2014-09-16 10:10:36 -0400
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-16 10:10:36 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-16 10:10:36 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trails.css?body=1" for 127.0.0.1 at 2014-09-16 10:10:36 -0400
+Served asset /trails.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-16 10:10:36 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-16 10:10:36 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2014-09-16 10:10:36 -0400
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trails.js?body=1" for 127.0.0.1 at 2014-09-16 10:10:36 -0400
+Served asset /trails.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-16 10:10:36 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-16 10:10:36 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-09-16 10:10:38 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 27.0ms (Views: 25.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-16 10:10:38 -0400
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2014-09-16 10:10:39 -0400
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trails.css?body=1" for 127.0.0.1 at 2014-09-16 10:10:39 -0400
+Served asset /trails.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-16 10:10:39 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-16 10:10:39 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-16 10:10:39 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2014-09-16 10:10:39 -0400
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trails.js?body=1" for 127.0.0.1 at 2014-09-16 10:10:39 -0400
+Served asset /trails.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-16 10:10:39 -0400
+Served asset /users.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-16 10:10:39 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2014-09-16 10:10:47 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nuglDjcUeQDL1Rf0mYOG74C4zEmkQbwq1OMZMJBz8Hg=", "user"=>{"username"=>"asdfasdfasdf", "email"=>"asdfsadfsdfa@a.com"}, "commit"=>"Create User"}
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (106.0ms)[0m  INSERT INTO "users" ("created_at", "email", "updated_at", "username") VALUES (?, ?, ?, ?)  [["created_at", Tue, 16 Sep 2014 14:10:47 UTC +00:00], ["email", "asdfsadfsdfa@a.com"], ["updated_at", Tue, 16 Sep 2014 14:10:47 UTC +00:00], ["username", "asdfasdfasdf"]]
+  [1m[36m (26.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/static_pages/about
+Completed 302 Found in 140.0ms (ActiveRecord: 132.0ms)
+
+
+Started GET "/static_pages/about" for 127.0.0.1 at 2014-09-16 10:10:48 -0400
+Processing by StaticPagesController#about as HTML
+  Rendered static_pages/about.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 15.0ms (Views: 15.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-16 10:10:48 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2014-09-16 10:10:48 -0400
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trails.css?body=1" for 127.0.0.1 at 2014-09-16 10:10:48 -0400
+Served asset /trails.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-16 10:10:48 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-16 10:10:48 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-16 10:10:48 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2014-09-16 10:10:48 -0400
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trails.js?body=1" for 127.0.0.1 at 2014-09-16 10:10:48 -0400
+Served asset /trails.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-16 10:10:48 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-16 10:10:48 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-09-16 10:15:03 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 27.0ms (Views: 23.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-16 10:15:03 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2014-09-16 10:15:03 -0400
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-16 10:15:03 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trails.css?body=1" for 127.0.0.1 at 2014-09-16 10:15:03 -0400
+Served asset /trails.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-16 10:15:04 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-16 10:15:04 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trails.js?body=1" for 127.0.0.1 at 2014-09-16 10:15:04 -0400
+Served asset /trails.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2014-09-16 10:15:04 -0400
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-16 10:15:04 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-16 10:15:04 -0400
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2014-09-16 10:15:17 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nuglDjcUeQDL1Rf0mYOG74C4zEmkQbwq1OMZMJBz8Hg=", "user"=>{"username"=>"123", "email"=>"123123123"}, "commit"=>"Create User"}
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (3.0ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "updated_at", "username") VALUES (?, ?, ?, ?)[0m  [["created_at", Tue, 16 Sep 2014 14:15:17 UTC +00:00], ["email", "123123123"], ["updated_at", Tue, 16 Sep 2014 14:15:17 UTC +00:00], ["username", "123"]]
+  [1m[35m (7.0ms)[0m  commit transaction
+Redirected to 
+Completed 404 Not Found in 15.0ms
+
+ActionController::RoutingError (No route matches {:action=>"home", :controller=>"users"}):
+  app/controllers/users_controller.rb:9:in `create'
+
+
+  Rendered c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.19/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-16 10:17:16 -0400
+Connecting to database specified by database.yml
+Processing by StaticPagesController#login as HTML
+  Rendered static_pages/login.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 152.0ms (Views: 152.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/trails.css?body=1" for 127.0.0.1 at 2014-09-16 10:17:17 -0400
+Served asset /trails.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2014-09-16 10:17:17 -0400
+Served asset /static_pages.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-16 10:17:17 -0400
+Served asset /jquery.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-16 10:17:17 -0400
+Served asset /application.css - 304 Not Modified (44ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-16 10:17:17 -0400
+Served asset /users.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-16 10:17:17 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2014-09-16 10:17:17 -0400
+Served asset /static_pages.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/trails.js?body=1" for 127.0.0.1 at 2014-09-16 10:17:17 -0400
+Served asset /trails.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-16 10:17:17 -0400
+Served asset /users.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-16 10:17:17 -0400
+Served asset /application.js - 304 Not Modified (47ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2014-09-16 10:17:25 -0400
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (130.0ms)
+Completed 200 OK in 143.0ms (Views: 133.0ms | ActiveRecord: 9.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-16 10:17:26 -0400
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2014-09-16 10:17:26 -0400
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trails.css?body=1" for 127.0.0.1 at 2014-09-16 10:17:26 -0400
+Served asset /trails.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-16 10:17:26 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-16 10:17:26 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-16 10:17:26 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2014-09-16 10:17:26 -0400
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trails.js?body=1" for 127.0.0.1 at 2014-09-16 10:17:26 -0400
+Served asset /trails.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-16 10:17:26 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-16 10:17:26 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2014-09-16 10:17:31 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nuglDjcUeQDL1Rf0mYOG74C4zEmkQbwq1OMZMJBz8Hg=", "user"=>{"username"=>"44444", "email"=>"44444"}, "commit"=>"Create User"}
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (19.0ms)[0m  INSERT INTO "users" ("created_at", "email", "updated_at", "username") VALUES (?, ?, ?, ?)  [["created_at", Tue, 16 Sep 2014 14:17:31 UTC +00:00], ["email", "44444"], ["updated_at", Tue, 16 Sep 2014 14:17:31 UTC +00:00], ["username", "44444"]]
+  [1m[36m (6.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/users
+Completed 302 Found in 32.0ms (ActiveRecord: 25.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2014-09-16 10:17:32 -0400
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT "users".* FROM "users" 
+  Rendered users/index.html.erb within layouts/application (18.0ms)
+Completed 500 Internal Server Error in 25.0ms
+
+ActionView::Template::Error (undefined method `name' for #<User:0x401e8c0>):
+    3: 
+    4: <ul>
+    5: 	<%for user in @users%>
+    6: 	<li><%=user.name%>, <%=user.email%></li>
+    7: 	<%end%>
+    8: </ul>
+  app/views/users/index.html.erb:6:in `block in _app_views_users_index_html_erb__38152902_34240512'
+  app/views/users/index.html.erb:5:in `each'
+  app/views/users/index.html.erb:5:in `_app_views_users_index_html_erb__38152902_34240512'
+
+
+  Rendered c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.19/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.19/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+  Rendered c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.19/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (26.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2014-09-16 10:18:05 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  Rendered users/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 15.0ms (Views: 13.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-16 10:18:05 -0400
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/trails.css?body=1" for 127.0.0.1 at 2014-09-16 10:18:05 -0400
+Served asset /trails.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2014-09-16 10:18:05 -0400
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-09-16 10:18:05 -0400
+Served asset /users.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-16 10:18:05 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-16 10:18:05 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2014-09-16 10:18:05 -0400
+Served asset /static_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trails.js?body=1" for 127.0.0.1 at 2014-09-16 10:18:05 -0400
+Served asset /trails.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-09-16 10:18:05 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-16 10:18:05 -0400
+Served asset /application.js - 304 Not Modified (0ms)

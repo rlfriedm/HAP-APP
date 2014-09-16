@@ -1,7 +1,13 @@
 HAPApp::Application.routes.draw do
+  get "static_pages/login"
+
+  get "static_pages/about"
+
+  get "static_pages/contact"
+
   get "trails/index"
 
-  root :to => 'Trails#index'
+  root :to => 'StaticPages#login'
   resources :users
   resources :trails
   # The priority is based upon order of creation:
