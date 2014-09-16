@@ -3,7 +3,6 @@ class UsersController < ApplicationController
   	@users = User.all
   end
   def create
-  	#render :text => params.inspect 
   	User.create params[:user]
  	@curUser = :user
   	redirect_to action: 'index'
