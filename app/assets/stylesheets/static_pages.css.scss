@@ -1,3 +1,20 @@
 // Place all the styles related to the static_pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+body.loginStyle{
+	background-image: url('AdirondackPic.jpg');
+	
+
+}
+
+div.loginStyle {
+	margin-left: 30%;
+	margin-right: 30%;
+	margin-top: 15%;
+	background-color: green;
+}
+
+h1.loginStyle{
+	text-align: center;
+}

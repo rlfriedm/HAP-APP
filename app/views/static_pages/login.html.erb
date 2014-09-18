@@ -1,8 +1,13 @@
-<h1>Login</h1>
-<div id="loginForm">
-	Username: <input type="text" name="username"><br>
-	Password: <input type="text" name="password"><br>
-	<input type="submit" name="submitButton">
-<div/>
-
-<p>No account? please <%= link_to 'signup', new_user_path%></p>
+<header>
+</header>
+<body class="loginStyle">
+	<div class="loginStyle">
+		<h1 class="loginStyle">Login</h1>
+		<div class="loginStyle">
+			Username: <input type="text" name="username">
+			Password: <input type="text" name="password">
+		</div>
+		<input type="submit" class="loginStyle" name="submitButton"><br>
+		<p>No account? please <%= link_to 'signup', new_user_path%></p>
+	</div>
+</body>
