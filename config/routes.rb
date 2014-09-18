@@ -7,7 +7,6 @@ HAPApp::Application.routes.draw do
 
   get "users/deleteuser"
   post "users/deleteuser"
-  post "user/edit"
 
   get "trails/index"
   get "trails/trail"

@@ -15,4 +15,13 @@ class UsersController < ApplicationController
   def edit
   	@curUser = User.find(params[:id])
   end
+  def update
+    #render :text => params.inspect
+    retUser = params[:user]
+    curUser = User.find(params[:id])
+    curUser.email = retUser[:email]
+    curUser.password = retUser[:password]
+    curUser.save
+    redirect_to action: 'index'
+  end
 end
