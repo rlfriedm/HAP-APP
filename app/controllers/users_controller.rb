@@ -4,7 +4,7 @@ class UsersController < ApplicationController
   end
   def create
   	User.create params[:user]
- 	@curUser = :user
+ 	  @curUser = :user
   	redirect_to action: 'index'
   end
   def deleteuser

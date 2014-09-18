@@ -10,6 +10,7 @@ HAPApp::Application.routes.draw do
   post "user/edit"
 
   get "trails/index"
+  get "trails/trail"
 
   root :to => 'StaticPages#login'
   resources :users
