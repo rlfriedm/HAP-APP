@@ -5,6 +5,10 @@ HAPApp::Application.routes.draw do
 
   get "static_pages/contact"
 
+  get "users/deleteuser"
+  post "users/deleteuser"
+  post "user/edit"
+
   get "trails/index"
 
   root :to => 'StaticPages#login'

@@ -3,7 +3,10 @@
 
 <ul>
 	<%for user in @users%>
-	<li><%=user.username%>, <%=user.email%></li>
+	<li><%=user.username%>, <%=user.email%><br>
+		<%= button_to "Delete", :action => "deleteuser", :id => user.id%>
+		<%= button_to "Edit", :action => "edit", :id => user.id%>
+	</li>
 	<%end%>
 </ul>
 
