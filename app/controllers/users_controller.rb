@@ -3,7 +3,7 @@ class UsersController < ApplicationController
   	@users = User.all
   end
   def create
-  	User.create params[:user]
+  	User.create! params[:user]
  	  @curUser = :user
   	redirect_to action: 'index'
   end
