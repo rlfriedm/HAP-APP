@@ -13,7 +13,10 @@ HAPApp::Application.routes.draw do
 
   root :to => 'StaticPages#login'
   resources :users
-  resources :trails
+  resources :reviews
+  resources :trails do
+    resources :reviews
+  end
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

@@ -1,2 +1,25 @@
 <h1><%=@trail.name %></h1>
 <h2>Rating: <%=@trail.rating %><h2>
+
+<h2> Reviews: </h2>
+<% if @trail.reviews.any? %>
+  <% @trail.reviews.each do |review| %>
+    <p>
+	  <%= review.title %>
+	  <%= review.bodyText %>
+	  <%= review.rating %>
+    </p>
+  <% end %>
+<% end %>
+
+<h1>Add a Review</h1>
+<%= form_for Review.new do |f| %>
+	<%= f.label :title %>
+	<%= f.text_field :title %>
+	<%= f.label :review %>
+	<%= f.text_field :bodyText %>
+	<%= f.label :rating %>
+	<%= f.text_field :rating %>
+	<%= f.hidden_field :trail_id, :value => @trail.id %>
+	<%= f.submit %>
+<% end %>
