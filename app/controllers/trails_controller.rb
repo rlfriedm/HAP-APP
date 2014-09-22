@@ -1,7 +1,7 @@
 class TrailsController < ApplicationController
   def index
   	@trails = Trail.all 
-    @reviews = Trail.reviews
+
   end
   def create
   	Trail.create params[:trail]
