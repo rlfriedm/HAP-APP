@@ -4,9 +4,13 @@
 	<div>
 		<h1>Welcome to the Adirondack Program Website!</h1>
 		<h2>Please sign in</h2>
-		Username: <input type="text" name="username">
-		Password: <input type="text" name="password">
-		<input class="button" type="submit" name="submitButton"><br>
+		<%= form_for User.new do |f| %>
+			<%= f.label :username %>
+			<%= f.text_field :username %>
+			<%= f.label :password %>
+			<%= f.text_field :password %>
+			<%= f.submit "Signin", :class => "button"%>
+		<% end %>
 		<p>No account? please <%= link_to 'signup', new_user_path%></p>
 	</div>
 </body>
