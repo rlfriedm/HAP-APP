@@ -1,16 +1,13 @@
 <header>
+	<script src="assets/javascripts/login.js"></script>
 </header>
 <body class="loginStyle">
 	<div>
 		<h1>Welcome to the Adirondack Program Website!</h1>
 		<h2>Please sign in</h2>
-		<%= form_for User.new do |f| %>
-			<%= f.label :username %>
-			<%= f.text_field :username %>
-			<%= f.label :password %>
-			<%= f.text_field :password %>
-			<%= f.submit "Signin", :class => "button"%>
-		<% end %>
+		Username: <input type="text" id="usernameBox">
+		Password: <input type="text" id="passwordBox">
+		<input class="button" type="submit" name="submitButton" onclick="checkUser()"><br>
 		<p>No account? please <%= link_to 'signup', new_user_path%></p>
 	</div>
 </body>
