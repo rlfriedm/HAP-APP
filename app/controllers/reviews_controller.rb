@@ -1,9 +1,4 @@
 class ReviewsController < ApplicationController
-	def new
-		@trail = Trail.find(params[:trail_id])
-		@review = Trail.reviews.build(params[:trail_id])
-	end
-
 	def create
 		id = params[:review][:trail_id]
 		@trail = Trail.find(id)
@@ -13,4 +8,12 @@ class ReviewsController < ApplicationController
 			redirect_to :back
 		end
 	end
+
+	def deleteReview
+  		reviews = Trail.find(params[:trail_id]).reviews
+  		review = reviews.find(params[:review_id])
+  		review.destroy
+  		redirect_to :back
+
+  	end
 end

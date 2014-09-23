@@ -1,25 +1,33 @@
-<h1><%=@trail.name %></h1>
-<h2>Rating: <%=@trail.rating %><h2>
+<h1><%=@trail.name %> Rating: <%=@trail.rating %></h1>
 
 <h2> Reviews: </h2>
 <% if @trail.reviews.any? %>
   <% @trail.reviews.each do |review| %>
     <p>
-	  <%= review.title %>
-	  <%= review.bodyText %>
-	  <%= review.rating %>
+	  Title: <%= review.title %> </br>
+	  Review: <%= review.bodyText %> </br>
+	  Rating: <%= review.rating %> 
+	  <%= button_to "Delete", { :controller => "reviews", :action => "deleteReview", :trail_id => @trail.id, :review_id => review.id} %>
+
     </p>
   <% end %>
 <% end %>
 
+<br/>
+<br/>
+
 <h1>Add a Review</h1>
 <%= form_for Review.new do |f| %>
 	<%= f.label :title %>
-	<%= f.text_field :title %>
+	<%= f.text_field :title %> 
+	<br/>
 	<%= f.label :review %>
-	<%= f.text_field :bodyText %>
+	<br/>
+	<%= f.text_area :bodyText %>
+	<br/>
 	<%= f.label :rating %>
 	<%= f.text_field :rating %>
+	<br/>
 	<%= f.hidden_field :trail_id, :value => @trail.id %>
 	<%= f.submit %>
 <% end %>

@@ -11,6 +11,9 @@ HAPApp::Application.routes.draw do
   get "trails/index"
   get "trails/trail"
 
+  get "reviews/deleteReview"
+  post "reviews/deleteReview"
+
   root :to => 'StaticPages#login'
   resources :users
   resources :reviews
