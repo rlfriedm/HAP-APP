@@ -1,5 +1,5 @@
 class User < ActiveRecord::Base
-  attr_accesor    :password
+  attr_accessor    :password
   attr_accessible :email, :username, :password, :password_confirmation
 
   email_regex = /.+@hamilton.edu/i
@@ -14,8 +14,9 @@ class User < ActiveRecord::Base
   					:uniqueness => {:case_sensitive => false}
 
   validates :password, :presence => true,
-                       :confirmation => true
-                       :length => { :within => 5..30}
+                       :confirmation => true,
+                       :length => {:maximum => 20}, 
+                       :length => {:minimum => 5}
 
   before_save :encrypt_password
 
@@ -23,6 +24,10 @@ class User < ActiveRecord::Base
     self.encrypted_password == encrypt(submitted_password)
   end
 
+  def User.authenticate(email, submitted_password)
+    user = User.find_by_email(email)
+    return nil if user.nil
+    return user if user.has_password(submitted_password)
   private
 
     def encrypt_password
