@@ -1,8 +1,6 @@
 <h1>Edit your information, <%= @curUser.username %></h1>
 
 <%= form_for @curUser do |f| %> 
-	<%= f.label :password %>
-	<%= f.text_field :password %>
 	<%= f.label :email %>
 	<%= f.text_field :email %> 
 	<%= f.submit %>
