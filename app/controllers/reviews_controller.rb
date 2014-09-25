@@ -14,6 +14,5 @@ class ReviewsController < ApplicationController
   		review = reviews.find(params[:review_id])
   		review.destroy
   		redirect_to :back
-
   	end
 end
