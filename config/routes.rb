@@ -15,7 +15,13 @@ HAPApp::Application.routes.draw do
   post "reviews/deleteReview"
 
   root :to => 'StaticPages#login'
-  resources :users
+
+  resources :users do
+    collection do
+      get :auth
+    end
+  end
+  
   resources :reviews
   resources :trails do
     resources :reviews

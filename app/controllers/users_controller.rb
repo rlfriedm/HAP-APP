@@ -2,6 +2,11 @@ class UsersController < ApplicationController
   def index
   	@users = User.all
   end
+  def auth
+    #render :text => params.inspect
+    @username = params[:username]
+    @password = params[:password]
+  end
   def create
   	User.create! params[:user]
  	  @curUser = :user
