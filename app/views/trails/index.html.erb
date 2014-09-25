@@ -1,4 +1,11 @@
 <h1>Trails</h1>
+
+<%= form_tag trails_path, :method => :get do %>
+  <p>
+    <%= text_field_tag :search, params[:search] %>
+    <%= submit_tag "Search", :name => nil %>
+<% end %>
+
 <ul>
 	<% for t in @trails %>
 	<li>Name: <%=link_to t.name, :action => "trail", :id => t.id%></li>
