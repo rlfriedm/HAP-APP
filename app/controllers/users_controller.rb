@@ -3,11 +3,10 @@ class UsersController < ApplicationController
   	@users = User.all
   end
   def show
-    if not User.exists?(:id => params[:id])
-      redirect_to action: 'index'
-    end
-    @user = User.find(params[:id])
+   @user = User.find(params[:id])
+
   end
+
   def auth
     #render :text => params.inspect
     @username = params[:username]

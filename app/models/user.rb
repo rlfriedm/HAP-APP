@@ -1,6 +1,6 @@
 class User < ActiveRecord::Base
   attr_accessor    :password
-  attr_accessible :email, :username, :password, :password_confirmation
+  attr_accessible :email, :username, :password#, :password_confirmation
 
   email_regex = /.+@hamilton.edu/i
   validates :username, 	:presence => true,

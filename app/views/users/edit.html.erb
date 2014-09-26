@@ -2,6 +2,10 @@
 
 <%= form_for @curUser do |f| %> 
 	<%= f.label :email %>
-	<%= f.text_field :email %> 
+	<%= f.text_field :email %><br> 
+	<%= f.label :password %>
+	<%= f.text_field :password%><br> 
+	<%= f.label :username %>
+	<%= f.text_field :username %><br> 
 	<%= f.submit %>
 <% end %>
