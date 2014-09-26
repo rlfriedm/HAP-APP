@@ -53,6 +53,7 @@ GEM
     ffi (1.9.3)
     ffi (1.9.3-x86-mingw32)
     formatador (0.2.5)
+    gravatar_image_tag (0.1.0)
     guard (2.6.1)
       formatador (>= 0.2.4)
       listen (~> 2.7)
@@ -186,6 +187,7 @@ PLATFORMS
 DEPENDENCIES
   capybara
   coffee-rails (~> 3.2.1)
+  gravatar_image_tag (= 0.1.0)
   guard-rspec
   jquery-rails
   rails (= 3.2.19)

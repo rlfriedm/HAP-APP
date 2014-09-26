@@ -14,14 +14,11 @@ HAPApp::Application.routes.draw do
   get "reviews/deleteReview"
   post "reviews/deleteReview"
 
+  match "/signup", :to => "users#new"
+
   root :to => 'StaticPages#login'
 
-  resources :users do
-    collection do
-      get :auth
-    end
-  end
-  
+  resources :users 
   resources :reviews
   resources :trails do
     resources :reviews
