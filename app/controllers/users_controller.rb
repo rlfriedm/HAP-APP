@@ -4,20 +4,21 @@ class UsersController < ApplicationController
   end
   def show
    @user = User.find(params[:id])
-
   end
-
+  def new
+    @user = User.new
+  end
   def auth
     #render :text => params.inspect
     @username = params[:username]
     @password = params[:password]
   end
   def create
-  	user = User.new(params[:user])
-    if user.save
+  	@user = User.new(params[:user])
+    if @user.save
   	 redirect_to action: 'index'
     else
-     render :text => user.errors.full_messages
+     render 'new'
     end
   end
   def deleteuser
