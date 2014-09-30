@@ -10,6 +10,7 @@ gem 'sqlite3'
 gem 'sunspot_rails'
 gem 'sunspot_solr'
 gem 'gravatar_image_tag', '0.1.0'
+gem 'paperclip'
 
 
 # Gems used only for assets and not required
