@@ -16,10 +16,28 @@ HAPApp::Application.routes.draw do
   get "trails/index"
   get "trails/trail"
 
+  get "reviews/deleteReview"
+  post "reviews/deleteReview"
+
+  match "/signup", :to => "users#new"
+
   root :to => 'StaticPages#login'
+<<<<<<< HEAD
   resources :users
   resources :trails
   resources :locations
+=======
+
+  resources :users 
+  resources :reviews
+  resources :trails do
+    resources :reviews
+  end
+
+  resources :reviews do
+    resources :photos
+  end
+>>>>>>> 3851e3415201759f74f6a6b40b98cc7e28bb19f2
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
