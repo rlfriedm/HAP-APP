@@ -1,4 +1,9 @@
 HAPApp::Application.routes.draw do
+  
+
+
+  get "maps/index"
+
   get "static_pages/login"
 
   get "static_pages/about"
@@ -14,6 +19,7 @@ HAPApp::Application.routes.draw do
   root :to => 'StaticPages#login'
   resources :users
   resources :trails
+  resources :locations
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
