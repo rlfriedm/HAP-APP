@@ -7,8 +7,21 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= yield %>
+<div class="container">
+	<ul class="nav nav-tabs">
+		<li><%= link_to "about", static_pages_about_path %></li>
+		<li><%= link_to "contact", static_pages_contact_path %></li>
+		<li><%= link_to "signout", root_path %></li>
+		<li><%= link_to "trails", :controller => :trails, :action => :index %></li>
+	</ul>
+	<% if flash[:notice] %>
+		<div class="alert alert-error">
+			<button class="close" data-dismiss="alert">x</button>
+			<%= flash[:notice] %>
+		</div>
+	<% end %>
+	<%= yield %>
+</div>
 
 </body>
 </html>

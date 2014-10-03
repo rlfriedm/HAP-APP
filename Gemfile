@@ -11,6 +11,7 @@ gem 'sunspot_rails'
 gem 'sunspot_solr'
 gem 'gravatar_image_tag', '0.1.0'
 gem 'paperclip'
+gem 'bootstrap-sass', '~> 2.3.1.0'
 
 
 # Gems used only for assets and not required

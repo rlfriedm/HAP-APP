@@ -1,4 +1,6 @@
 HAPApp::Application.routes.draw do
+  get "sessions/new"
+
   get "static_pages/login"
 
   get "static_pages/about"
@@ -15,9 +17,12 @@ HAPApp::Application.routes.draw do
   post "reviews/deleteReview"
 
   match "/signup", :to => "users#new"
+  match "/signin", :to => "sessions#new"
+  match "signout", :to => "sessions#destroy"
 
-  root :to => 'StaticPages#login'
+  root :to => 'sessions#new'
 
+  resources :sessions, :only => [:new, :create, :destroy]
   resources :users 
   resources :reviews
   resources :trails do
