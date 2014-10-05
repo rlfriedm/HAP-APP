@@ -7,20 +7,23 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-<div class="container">
-	<ul class="nav nav-tabs">
-		<li><%= link_to "about", static_pages_about_path %></li>
-		<li><%= link_to "contact", static_pages_contact_path %></li>
-		<li><%= link_to "signout", root_path %></li>
-		<li><%= link_to "trails", :controller => :trails, :action => :index %></li>
-	</ul>
+<div class="container" id="main">
+
+	<div class="navbar navbar-fixed-top">
+		<% if signed_in? %>
+		<%= render "shared/header" %>
+	<% end %>
+	</div>
+
 	<% if flash[:notice] %>
 		<div class="alert alert-error">
 			<button class="close" data-dismiss="alert">x</button>
 			<%= flash[:notice] %>
 		</div>
 	<% end %>
-	<%= yield %>
+	<div class="jumbotron">
+		<%= yield %>
+	<div>
 </div>
 
 </body>
