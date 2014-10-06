@@ -8,22 +8,18 @@
 </head>
 <body>
 <div class="container" id="main">
-
-	<div class="navbar navbar-fixed-top">
-		<% if signed_in? %>
-		<%= render "shared/header" %>
+	<% if signed_in? %>
+	 	<%= render "shared/header" %>
 	<% end %>
-	</div>
-
 	<% if flash[:notice] %>
-		<div class="alert alert-error">
-			<button class="close" data-dismiss="alert">x</button>
-			<%= flash[:notice] %>
+		<div class="alert alert-danger alert-dismissible" role="alert">
+  			<button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+  			<%= flash[:notice] %>
 		</div>
 	<% end %>
-	<div class="jumbotron">
-		<%= yield %>
-	<div>
+	
+	<%= yield %>
+	
 </div>
 
 </body>
