@@ -1,32 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
+<%= yield :scripts %>
   <title>HAPApp</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-<<<<<<< HEAD
-
-<%= yield %>
-<%= yield :scripts %>
-=======
-<div class="container" id="main">
-	<% if signed_in? %>
-	 	<%= render "shared/header" %>
-	<% end %>
-	<% if flash[:notice] %>
-		<div class="alert alert-danger alert-dismissible" role="alert">
-  			<button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-  			<%= flash[:notice] %>
+	<div class="container" id="main">
+		<% if signed_in? %>
+		 	<%= render "shared/header" %>
+		 <% else %>
+		 	<%= render "shared/welcome" %>
+		<% end %>
+		<% if flash[:notice] %>
+			<div class="alert alert-danger alert-dismissible" role="alert">
+	  			<button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+	  			<%= flash[:notice] %>
+			</div>
+		<% end %>
+		
+		<div class="well well-lg">
+			<%= yield %>
 		</div>
-	<% end %>
-	
-	<%= yield %>
-	
-</div>
->>>>>>> aac711481d69216291cdaf3b8bd8689ae3a8cc1a
-
+		
+	</div>
 </body>
 </html>

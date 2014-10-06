@@ -1,17 +1,14 @@
 <header>
 	<!--<script src="assets/javascripts/login.js"></script> -->
 </header>
-<body class="loginStyle">
-	<div class="loginStyle">
-		<h1>Welcome to the Adirondack Program Website!</h1>
-		<h2>Please sign in:</h2>
-		<%= form_for(:session, :url => sessions_path) do |f| %>
-			<%= f.label :email%>
-			<%= f.text_field :email%><br>
-			<%= f.label :password%>
-			<%= f.password_field :password%><br>
-			<%= f.submit "Sign in" %>
-		<% end %> 
-		<p> New user? Please <%= link_to 'signup!', new_user_path%></p>
-	</div>
+<body>
+	<h2>Please sign in:</h2><br>
+	<%= form_for(:session, :url => sessions_path) do |f| %>
+		<%= f.label :email%>
+		<%= f.text_field :email, :class => "form-control" %><br>
+		<%= f.label :password%>
+		<%= f.password_field :password, :class => "form-control" %><br>
+		<%= f.submit "Sign in", :class => "btn btn-success" %>
+		<p class="form-control-static">New user? Please <%= link_to 'signup!', new_user_path%></p>
+	<% end %>  
 </body>
