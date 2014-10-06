@@ -10,6 +10,8 @@
 <div class="container" id="main">
 	<% if signed_in? %>
 	 	<%= render "shared/header" %>
+	 <% else %>
+	 	<%= render "shared/welcome" %>
 	<% end %>
 	<% if flash[:notice] %>
 		<div class="alert alert-danger alert-dismissible" role="alert">
@@ -18,7 +20,9 @@
 		</div>
 	<% end %>
 	
-	<%= yield %>
+	<div class="well well-lg">
+		<%= yield %>
+	</div>
 	
 </div>
 
