@@ -16,7 +16,8 @@ class UsersController < ApplicationController
   def create
   	@user = User.new(params[:user])
     if @user.save
-  	 redirect_to action: 'index'
+  	 redirect_to action: 'show', :id => @user.id
+     sign_in(@user)
     else
      render 'new'
     end

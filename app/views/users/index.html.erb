@@ -3,7 +3,7 @@
 
 <ul>
 	<%for user in @users%>
-	<li><%= link_to user.username, :action => "show", :id => user.id%>, <%=user.email%>, <%= user.id%>, <%=user.encrypted_password %><br>
+	<li><%= link_to user.username, :action => "show", :id => user.id%>, <%=user.email%>, <%= user.id%><br>
 		<%= button_to "Delete", :action => "deleteuser", :id => user.id%>
 		<%= link_to "Edit", :action => "edit", :id => user.id%>
 	</li>

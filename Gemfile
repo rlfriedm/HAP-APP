@@ -12,7 +12,6 @@ gem 'sunspot_solr'
 gem 'gravatar_image_tag', '0.1.0'
 gem 'paperclip'
 
-
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do

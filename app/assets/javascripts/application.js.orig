@@ -12,7 +12,11 @@
 //
 //= require jquery
 //= require jquery_ujs
+<<<<<<< HEAD
 //= require underscore
 //= require gmaps/google
 //= require_tree .
+=======
+//= require_tree .
 //= require bootstrap.min
+>>>>>>> aac711481d69216291cdaf3b8bd8689ae3a8cc1a
