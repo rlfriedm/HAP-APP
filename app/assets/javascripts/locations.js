@@ -8,6 +8,7 @@
 
 
 var map;
+var polyLine;
 
 function initialize() {
   var mapOptions = {
@@ -26,10 +27,24 @@ function initialize() {
   		map : map,
   		draggable : true
   	});
-
   }
+
+  google.maps.event.addListener(map, 'drag', drawPath);
 }
   
+
+function drawPath(event) {
+  var path = polyLine.getPath();
+
+  path.push(event.latLng);
+
+  var marker = new google.maps.Marker({
+    position : event.latLng,
+    map : map
+  });
+
+}
+
 
 //google.maps.event.addDomListener(window, 'load', initialize);
 
