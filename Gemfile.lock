@@ -55,9 +55,7 @@ GEM
     erubis (2.7.0)
     execjs (2.2.1)
     ffi (1.9.5)
-    ffi (1.9.5-x86-mingw32)
     formatador (0.2.5)
-<<<<<<< HEAD
     geocoder (1.2.5)
     gmaps4rails (2.1.2)
     gon (5.2.0)
@@ -65,9 +63,7 @@ GEM
       json
       multi_json
       request_store (>= 1.0.5)
-=======
     gravatar_image_tag (0.1.0)
->>>>>>> 3851e3415201759f74f6a6b40b98cc7e28bb19f2
     guard (2.6.1)
       formatador (>= 0.2.4)
       listen (~> 2.7)
@@ -99,27 +95,17 @@ GEM
     multi_json (1.10.1)
     nokogiri (1.6.3.1)
       mini_portile (= 0.6.0)
-    nokogiri (1.6.3.1-x86-mingw32)
-      mini_portile (= 0.6.0)
     paperclip (4.2.0)
       activemodel (>= 3.0.0)
       activesupport (>= 3.0.0)
       cocaine (~> 0.5.3)
       mime-types
     polyglot (0.3.5)
-<<<<<<< HEAD
-=======
     pr_geohash (1.0.0)
->>>>>>> 3851e3415201759f74f6a6b40b98cc7e28bb19f2
     pry (0.10.1)
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
       slop (~> 3.4)
-    pry (0.10.1-x86-mingw32)
-      coderay (~> 1.1.0)
-      method_source (~> 0.8.1)
-      slop (~> 3.4)
-      win32console (~> 1.3)
     rack (1.4.5)
     rack-cache (1.2)
       rack (>= 0.4)
@@ -148,12 +134,9 @@ GEM
       ffi (>= 0.5.0)
     rdoc (3.12.2)
       json (~> 1.4)
-<<<<<<< HEAD
     request_store (1.1.0)
-=======
     rsolr (1.0.10)
       builder (>= 2.1.2)
->>>>>>> 3851e3415201759f74f6a6b40b98cc7e28bb19f2
     rspec (2.4.0)
       rspec-core (~> 2.4.0)
       rspec-expectations (~> 2.4.0)
@@ -173,13 +156,12 @@ GEM
       sass (>= 3.1.10)
       tilt (~> 1.3)
     slop (3.6.0)
-    sprockets (2.2.2.backport2)
+    sprockets (2.2.2)
       hike (~> 1.2)
       multi_json (~> 1.0)
       rack (~> 1.0)
       tilt (~> 1.1, != 1.3.0)
     sqlite3 (1.3.9)
-    sqlite3 (1.3.9-x86-mingw32)
     sunspot (2.1.1)
       pr_geohash (~> 1.0)
       rsolr (~> 1.0.7)
@@ -202,24 +184,19 @@ GEM
     uglifier (2.5.3)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
-    win32console (1.3.2-x86-mingw32)
     xpath (2.0.0)
       nokogiri (~> 1.3)
 
 PLATFORMS
   ruby
-  x86-mingw32
 
 DEPENDENCIES
   capybara
   coffee-rails (~> 3.2.1)
-<<<<<<< HEAD
   geocoder
   gmaps4rails
   gon
-=======
   gravatar_image_tag (= 0.1.0)
->>>>>>> 3851e3415201759f74f6a6b40b98cc7e28bb19f2
   guard-rspec
   jquery-rails
   paperclip
