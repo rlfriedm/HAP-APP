@@ -37,7 +37,7 @@ module HAPApp
     config.encoding = "utf-8"
 
     config.action_view.field_error_proc = Proc.new { |html_tag, instance| 
-        "<div class=\"alert alert-error\">#{html_tag}</div>".html_safe
+        "<div class=\"alert alert-danger\">#{html_tag}</div>".html_safe
     }
 
     # Configure sensitive parameters which will be filtered from the log file.
