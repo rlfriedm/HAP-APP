@@ -8,7 +8,6 @@ gem 'rails', '3.2.19'
 gem 'sqlite3'
 
 gem 'sunspot_rails'
-gem 'sunspot_solr'
 
 
 # Gems used only for assets and not required
@@ -22,10 +21,11 @@ end
 gem 'jquery-rails'
 
 group :test, :development do
-  gem 'turn'
-  gem 'rspec-rails', '2.4.1'
-  gem 'capybara'
-  gem 'guard-rspec'
+  	gem 'turn'
+  	gem 'rspec-rails', '2.4.1'
+ 	gem 'capybara'
+  	gem 'guard-rspec'
+	gem 'sunspot_solr'
 end
 
 

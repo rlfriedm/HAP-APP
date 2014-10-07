@@ -1,16 +1,43 @@
 <h1>Trails</h1>
 
 <%= form_tag trails_path, :method => :get do %>
-  <p>
-    <%= text_field_tag :search, params[:search] %>
-    <%= submit_tag "Search", :name => nil %>
+  	<p>
+    	<%= text_field_tag :search, params[:search] %>
+    	<%= submit_tag "Search", :name => nil %>
 <% end %>
+
+<% if @trails.size == 0 %>
+	<em>No trails were found matching your search</em>
+<% end %>
+
+<%= form_for trails_path do |f| %>
+    <p>
+      <%= f.select :trail_order, options_for_select(["Newest First", "Trail Rating", "Trail Name A-Z"])%>
+<% end %>
+
+<div id="facets">
+  	<h3>Published</h3>
+  	<ul>
+    	<% for row in @search.facet(:publish_month).rows %>
+      		<li>
+        	<% if params[:month].blank? %>
+          		<%= link_to row.value, :month => row.value %> (<%= row.count %>)
+        	<% else %>
+          		<strong><%= row.value %></strong> (<%= link_to "remove", :month => nil %>)
+        	<% end %>
+      		</li>
+    	<% end %>
+  	</ul>
+</div>
+
+
 
 <ul>
 	<% for t in @trails %>
-	<li>Name: <%=link_to t.name, :action => "trail", :id => t.id%></li>
-	<li>Description: <%=t.description%></li>
-	<li>Rating: <%=t.rating%></li>
-	<%end%> 
+	 <li>Name: <%=link_to t.name, :action => "trail", :id => t.id%></li>
+	 <li>Description: <%=t.description%></li>
+	 <li>Rating: <%=t.rating%></li>
+   <li>Created: <%=t.created_at.strftime("%B %d, %Y")%></li>
+	<% end %>
 </ul>
 
