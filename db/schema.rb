@@ -31,6 +31,16 @@ ActiveRecord::Schema.define(:version => 20140925195550) do
     t.datetime "updated_at",               :null => false
   end
 
+#added this cause we didn't know what it did....?
+
+  create_table "reviews", :force => true do |t|
+    t.string "title"
+    t.text "bodyText"
+    t.integer "rating"        :limit => 5
+    t.trail_id "trail_id"                   :null => false
+    t.timestamps "timestamps"
+  end
+
   create_table "users", :force => true do |t|
     t.string   "username"
     t.string   "email"

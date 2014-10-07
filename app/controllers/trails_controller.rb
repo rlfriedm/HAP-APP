@@ -9,7 +9,7 @@ class TrailsController < ApplicationController
         with(:publish_month, params[:month])
       end
     end
-    @trails = @search.results.sort_by{|e| e[:created_at]}.reverse
+    @trails = @search.results #.sort_by{|e| e[:created_at]}.reverse
 
 
   end

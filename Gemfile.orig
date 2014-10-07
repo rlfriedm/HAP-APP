@@ -8,8 +8,13 @@ gem 'rails', '3.2.19'
 gem 'sqlite3'
 
 gem 'sunspot_rails'
+<<<<<<< HEAD
+
+=======
+gem 'sunspot_solr'
 gem 'gravatar_image_tag', '0.1.0'
 gem 'paperclip'
+>>>>>>> 82c2174d8717a8fca5ef2136f4ea8bf1a5fedda9
 
 # Gems used only for assets and not required
 # in production environments by default.
