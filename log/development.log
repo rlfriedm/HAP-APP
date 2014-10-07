@@ -64792,3 +64792,568 @@ Served asset /application.js - 304 Not Modified (76ms)
 
 Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-10-06 20:25:56 -0400
 Served asset /bootstrap.min.js - 304 Not Modified (1ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-06 21:35:25 -0400
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (78.2ms)
+Warning. Error encountered while saving cache /Users/Gretchen/CSThesis/HAP-APP/tmp/cache/sass/2c3f46cb0cb54b054444f67fe8b0abe8274f2d15/trails.css.scssc: can't dump anonymous class #<Class:0x007fef49d763e8>
+
+Compiled trails.css  (9ms)  (pid 5948)
+Warning. Error encountered while saving cache /Users/Gretchen/CSThesis/HAP-APP/tmp/cache/sass/2c3f46cb0cb54b054444f67fe8b0abe8274f2d15/users.css.scssc: can't dump anonymous class #<Class:0x007fef49d763e8>
+
+Compiled users.css  (1ms)  (pid 5948)
+Compiled trails.js  (675ms)  (pid 5948)
+Compiled users.js  (125ms)  (pid 5948)
+Compiled application.js  (1152ms)  (pid 5948)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  Rendered shared/_welcome.html.erb (0.5ms)
+Completed 200 OK in 1514.5ms (Views: 1512.7ms | ActiveRecord: 1.3ms | Solr: 0.0ms)
+
+
+Started GET "/assets/global.css?body=1" for 127.0.0.1 at 2014-10-06 21:35:26 -0400
+Served asset /global.css - 304 Not Modified (13ms)
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2014-10-06 21:35:26 -0400
+Served asset /reviews.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2014-10-06 21:35:26 -0400
+Served asset /maps.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2014-10-06 21:35:26 -0400
+Served asset /locations.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/photo.css?body=1" for 127.0.0.1 at 2014-10-06 21:35:27 -0400
+Served asset /photo.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-10-06 21:35:27 -0400
+Served asset /sessions.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2014-10-06 21:35:27 -0400
+Served asset /static_pages.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-06 21:35:27 -0400
+Served asset /application.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/trails.css?body=1" for 127.0.0.1 at 2014-10-06 21:35:27 -0400
+Served asset /trails.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-06 21:35:27 -0400
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-10-06 21:35:27 -0400
+Served asset /users.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-10-06 21:35:27 -0400
+Served asset /bootstrap.min.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-06 21:35:27 -0400
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-06 21:35:27 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2014-10-06 21:35:27 -0400
+Served asset /underscore.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/gmaps/base.js?body=1" for 127.0.0.1 at 2014-10-06 21:35:27 -0400
+Served asset /gmaps/base.js - 304 Not Modified (54ms)
+
+
+Started GET "/assets/gmaps/base/base.js?body=1" for 127.0.0.1 at 2014-10-06 21:35:27 -0400
+Served asset /gmaps/base/base.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/gmaps/objects/base_builder.js?body=1" for 127.0.0.1 at 2014-10-06 21:35:27 -0400
+Served asset /gmaps/objects/base_builder.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/gmaps/objects/builder.js?body=1" for 127.0.0.1 at 2014-10-06 21:35:27 -0400
+Served asset /gmaps/objects/builder.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/gmaps/objects/handler.js?body=1" for 127.0.0.1 at 2014-10-06 21:35:27 -0400
+Served asset /gmaps/objects/handler.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/gmaps/objects/null_clusterer.js?body=1" for 127.0.0.1 at 2014-10-06 21:35:27 -0400
+Served asset /gmaps/objects/null_clusterer.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/gmaps/google/objects/common.js?body=1" for 127.0.0.1 at 2014-10-06 21:35:27 -0400
+Served asset /gmaps/google/objects/common.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/gmaps/google/builders/bound.js?body=1" for 127.0.0.1 at 2014-10-06 21:35:27 -0400
+Served asset /gmaps/google/builders/bound.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/gmaps/google/builders/circle.js?body=1" for 127.0.0.1 at 2014-10-06 21:35:27 -0400
+Served asset /gmaps/google/builders/circle.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/gmaps/google/builders/clusterer.js?body=1" for 127.0.0.1 at 2014-10-06 21:35:27 -0400
+Served asset /gmaps/google/builders/clusterer.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/gmaps/google/builders/kml.js?body=1" for 127.0.0.1 at 2014-10-06 21:35:27 -0400
+Served asset /gmaps/google/builders/kml.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/gmaps/google/builders/map.js?body=1" for 127.0.0.1 at 2014-10-06 21:35:27 -0400
+Served asset /gmaps/google/builders/map.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/gmaps/google/builders/marker.js?body=1" for 127.0.0.1 at 2014-10-06 21:35:27 -0400
+Served asset /gmaps/google/builders/marker.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/gmaps/google/builders/polygon.js?body=1" for 127.0.0.1 at 2014-10-06 21:35:27 -0400
+Served asset /gmaps/google/builders/polygon.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/gmaps/google/builders/polyline.js?body=1" for 127.0.0.1 at 2014-10-06 21:35:27 -0400
+Served asset /gmaps/google/builders/polyline.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/gmaps/google/objects/circle.js?body=1" for 127.0.0.1 at 2014-10-06 21:35:27 -0400
+Served asset /gmaps/google/objects/circle.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/gmaps/google/objects/bound.js?body=1" for 127.0.0.1 at 2014-10-06 21:35:27 -0400
+Served asset /gmaps/google/objects/bound.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/gmaps/google/objects/clusterer.js?body=1" for 127.0.0.1 at 2014-10-06 21:35:27 -0400
+Served asset /gmaps/google/objects/clusterer.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/gmaps/google/objects/kml.js?body=1" for 127.0.0.1 at 2014-10-06 21:35:27 -0400
+Served asset /gmaps/google/objects/kml.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/gmaps/google/objects/map.js?body=1" for 127.0.0.1 at 2014-10-06 21:35:27 -0400
+Served asset /gmaps/google/objects/map.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/gmaps/google/objects/marker.js?body=1" for 127.0.0.1 at 2014-10-06 21:35:27 -0400
+Served asset /gmaps/google/objects/marker.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/gmaps/google/objects/polygon.js?body=1" for 127.0.0.1 at 2014-10-06 21:35:27 -0400
+Served asset /gmaps/google/objects/polygon.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/gmaps/google/objects/polyline.js?body=1" for 127.0.0.1 at 2014-10-06 21:35:27 -0400
+Served asset /gmaps/google/objects/polyline.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/gmaps/google/primitives.js?body=1" for 127.0.0.1 at 2014-10-06 21:35:27 -0400
+Served asset /gmaps/google/primitives.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/gmaps/google.js?body=1" for 127.0.0.1 at 2014-10-06 21:35:27 -0400
+Served asset /gmaps/google.js - 304 Not Modified (31ms)
+
+
+Started GET "/assets/application.js.orig?body=1" for 127.0.0.1 at 2014-10-06 21:35:27 -0400
+Served asset /application.js.orig - 304 Not Modified (48ms)
+
+
+Started GET "/assets/locations.js?body=1" for 127.0.0.1 at 2014-10-06 21:35:27 -0400
+Served asset /locations.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/maps.js?body=1" for 127.0.0.1 at 2014-10-06 21:35:27 -0400
+Served asset /maps.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/photo.js?body=1" for 127.0.0.1 at 2014-10-06 21:35:27 -0400
+Served asset /photo.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2014-10-06 21:35:27 -0400
+Served asset /reviews.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-10-06 21:35:27 -0400
+Served asset /sessions.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/trails.js?body=1" for 127.0.0.1 at 2014-10-06 21:35:27 -0400
+Served asset /trails.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-10-06 21:35:27 -0400
+Served asset /users.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-10-06 21:35:27 -0400
+Served asset /bootstrap.min.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-06 21:35:27 -0400
+Served asset /application.js - 304 Not Modified (50ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2014-10-06 21:35:43 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QNHlBpgrpnw0Mj4CFOk7UWyA66s3lKNJdl0FCNG42Y8=", "session"=>{"email"=>"zarnold@hamilton.edu", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'zarnold@hamilton.edu' LIMIT 1
+Redirected to http://localhost:3000/users/17
+Completed 302 Found in 65.9ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/users/17" for 127.0.0.1 at 2014-10-06 21:35:43 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"17"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "17"]]
+  Rendered users/show.html.erb within layouts/application (0.7ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 17 LIMIT 1
+  Rendered shared/_header.html.erb (1.5ms)
+Completed 200 OK in 31.5ms (Views: 29.9ms | ActiveRecord: 0.4ms | Solr: 0.0ms)
+
+
+Started GET "/assets/global.css?body=1" for 127.0.0.1 at 2014-10-06 21:35:43 -0400
+Served asset /global.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2014-10-06 21:35:43 -0400
+Served asset /locations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2014-10-06 21:35:43 -0400
+Served asset /reviews.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photo.css?body=1" for 127.0.0.1 at 2014-10-06 21:35:43 -0400
+Served asset /photo.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2014-10-06 21:35:43 -0400
+Served asset /maps.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-10-06 21:35:43 -0400
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-06 21:35:43 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-06 21:35:43 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trails.css?body=1" for 127.0.0.1 at 2014-10-06 21:35:43 -0400
+Served asset /trails.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2014-10-06 21:35:43 -0400
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-10-06 21:35:43 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-10-06 21:35:43 -0400
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-06 21:35:43 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-06 21:35:43 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2014-10-06 21:35:43 -0400
+Served asset /underscore.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gmaps/base.js?body=1" for 127.0.0.1 at 2014-10-06 21:35:43 -0400
+Served asset /gmaps/base.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gmaps/base/base.js?body=1" for 127.0.0.1 at 2014-10-06 21:35:43 -0400
+Served asset /gmaps/base/base.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gmaps/objects/base_builder.js?body=1" for 127.0.0.1 at 2014-10-06 21:35:43 -0400
+Served asset /gmaps/objects/base_builder.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gmaps/objects/handler.js?body=1" for 127.0.0.1 at 2014-10-06 21:35:43 -0400
+Served asset /gmaps/objects/handler.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gmaps/objects/null_clusterer.js?body=1" for 127.0.0.1 at 2014-10-06 21:35:43 -0400
+Served asset /gmaps/objects/null_clusterer.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gmaps/objects/builder.js?body=1" for 127.0.0.1 at 2014-10-06 21:35:43 -0400
+Served asset /gmaps/objects/builder.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gmaps/google/objects/common.js?body=1" for 127.0.0.1 at 2014-10-06 21:35:43 -0400
+Served asset /gmaps/google/objects/common.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gmaps/google/builders/bound.js?body=1" for 127.0.0.1 at 2014-10-06 21:35:43 -0400
+Served asset /gmaps/google/builders/bound.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gmaps/google/builders/circle.js?body=1" for 127.0.0.1 at 2014-10-06 21:35:43 -0400
+Served asset /gmaps/google/builders/circle.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gmaps/google/builders/clusterer.js?body=1" for 127.0.0.1 at 2014-10-06 21:35:43 -0400
+Served asset /gmaps/google/builders/clusterer.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gmaps/google/builders/kml.js?body=1" for 127.0.0.1 at 2014-10-06 21:35:43 -0400
+Served asset /gmaps/google/builders/kml.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gmaps/google/builders/map.js?body=1" for 127.0.0.1 at 2014-10-06 21:35:43 -0400
+Served asset /gmaps/google/builders/map.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gmaps/google/builders/marker.js?body=1" for 127.0.0.1 at 2014-10-06 21:35:43 -0400
+Served asset /gmaps/google/builders/marker.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gmaps/google/builders/polygon.js?body=1" for 127.0.0.1 at 2014-10-06 21:35:43 -0400
+Served asset /gmaps/google/builders/polygon.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gmaps/google/builders/polyline.js?body=1" for 127.0.0.1 at 2014-10-06 21:35:43 -0400
+Served asset /gmaps/google/builders/polyline.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gmaps/google/objects/bound.js?body=1" for 127.0.0.1 at 2014-10-06 21:35:43 -0400
+Served asset /gmaps/google/objects/bound.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gmaps/google/objects/circle.js?body=1" for 127.0.0.1 at 2014-10-06 21:35:43 -0400
+Served asset /gmaps/google/objects/circle.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gmaps/google/objects/clusterer.js?body=1" for 127.0.0.1 at 2014-10-06 21:35:43 -0400
+Served asset /gmaps/google/objects/clusterer.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gmaps/google/objects/kml.js?body=1" for 127.0.0.1 at 2014-10-06 21:35:43 -0400
+Served asset /gmaps/google/objects/kml.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gmaps/google/objects/map.js?body=1" for 127.0.0.1 at 2014-10-06 21:35:43 -0400
+Served asset /gmaps/google/objects/map.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gmaps/google/objects/marker.js?body=1" for 127.0.0.1 at 2014-10-06 21:35:43 -0400
+Served asset /gmaps/google/objects/marker.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gmaps/google/objects/polygon.js?body=1" for 127.0.0.1 at 2014-10-06 21:35:43 -0400
+Served asset /gmaps/google/objects/polygon.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gmaps/google/objects/polyline.js?body=1" for 127.0.0.1 at 2014-10-06 21:35:43 -0400
+Served asset /gmaps/google/objects/polyline.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gmaps/google/primitives.js?body=1" for 127.0.0.1 at 2014-10-06 21:35:43 -0400
+Served asset /gmaps/google/primitives.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/locations.js?body=1" for 127.0.0.1 at 2014-10-06 21:35:43 -0400
+Served asset /locations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photo.js?body=1" for 127.0.0.1 at 2014-10-06 21:35:43 -0400
+Served asset /photo.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js.orig?body=1" for 127.0.0.1 at 2014-10-06 21:35:43 -0400
+Served asset /application.js.orig - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gmaps/google.js?body=1" for 127.0.0.1 at 2014-10-06 21:35:43 -0400
+Served asset /gmaps/google.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/maps.js?body=1" for 127.0.0.1 at 2014-10-06 21:35:43 -0400
+Served asset /maps.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2014-10-06 21:35:43 -0400
+Served asset /reviews.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trails.js?body=1" for 127.0.0.1 at 2014-10-06 21:35:43 -0400
+Served asset /trails.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-10-06 21:35:43 -0400
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-10-06 21:35:43 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-10-06 21:35:43 -0400
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-06 21:35:43 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/trails" for 127.0.0.1 at 2014-10-06 21:35:45 -0400
+Processing by TrailsController#index as HTML
+  [1m[36mTrail Load (0.1ms)[0m  [1mSELECT "trails".* FROM "trails" [0m
+  [1m[32mSOLR Request (165.2ms)[0m  [ path=[1m[1mselect[0m parameters={fq: [1m[1m["type:Trail"][0m, start: [1m[1m0[0m, rows: [1m[1m30[0m, q: [1m[1m"*:*"[0m} ]
+Completed 500 Internal Server Error in 213.5ms
+
+RSolr::Error::Http (RSolr::Error::Http - 404 Not Found
+Error:     Not Found
+
+Request Data: "fq=type%3ATrail&start=0&rows=30&q=%2A%3A%2A"
+
+Backtrace: /Library/Ruby/Gems/2.0.0/gems/rsolr-1.0.10/lib/rsolr/client.rb:283:in `adapt_response'
+/Library/Ruby/Gems/2.0.0/gems/rsolr-1.0.10/lib/rsolr/client.rb:190:in `execute'
+/Library/Ruby/Gems/2.0.0/gems/rsolr-1.0.10/lib/rsolr/client.rb:176:in `send_and_receive'
+/Library/Ruby/Gems/2.0.0/gems/sunspot_rails-2.1.1/lib/sunspot/rails/solr_instrumentation.rb:16:in `block in send_and_receive_with_as_instrumentation'
+/Library/Ruby/Gems/2.0.0/gems/activesupport-3.2.19/lib/active_support/notifications.rb:123:in `block in instrument'
+/Library/Ruby/Gems/2.0.0/gems/activesupport-3.2.19/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/Library/Ruby/Gems/2.0.0/gems/activesupport-3.2.19/lib/active_support/notifications.rb:123:in `instrument'
+/Library/Ruby/Gems/2.0.0/gems/sunspot_rails-2.1.1/lib/sunspot/rails/solr_instrumentation.rb:15:in `send_and_receive_with_as_instrumentation'
+(eval):2:in `post'
+/Library/Ruby/Gems/2.0.0/gems/sunspot-2.1.1/lib/sunspot/search/abstract_search.rb:48:in `execute'
+/Library/Ruby/Gems/2.0.0/gems/sunspot_rails-2.1.1/lib/sunspot/rails/searchable.rb:344:in `solr_execute_search'):
+  app/controllers/trails_controller.rb:5:in `index'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-3.2.19/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-3.2.19/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-3.2.19/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.6ms)
+Connecting to database specified by database.yml
+  [1m[32mSOLR Request (6.6ms)[0m  [ path=[1m[1mupdate[0m parameters={} ]
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+
+
+Started GET "/trails" for 127.0.0.1 at 2014-10-06 21:45:15 -0400
+Processing by TrailsController#index as HTML
+  [1m[36mTrail Load (0.1ms)[0m  [1mSELECT "trails".* FROM "trails" [0m
+  [1m[32mSOLR Request (5.3ms)[0m  [ path=[1m[1mselect[0m parameters={fq: [1m[1m["type:Trail"][0m, start: [1m[1m0[0m, rows: [1m[1m30[0m, q: [1m[1m"*:*"[0m} ]
+Completed 500 Internal Server Error in 56.8ms
+
+RSolr::Error::Http (RSolr::Error::Http - 404 Not Found
+Error:     Not Found
+
+Request Data: "fq=type%3ATrail&start=0&rows=30&q=%2A%3A%2A"
+
+Backtrace: /Library/Ruby/Gems/2.0.0/gems/rsolr-1.0.10/lib/rsolr/client.rb:283:in `adapt_response'
+/Library/Ruby/Gems/2.0.0/gems/rsolr-1.0.10/lib/rsolr/client.rb:190:in `execute'
+/Library/Ruby/Gems/2.0.0/gems/rsolr-1.0.10/lib/rsolr/client.rb:176:in `send_and_receive'
+/Library/Ruby/Gems/2.0.0/gems/sunspot_rails-2.1.1/lib/sunspot/rails/solr_instrumentation.rb:16:in `block in send_and_receive_with_as_instrumentation'
+/Library/Ruby/Gems/2.0.0/gems/activesupport-3.2.19/lib/active_support/notifications.rb:123:in `block in instrument'
+/Library/Ruby/Gems/2.0.0/gems/activesupport-3.2.19/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/Library/Ruby/Gems/2.0.0/gems/activesupport-3.2.19/lib/active_support/notifications.rb:123:in `instrument'
+/Library/Ruby/Gems/2.0.0/gems/sunspot_rails-2.1.1/lib/sunspot/rails/solr_instrumentation.rb:15:in `send_and_receive_with_as_instrumentation'
+(eval):2:in `post'
+/Library/Ruby/Gems/2.0.0/gems/sunspot-2.1.1/lib/sunspot/search/abstract_search.rb:48:in `execute'
+/Library/Ruby/Gems/2.0.0/gems/sunspot_rails-2.1.1/lib/sunspot/rails/searchable.rb:344:in `solr_execute_search'):
+  app/controllers/trails_controller.rb:5:in `index'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-3.2.19/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-3.2.19/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-3.2.19/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.6ms)
+
+
+Started GET "/trails" for 127.0.0.1 at 2014-10-06 21:45:19 -0400
+Processing by TrailsController#index as HTML
+  [1m[35mTrail Load (0.2ms)[0m  SELECT "trails".* FROM "trails" 
+  [1m[32mSOLR Request (3.3ms)[0m  [ path=[1m[1mselect[0m parameters={fq: [1m[1m["type:Trail"][0m, start: [1m[1m0[0m, rows: [1m[1m30[0m, q: [1m[1m"*:*"[0m} ]
+Completed 500 Internal Server Error in 4.9ms
+
+RSolr::Error::Http (RSolr::Error::Http - 404 Not Found
+Error:     Not Found
+
+Request Data: "fq=type%3ATrail&start=0&rows=30&q=%2A%3A%2A"
+
+Backtrace: /Library/Ruby/Gems/2.0.0/gems/rsolr-1.0.10/lib/rsolr/client.rb:283:in `adapt_response'
+/Library/Ruby/Gems/2.0.0/gems/rsolr-1.0.10/lib/rsolr/client.rb:190:in `execute'
+/Library/Ruby/Gems/2.0.0/gems/rsolr-1.0.10/lib/rsolr/client.rb:176:in `send_and_receive'
+/Library/Ruby/Gems/2.0.0/gems/sunspot_rails-2.1.1/lib/sunspot/rails/solr_instrumentation.rb:16:in `block in send_and_receive_with_as_instrumentation'
+/Library/Ruby/Gems/2.0.0/gems/activesupport-3.2.19/lib/active_support/notifications.rb:123:in `block in instrument'
+/Library/Ruby/Gems/2.0.0/gems/activesupport-3.2.19/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/Library/Ruby/Gems/2.0.0/gems/activesupport-3.2.19/lib/active_support/notifications.rb:123:in `instrument'
+/Library/Ruby/Gems/2.0.0/gems/sunspot_rails-2.1.1/lib/sunspot/rails/solr_instrumentation.rb:15:in `send_and_receive_with_as_instrumentation'
+(eval):2:in `post'
+/Library/Ruby/Gems/2.0.0/gems/sunspot-2.1.1/lib/sunspot/search/abstract_search.rb:48:in `execute'
+/Library/Ruby/Gems/2.0.0/gems/sunspot_rails-2.1.1/lib/sunspot/rails/searchable.rb:344:in `solr_execute_search'):
+  app/controllers/trails_controller.rb:5:in `index'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-3.2.19/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-3.2.19/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-3.2.19/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.8ms)
+
+
+Started GET "/trails/index" for 127.0.0.1 at 2014-10-06 21:45:29 -0400
+Processing by TrailsController#index as HTML
+  [1m[36mTrail Load (0.2ms)[0m  [1mSELECT "trails".* FROM "trails" [0m
+  [1m[32mSOLR Request (5.5ms)[0m  [ path=[1m[1mselect[0m parameters={fq: [1m[1m["type:Trail"][0m, start: [1m[1m0[0m, rows: [1m[1m30[0m, q: [1m[1m"*:*"[0m} ]
+Completed 500 Internal Server Error in 8.1ms
+
+RSolr::Error::Http (RSolr::Error::Http - 404 Not Found
+Error:     Not Found
+
+Request Data: "fq=type%3ATrail&start=0&rows=30&q=%2A%3A%2A"
+
+Backtrace: /Library/Ruby/Gems/2.0.0/gems/rsolr-1.0.10/lib/rsolr/client.rb:283:in `adapt_response'
+/Library/Ruby/Gems/2.0.0/gems/rsolr-1.0.10/lib/rsolr/client.rb:190:in `execute'
+/Library/Ruby/Gems/2.0.0/gems/rsolr-1.0.10/lib/rsolr/client.rb:176:in `send_and_receive'
+/Library/Ruby/Gems/2.0.0/gems/sunspot_rails-2.1.1/lib/sunspot/rails/solr_instrumentation.rb:16:in `block in send_and_receive_with_as_instrumentation'
+/Library/Ruby/Gems/2.0.0/gems/activesupport-3.2.19/lib/active_support/notifications.rb:123:in `block in instrument'
+/Library/Ruby/Gems/2.0.0/gems/activesupport-3.2.19/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/Library/Ruby/Gems/2.0.0/gems/activesupport-3.2.19/lib/active_support/notifications.rb:123:in `instrument'
+/Library/Ruby/Gems/2.0.0/gems/sunspot_rails-2.1.1/lib/sunspot/rails/solr_instrumentation.rb:15:in `send_and_receive_with_as_instrumentation'
+(eval):2:in `post'
+/Library/Ruby/Gems/2.0.0/gems/sunspot-2.1.1/lib/sunspot/search/abstract_search.rb:48:in `execute'
+/Library/Ruby/Gems/2.0.0/gems/sunspot_rails-2.1.1/lib/sunspot/rails/searchable.rb:344:in `solr_execute_search'):
+  app/controllers/trails_controller.rb:5:in `index'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-3.2.19/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-3.2.19/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-3.2.19/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.1ms)
+Connecting to database specified by database.yml
+  [1m[32mSOLR Request (12.2ms)[0m  [ path=[1m[1mupdate[0m parameters={} ]
