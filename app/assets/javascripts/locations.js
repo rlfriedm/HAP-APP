@@ -29,7 +29,20 @@ function initialize() {
   	});
   }
 
-  google.maps.event.addListener(map, 'drag', drawPath);
+  var drawingManager = new google.maps.drawing.DrawingManager({
+    drawingMode: google.maps.drawing.OverlayType.POLYLINE,
+    drawingControl: true,
+    drawingControlOptions: {
+        position: google.maps.ControlPosition.TOP_CENTER,
+        drawingModes: [
+          google.maps.drawing.OverlayType.MARKER,
+          google.maps.drawing.OverlayType.POLYLINE
+        ]
+    }
+  });
+  drawingManager.setMap(map);
+
+  //google.maps.event.addListener(map, 'drag', drawPath);
 }
   
 
