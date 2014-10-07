@@ -8,7 +8,6 @@ gem 'rails', '3.2.19'
 gem 'sqlite3'
 
 gem 'sunspot_rails'
-gem 'sunspot_solr'
 gem 'gravatar_image_tag', '0.1.0'
 gem 'paperclip'
 
@@ -27,6 +26,7 @@ group :test, :development do
   gem 'rspec-rails', '2.4.1'
   gem 'capybara'
   gem 'guard-rspec'
+  gem 'sunspot_solr'
 end
 
 gem 'gon'
