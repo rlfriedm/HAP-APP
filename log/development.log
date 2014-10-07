@@ -65357,3 +65357,605 @@ Backtrace: /Library/Ruby/Gems/2.0.0/gems/rsolr-1.0.10/lib/rsolr/client.rb:283:in
   Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-3.2.19/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.1ms)
 Connecting to database specified by database.yml
   [1m[32mSOLR Request (12.2ms)[0m  [ path=[1m[1mupdate[0m parameters={} ]
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+
+
+Started GET "/trails/index.html" for 127.0.0.1 at 2014-10-06 22:10:47 -0400
+Processing by TrailsController#index as HTML
+  [1m[32mSOLR Request (42.5ms)[0m  [ path=[1m[1mselect[0m parameters={fq: [1m[1m["type:Trail", "created_at_d:{* TO 2014-10-07T02:10:48Z}"][0m, start: [1m[1m0[0m, rows: [1m[1m30[0m, facet: [1m[1m"true"[0m, f.publish_month_s.facet.mincount: [1m[1m1[0m, facet.field: [1m[1m["publish_month_s"][0m, q: [1m[1m"*:*"[0m} ]
+SQLite3::CorruptException: database disk image is malformed:           SELECT name
+          FROM sqlite_master
+          WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+ AND name = "trails"
+Completed 500 Internal Server Error in 133.2ms
+
+ActiveRecord::StatementInvalid (SQLite3::CorruptException: database disk image is malformed:           SELECT name
+          FROM sqlite_master
+          WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+ AND name = "trails"):
+  app/controllers/trails_controller.rb:12:in `index'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-3.2.19/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-3.2.19/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-3.2.19/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (10.6ms)
+
+
+Started GET "/trails/index.html" for 127.0.0.1 at 2014-10-06 22:11:23 -0400
+Processing by TrailsController#index as HTML
+  [1m[32mSOLR Request (6.1ms)[0m  [ path=[1m[1mselect[0m parameters={fq: [1m[1m["type:Trail", "created_at_d:{* TO 2014-10-07T02:11:23Z}"][0m, start: [1m[1m0[0m, rows: [1m[1m30[0m, facet: [1m[1m"true"[0m, f.publish_month_s.facet.mincount: [1m[1m1[0m, facet.field: [1m[1m["publish_month_s"][0m, q: [1m[1m"*:*"[0m} ]
+SQLite3::CorruptException: database disk image is malformed:           SELECT name
+          FROM sqlite_master
+          WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+ AND name = "trails"
+Completed 500 Internal Server Error in 8.1ms
+
+ActiveRecord::StatementInvalid (SQLite3::CorruptException: database disk image is malformed:           SELECT name
+          FROM sqlite_master
+          WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+ AND name = "trails"):
+  app/controllers/trails_controller.rb:12:in `index'
+
+
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-3.2.19/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-3.2.19/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Library/Ruby/Gems/2.0.0/gems/actionpack-3.2.19/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.9ms)
+Connecting to database specified by database.yml
+  [1m[36m (14.7ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (1.9ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (1.5ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateUsers (20140915172604)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255), "email" varchar(255), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20140915172604')[0m
+  [1m[35m (1.4ms)[0m  commit transaction
+Migrating to CreateTrails (20140915225208)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "trails" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "description" varchar(255), "rating" integer(5), "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20140915225208')[0m
+  [1m[35m (1.1ms)[0m  commit transaction
+Migrating to AddPasswordToUsers (20140918151442)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  ALTER TABLE "users" ADD "password" varchar(255)
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20140918151442')[0m
+  [1m[35m (1.0ms)[0m  commit transaction
+Migrating to CreateLocations (20140922192955)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "locations" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "address" varchar(255), "longitude" float, "latitude" float, "gmaps" boolean, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20140922192955')[0m
+  [1m[35m (1.1ms)[0m  commit transaction
+Migrating to CreateReviews (20140922195016)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateUsers (20140915172604)
+Migrating to CreateTrails (20140915225208)
+Migrating to AddPasswordToUsers (20140918151442)
+Migrating to CreateLocations (20140922192955)
+Migrating to CreateReviews (20140922195016)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateUsers (20140915172604)
+Migrating to CreateTrails (20140915225208)
+Migrating to AddPasswordToUsers (20140918151442)
+Migrating to CreateLocations (20140922192955)
+Migrating to CreateReviews (20140922195016)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+
+
+Started GET "/trails/index.html" for 127.0.0.1 at 2014-10-06 22:25:35 -0400
+Processing by TrailsController#index as HTML
+  [1m[32mSOLR Request (6.7ms)[0m  [ path=[1m[1mselect[0m parameters={fq: [1m[1m["type:Trail", "created_at_d:{* TO 2014-10-07T02:25:35Z}"][0m, start: [1m[1m0[0m, rows: [1m[1m30[0m, facet: [1m[1m"true"[0m, f.publish_month_s.facet.mincount: [1m[1m1[0m, facet.field: [1m[1m["publish_month_s"][0m, q: [1m[1m"*:*"[0m} ]
+  [1m[36mTrail Load (0.2ms)[0m  [1mSELECT "trails".* FROM "trails" WHERE "trails"."id" IN (2, 3, 4, 5, 6, 7, 8)[0m
+  Rendered trails/index.html.erb within layouts/application (7.9ms)
+Warning. Error encountered while saving cache /Users/judsonmartin/Desktop/HAP-APP/HAP-APP/tmp/cache/sass/bdc1b14b55b0354324d8379c9573a5d1bb1c79dd/application.css.scssc: can't dump anonymous class #<Class:0x007f87c51817b8>
+
+Warning. Error encountered while saving cache /Users/judsonmartin/Desktop/HAP-APP/HAP-APP/tmp/cache/sass/bdc1b14b55b0354324d8379c9573a5d1bb1c79dd/global.css.scssc: can't dump anonymous class #<Class:0x007f87c51817b8>
+
+Compiled global.css  (8ms)  (pid 1436)
+Warning. Error encountered while saving cache /Users/judsonmartin/Desktop/HAP-APP/HAP-APP/tmp/cache/sass/bdc1b14b55b0354324d8379c9573a5d1bb1c79dd/locations.css.scssc: can't dump anonymous class #<Class:0x007f87c51817b8>
+
+Compiled locations.css  (1ms)  (pid 1436)
+Warning. Error encountered while saving cache /Users/judsonmartin/Desktop/HAP-APP/HAP-APP/tmp/cache/sass/bdc1b14b55b0354324d8379c9573a5d1bb1c79dd/maps.css.scssc: can't dump anonymous class #<Class:0x007f87c51817b8>
+
+Compiled maps.css  (1ms)  (pid 1436)
+Warning. Error encountered while saving cache /Users/judsonmartin/Desktop/HAP-APP/HAP-APP/tmp/cache/sass/bdc1b14b55b0354324d8379c9573a5d1bb1c79dd/photo.css.scssc: can't dump anonymous class #<Class:0x007f87c51817b8>
+
+Compiled photo.css  (2ms)  (pid 1436)
+Warning. Error encountered while saving cache /Users/judsonmartin/Desktop/HAP-APP/HAP-APP/tmp/cache/sass/bdc1b14b55b0354324d8379c9573a5d1bb1c79dd/scaffolds.css.scssc: can't dump anonymous class #<Class:0x007f87c51817b8>
+
+Compiled scaffolds.css  (8ms)  (pid 1436)
+Warning. Error encountered while saving cache /Users/judsonmartin/Desktop/HAP-APP/HAP-APP/tmp/cache/sass/bdc1b14b55b0354324d8379c9573a5d1bb1c79dd/sessions.css.scssc: can't dump anonymous class #<Class:0x007f87c51817b8>
+
+Compiled sessions.css  (2ms)  (pid 1436)
+Warning. Error encountered while saving cache /Users/judsonmartin/Desktop/HAP-APP/HAP-APP/tmp/cache/sass/bdc1b14b55b0354324d8379c9573a5d1bb1c79dd/static_pages.css.scssc: can't dump anonymous class #<Class:0x007f87c51817b8>
+
+Compiled static_pages.css  (1ms)  (pid 1436)
+Warning. Error encountered while saving cache /Users/judsonmartin/Desktop/HAP-APP/HAP-APP/tmp/cache/sass/bdc1b14b55b0354324d8379c9573a5d1bb1c79dd/trails.css.scssc: can't dump anonymous class #<Class:0x007f87c51817b8>
+
+Compiled trails.css  (2ms)  (pid 1436)
+Warning. Error encountered while saving cache /Users/judsonmartin/Desktop/HAP-APP/HAP-APP/tmp/cache/sass/bdc1b14b55b0354324d8379c9573a5d1bb1c79dd/users.css.scssc: can't dump anonymous class #<Class:0x007f87c51817b8>
+
+Compiled users.css  (3ms)  (pid 1436)
+Compiled bootstrap.min.css  (1ms)  (pid 1436)
+Compiled application.css  (192ms)  (pid 1436)
+Compiled underscore.js  (1ms)  (pid 1436)
+Compiled gmaps/base/base.js  (136ms)  (pid 1436)
+Compiled gmaps/objects/base_builder.js  (92ms)  (pid 1436)
+Compiled gmaps/objects/builder.js  (79ms)  (pid 1436)
+Compiled gmaps/objects/handler.js  (220ms)  (pid 1436)
+Compiled gmaps/objects/null_clusterer.js  (77ms)  (pid 1436)
+Compiled gmaps/base.js  (785ms)  (pid 1436)
+Compiled gmaps/google/objects/common.js  (87ms)  (pid 1436)
+Compiled gmaps/google/builders/bound.js  (81ms)  (pid 1436)
+Compiled gmaps/google/builders/circle.js  (136ms)  (pid 1436)
+Compiled gmaps/google/builders/clusterer.js  (111ms)  (pid 1436)
+Compiled gmaps/google/builders/kml.js  (88ms)  (pid 1436)
+Compiled gmaps/google/builders/map.js  (130ms)  (pid 1436)
+Compiled gmaps/google/builders/marker.js  (160ms)  (pid 1436)
+Compiled gmaps/google/builders/polygon.js  (93ms)  (pid 1436)
+Compiled gmaps/google/builders/polyline.js  (88ms)  (pid 1436)
+Compiled gmaps/google/objects/bound.js  (131ms)  (pid 1436)
+Compiled gmaps/google/objects/circle.js  (98ms)  (pid 1436)
+Compiled gmaps/google/objects/clusterer.js  (90ms)  (pid 1436)
+Compiled gmaps/google/objects/kml.js  (91ms)  (pid 1436)
+Compiled gmaps/google/objects/map.js  (137ms)  (pid 1436)
+Compiled gmaps/google/objects/marker.js  (85ms)  (pid 1436)
+Compiled gmaps/google/objects/polygon.js  (79ms)  (pid 1436)
+Compiled gmaps/google/objects/polyline.js  (91ms)  (pid 1436)
+Compiled gmaps/google/primitives.js  (137ms)  (pid 1436)
+Compiled gmaps/google.js  (3041ms)  (pid 1436)
+Compiled application.js.orig  (5ms)  (pid 1436)
+Compiled locations.js  (0ms)  (pid 1436)
+Compiled maps.js  (65ms)  (pid 1436)
+Compiled photo.js  (64ms)  (pid 1436)
+Compiled sessions.js  (107ms)  (pid 1436)
+Compiled trails.js  (69ms)  (pid 1436)
+Compiled users.js  (63ms)  (pid 1436)
+Compiled bootstrap.min.js  (0ms)  (pid 1436)
+Compiled application.js  (3661ms)  (pid 1436)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  Rendered shared/_welcome.html.erb (0.4ms)
+Completed 200 OK in 4193.1ms (Views: 4117.7ms | ActiveRecord: 1.8ms | Solr: 6.7ms)
+
+
+Started GET "/trails/index.html" for 127.0.0.1 at 2014-10-06 22:25:39 -0400
+Processing by TrailsController#index as HTML
+  [1m[32mSOLR Request (5.8ms)[0m  [ path=[1m[1mselect[0m parameters={fq: [1m[1m["type:Trail", "created_at_d:{* TO 2014-10-07T02:25:39Z}"][0m, start: [1m[1m0[0m, rows: [1m[1m30[0m, facet: [1m[1m"true"[0m, f.publish_month_s.facet.mincount: [1m[1m1[0m, facet.field: [1m[1m["publish_month_s"][0m, q: [1m[1m"*:*"[0m} ]
+  [1m[36mTrail Load (0.3ms)[0m  [1mSELECT "trails".* FROM "trails" WHERE "trails"."id" IN (2, 3, 4, 5, 6, 7, 8)[0m
+  Rendered trails/index.html.erb within layouts/application (2.0ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  Rendered shared/_welcome.html.erb (0.0ms)
+Completed 200 OK in 30.1ms (Views: 21.0ms | ActiveRecord: 0.4ms | Solr: 5.8ms)
+
+
+Started GET "/trails/index.html" for 127.0.0.1 at 2014-10-06 22:25:39 -0400
+Processing by TrailsController#index as HTML
+  [1m[32mSOLR Request (5.5ms)[0m  [ path=[1m[1mselect[0m parameters={fq: [1m[1m["type:Trail", "created_at_d:{* TO 2014-10-07T02:25:39Z}"][0m, start: [1m[1m0[0m, rows: [1m[1m30[0m, facet: [1m[1m"true"[0m, f.publish_month_s.facet.mincount: [1m[1m1[0m, facet.field: [1m[1m["publish_month_s"][0m, q: [1m[1m"*:*"[0m} ]
+  [1m[36mTrail Load (0.2ms)[0m  [1mSELECT "trails".* FROM "trails" WHERE "trails"."id" IN (2, 3, 4, 5, 6, 7, 8)[0m
+  Rendered trails/index.html.erb within layouts/application (1.8ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  Rendered shared/_welcome.html.erb (0.0ms)
+Completed 200 OK in 32.7ms (Views: 24.7ms | ActiveRecord: 0.3ms | Solr: 5.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-06 22:25:39 -0400
+Served asset /application.css - 200 OK (13ms)
+
+
+Started GET "/assets/global.css?body=1" for 127.0.0.1 at 2014-10-06 22:25:39 -0400
+Served asset /global.css - 200 OK (2ms)
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2014-10-06 22:25:39 -0400
+Served asset /locations.css - 200 OK (3ms)
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2014-10-06 22:25:40 -0400
+Served asset /maps.css - 200 OK (3ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-06 22:25:40 -0400
+Served asset /scaffolds.css - 200 OK (4ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2014-10-06 22:25:40 -0400
+Served asset /static_pages.css - 200 OK (2ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-10-06 22:25:40 -0400
+Served asset /sessions.css - 200 OK (2ms)
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2014-10-06 22:25:40 -0400
+Served asset /reviews.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/photo.css?body=1" for 127.0.0.1 at 2014-10-06 22:25:40 -0400
+Served asset /photo.css - 200 OK (3ms)
+
+
+Started GET "/assets/trails.css?body=1" for 127.0.0.1 at 2014-10-06 22:25:40 -0400
+Served asset /trails.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-10-06 22:25:40 -0400
+Served asset /bootstrap.min.css - 200 OK (2ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-10-06 22:25:40 -0400
+Served asset /users.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-06 22:25:40 -0400
+Served asset /jquery.js - 304 Not Modified (49ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2014-10-06 22:25:40 -0400
+Served asset /underscore.js - 200 OK (2ms)
+
+
+Started GET "/assets/gmaps/base.js?body=1" for 127.0.0.1 at 2014-10-06 22:25:40 -0400
+Served asset /gmaps/base.js - 200 OK (9ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-06 22:25:40 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/gmaps/base/base.js?body=1" for 127.0.0.1 at 2014-10-06 22:25:40 -0400
+Served asset /gmaps/base/base.js - 200 OK (1ms)
+
+
+Started GET "/assets/gmaps/objects/base_builder.js?body=1" for 127.0.0.1 at 2014-10-06 22:25:40 -0400
+Served asset /gmaps/objects/base_builder.js - 200 OK (4ms)
+
+
+Started GET "/assets/gmaps/objects/builder.js?body=1" for 127.0.0.1 at 2014-10-06 22:25:40 -0400
+Served asset /gmaps/objects/builder.js - 200 OK (1ms)
+
+
+Started GET "/assets/gmaps/objects/handler.js?body=1" for 127.0.0.1 at 2014-10-06 22:25:40 -0400
+Served asset /gmaps/objects/handler.js - 200 OK (1ms)
+
+
+Started GET "/assets/gmaps/objects/null_clusterer.js?body=1" for 127.0.0.1 at 2014-10-06 22:25:40 -0400
+Served asset /gmaps/objects/null_clusterer.js - 200 OK (1ms)
+
+
+Started GET "/assets/gmaps/google/objects/common.js?body=1" for 127.0.0.1 at 2014-10-06 22:25:40 -0400
+Served asset /gmaps/google/objects/common.js - 200 OK (1ms)
+
+
+Started GET "/assets/gmaps/google/builders/bound.js?body=1" for 127.0.0.1 at 2014-10-06 22:25:40 -0400
+Served asset /gmaps/google/builders/bound.js - 200 OK (1ms)
+
+
+Started GET "/assets/gmaps/google/builders/circle.js?body=1" for 127.0.0.1 at 2014-10-06 22:25:40 -0400
+Served asset /gmaps/google/builders/circle.js - 200 OK (1ms)
+
+
+Started GET "/assets/gmaps/google/builders/clusterer.js?body=1" for 127.0.0.1 at 2014-10-06 22:25:40 -0400
+Served asset /gmaps/google/builders/clusterer.js - 200 OK (1ms)
+
+
+Started GET "/assets/gmaps/google/builders/kml.js?body=1" for 127.0.0.1 at 2014-10-06 22:25:40 -0400
+Served asset /gmaps/google/builders/kml.js - 200 OK (1ms)
+
+
+Started GET "/assets/gmaps/google/builders/map.js?body=1" for 127.0.0.1 at 2014-10-06 22:25:40 -0400
+Served asset /gmaps/google/builders/map.js - 200 OK (2ms)
+
+
+Started GET "/assets/gmaps/google/builders/marker.js?body=1" for 127.0.0.1 at 2014-10-06 22:25:40 -0400
+Served asset /gmaps/google/builders/marker.js - 200 OK (1ms)
+
+
+Started GET "/assets/gmaps/google/builders/polygon.js?body=1" for 127.0.0.1 at 2014-10-06 22:25:40 -0400
+Served asset /gmaps/google/builders/polygon.js - 200 OK (3ms)
+
+
+Started GET "/assets/gmaps/google/builders/polyline.js?body=1" for 127.0.0.1 at 2014-10-06 22:25:40 -0400
+Served asset /gmaps/google/builders/polyline.js - 200 OK (1ms)
+
+
+Started GET "/assets/gmaps/google/objects/bound.js?body=1" for 127.0.0.1 at 2014-10-06 22:25:40 -0400
+Served asset /gmaps/google/objects/bound.js - 200 OK (1ms)
+
+
+Started GET "/assets/gmaps/google/objects/circle.js?body=1" for 127.0.0.1 at 2014-10-06 22:25:40 -0400
+Served asset /gmaps/google/objects/circle.js - 200 OK (2ms)
+
+
+Started GET "/assets/gmaps/google/objects/clusterer.js?body=1" for 127.0.0.1 at 2014-10-06 22:25:40 -0400
+Served asset /gmaps/google/objects/clusterer.js - 200 OK (1ms)
+
+
+Started GET "/assets/gmaps/google/objects/kml.js?body=1" for 127.0.0.1 at 2014-10-06 22:25:40 -0400
+Served asset /gmaps/google/objects/kml.js - 200 OK (1ms)
+
+
+Started GET "/assets/gmaps/google/objects/map.js?body=1" for 127.0.0.1 at 2014-10-06 22:25:40 -0400
+Served asset /gmaps/google/objects/map.js - 200 OK (1ms)
+
+
+Started GET "/assets/gmaps/google/objects/marker.js?body=1" for 127.0.0.1 at 2014-10-06 22:25:40 -0400
+Served asset /gmaps/google/objects/marker.js - 200 OK (1ms)
+
+
+Started GET "/assets/gmaps/google/objects/polygon.js?body=1" for 127.0.0.1 at 2014-10-06 22:25:40 -0400
+Served asset /gmaps/google/objects/polygon.js - 200 OK (1ms)
+
+
+Started GET "/assets/gmaps/google/objects/polyline.js?body=1" for 127.0.0.1 at 2014-10-06 22:25:40 -0400
+Served asset /gmaps/google/objects/polyline.js - 200 OK (1ms)
+
+
+Started GET "/assets/gmaps/google/primitives.js?body=1" for 127.0.0.1 at 2014-10-06 22:25:40 -0400
+Served asset /gmaps/google/primitives.js - 200 OK (3ms)
+
+
+Started GET "/assets/gmaps/google.js?body=1" for 127.0.0.1 at 2014-10-06 22:25:40 -0400
+Served asset /gmaps/google.js - 200 OK (27ms)
+
+
+Started GET "/assets/application.js.orig?body=1" for 127.0.0.1 at 2014-10-06 22:25:40 -0400
+Served asset /application.js.orig - 200 OK (53ms)
+
+
+Started GET "/assets/locations.js?body=1" for 127.0.0.1 at 2014-10-06 22:25:40 -0400
+Served asset /locations.js - 200 OK (1ms)
+
+
+Started GET "/assets/maps.js?body=1" for 127.0.0.1 at 2014-10-06 22:25:40 -0400
+Served asset /maps.js - 200 OK (3ms)
+
+
+Started GET "/assets/photo.js?body=1" for 127.0.0.1 at 2014-10-06 22:25:40 -0400
+Served asset /photo.js - 200 OK (1ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-10-06 22:25:40 -0400
+Served asset /sessions.js - 200 OK (1ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-10-06 22:25:40 -0400
+Served asset /bootstrap.min.js - 200 OK (3ms)
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2014-10-06 22:25:40 -0400
+Served asset /reviews.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/trails.js?body=1" for 127.0.0.1 at 2014-10-06 22:25:40 -0400
+Served asset /trails.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-10-06 22:25:40 -0400
+Served asset /users.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-06 22:25:40 -0400
+Served asset /application.js - 200 OK (39ms)
+
+
+Started GET "/trails/index?month=September+2014" for 127.0.0.1 at 2014-10-06 22:26:14 -0400
+Processing by TrailsController#index as HTML
+  Parameters: {"month"=>"September 2014"}
+  [1m[32mSOLR Request (5.7ms)[0m  [ path=[1m[1mselect[0m parameters={fq: [1m[1m["type:Trail", "created_at_d:{* TO 2014-10-07T02:26:14Z}", "publish_month_s:September 2014"][0m, start: [1m[1m0[0m, rows: [1m[1m30[0m, facet: [1m[1m"true"[0m, f.publish_month_s.facet.mincount: [1m[1m1[0m, facet.field: [1m[1m["publish_month_s"][0m, q: [1m[1m"*:*"[0m} ]
+  [1m[36mTrail Load (0.2ms)[0m  [1mSELECT "trails".* FROM "trails" WHERE "trails"."id" IN (2, 3, 4, 5, 6)[0m
+  Rendered trails/index.html.erb within layouts/application (1.7ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  Rendered shared/_welcome.html.erb (0.0ms)
+Completed 200 OK in 32.0ms (Views: 24.0ms | ActiveRecord: 0.3ms | Solr: 5.7ms)
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2014-10-06 22:26:14 -0400
+Served asset /reviews.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trails.css?body=1" for 127.0.0.1 at 2014-10-06 22:26:14 -0400
+Served asset /trails.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-10-06 22:26:14 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-06 22:26:14 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trails.js?body=1" for 127.0.0.1 at 2014-10-06 22:26:14 -0400
+Served asset /trails.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-06 22:26:14 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2014-10-06 22:26:14 -0400
+Served asset /reviews.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-10-06 22:26:14 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/trails/index" for 127.0.0.1 at 2014-10-06 22:26:15 -0400
+Processing by TrailsController#index as HTML
+  [1m[32mSOLR Request (49.6ms)[0m  [ path=[1m[1mselect[0m parameters={fq: [1m[1m["type:Trail", "created_at_d:{* TO 2014-10-07T02:26:15Z}"][0m, start: [1m[1m0[0m, rows: [1m[1m30[0m, facet: [1m[1m"true"[0m, f.publish_month_s.facet.mincount: [1m[1m1[0m, facet.field: [1m[1m["publish_month_s"][0m, q: [1m[1m"*:*"[0m} ]
+  [1m[36mTrail Load (0.2ms)[0m  [1mSELECT "trails".* FROM "trails" WHERE "trails"."id" IN (2, 3, 4, 5, 6, 7, 8)[0m
+  Rendered trails/index.html.erb within layouts/application (1.7ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  Rendered shared/_welcome.html.erb (0.0ms)
+Completed 200 OK in 70.9ms (Views: 18.6ms | ActiveRecord: 0.3ms | Solr: 49.6ms)
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2014-10-06 22:26:15 -0400
+Served asset /reviews.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-06 22:26:15 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-10-06 22:26:15 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2014-10-06 22:26:15 -0400
+Served asset /reviews.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trails.css?body=1" for 127.0.0.1 at 2014-10-06 22:26:15 -0400
+Served asset /trails.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-06 22:26:15 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trails.js?body=1" for 127.0.0.1 at 2014-10-06 22:26:15 -0400
+Served asset /trails.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-10-06 22:26:15 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/trails/index?month=October+2014" for 127.0.0.1 at 2014-10-06 22:26:16 -0400
+Processing by TrailsController#index as HTML
+  Parameters: {"month"=>"October 2014"}
+  [1m[32mSOLR Request (5.7ms)[0m  [ path=[1m[1mselect[0m parameters={fq: [1m[1m["type:Trail", "created_at_d:{* TO 2014-10-07T02:26:16Z}", "publish_month_s:October 2014"][0m, start: [1m[1m0[0m, rows: [1m[1m30[0m, facet: [1m[1m"true"[0m, f.publish_month_s.facet.mincount: [1m[1m1[0m, facet.field: [1m[1m["publish_month_s"][0m, q: [1m[1m"*:*"[0m} ]
+  [1m[36mTrail Load (0.2ms)[0m  [1mSELECT "trails".* FROM "trails" WHERE "trails"."id" IN (7, 8)[0m
+  Rendered trails/index.html.erb within layouts/application (1.5ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  Rendered shared/_welcome.html.erb (0.0ms)
+Completed 200 OK in 31.1ms (Views: 23.3ms | ActiveRecord: 0.3ms | Solr: 5.7ms)
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2014-10-06 22:26:17 -0400
+Served asset /reviews.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-10-06 22:26:17 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-06 22:26:17 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trails.css?body=1" for 127.0.0.1 at 2014-10-06 22:26:17 -0400
+Served asset /trails.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-06 22:26:17 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2014-10-06 22:26:17 -0400
+Served asset /reviews.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trails.js?body=1" for 127.0.0.1 at 2014-10-06 22:26:17 -0400
+Served asset /trails.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-10-06 22:26:17 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/trails/index" for 127.0.0.1 at 2014-10-06 22:26:18 -0400
+Processing by TrailsController#index as HTML
+  [1m[32mSOLR Request (5.4ms)[0m  [ path=[1m[1mselect[0m parameters={fq: [1m[1m["type:Trail", "created_at_d:{* TO 2014-10-07T02:26:18Z}"][0m, start: [1m[1m0[0m, rows: [1m[1m30[0m, facet: [1m[1m"true"[0m, f.publish_month_s.facet.mincount: [1m[1m1[0m, facet.field: [1m[1m["publish_month_s"][0m, q: [1m[1m"*:*"[0m} ]
+  [1m[36mTrail Load (0.2ms)[0m  [1mSELECT "trails".* FROM "trails" WHERE "trails"."id" IN (2, 3, 4, 5, 6, 7, 8)[0m
+  Rendered trails/index.html.erb within layouts/application (1.6ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  Rendered shared/_welcome.html.erb (0.0ms)
+Completed 200 OK in 31.7ms (Views: 23.4ms | ActiveRecord: 0.3ms | Solr: 5.4ms)
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2014-10-06 22:26:18 -0400
+Served asset /reviews.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-06 22:26:18 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trails.css?body=1" for 127.0.0.1 at 2014-10-06 22:26:18 -0400
+Served asset /trails.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-06 22:26:18 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-10-06 22:26:18 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2014-10-06 22:26:18 -0400
+Served asset /reviews.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trails.js?body=1" for 127.0.0.1 at 2014-10-06 22:26:18 -0400
+Served asset /trails.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-10-06 22:26:18 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/trails?utf8=%E2%9C%93&search=trail" for 127.0.0.1 at 2014-10-06 22:26:24 -0400
+Processing by TrailsController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"trail"}
+  [1m[32mSOLR Request (8.8ms)[0m  [ path=[1m[1mselect[0m parameters={fq: [1m[1m["type:Trail", "created_at_d:{* TO 2014-10-07T02:26:24Z}"][0m, q: [1m[1m"trail"[0m, fl: [1m[1m"* score"[0m, qf: [1m[1m"name_text description_text publish_month_text reviews_text"[0m, defType: [1m[1m"edismax"[0m, start: [1m[1m0[0m, rows: [1m[1m30[0m, facet: [1m[1m"true"[0m, f.publish_month_s.facet.mincount: [1m[1m1[0m, facet.field: [1m[1m["publish_month_s"][0m} ]
+  [1m[36mTrail Load (0.2ms)[0m  [1mSELECT "trails".* FROM "trails" WHERE "trails"."id" IN (5, 6, 7, 8, 4)[0m
+  Rendered trails/index.html.erb within layouts/application (1.7ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  Rendered shared/_welcome.html.erb (0.0ms)
+Completed 200 OK in 29.4ms (Views: 18.4ms | ActiveRecord: 0.3ms | Solr: 8.8ms)
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2014-10-06 22:26:24 -0400
+Served asset /reviews.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-06 22:26:25 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-10-06 22:26:25 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trails.css?body=1" for 127.0.0.1 at 2014-10-06 22:26:25 -0400
+Served asset /trails.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-06 22:26:25 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2014-10-06 22:26:25 -0400
+Served asset /reviews.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trails.js?body=1" for 127.0.0.1 at 2014-10-06 22:26:25 -0400
+Served asset /trails.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-10-06 22:26:25 -0400
+Served asset /users.js - 304 Not Modified (0ms)
