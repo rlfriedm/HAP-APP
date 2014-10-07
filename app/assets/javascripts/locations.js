@@ -40,11 +40,24 @@ function initialize() {
         ]
     }
   });
-  drawingManager.setMap(map);
+  
 
+  drawingManager.setMap(map);
+  
+  google.maps.event.addListener(drawingManager, 'polylinecomplete', movePolyLine);
+  
   //google.maps.event.addListener(map, 'drag', drawPath);
 }
   
+
+function movePolyLine(event) {
+  //var line = event;
+  //alert("click to continue!");
+  event.setOptions({strokeColor: '#0000FF'});
+//  event.visible = false;
+  //strokeColor: '#0000FF');
+}
+
 
 function drawPath(event) {
   var path = polyLine.getPath();
