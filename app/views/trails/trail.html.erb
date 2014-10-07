@@ -6,10 +6,16 @@
     <p>
 	  Title: <%= review.title %> </br>
 	  Review: <%= review.bodyText %> </br>
-	  Rating: <%= review.rating %> 
+	  Rating: <%= review.rating %> </br>
+	  Date: <%= review.created_at %>
 	  <%= button_to "Delete", { :controller => "reviews", :action => "deleteReview", :trail_id => @trail.id, :review_id => review.id} %>
 
     </p>
+
+	  <% unless review.photo.nil? %>
+	    	<%= link_to image_tag(review.photo.image, :size=> "64x64"), review.photo.image(:original), :popup=>['original_image', 'height=700', 'width=900'] %>
+
+	  <% end %>
   <% end %>
 <% end %>
 
@@ -28,6 +34,11 @@
 	<%= f.label :rating %>
 	<%= f.text_field :rating %>
 	<br/>
+
 	<%= f.hidden_field :trail_id, :value => @trail.id %>
+
+	<%= f.label :photo %>
+	<%= f.file_field :photo %>
+	</br>
 	<%= f.submit %>
 <% end %>

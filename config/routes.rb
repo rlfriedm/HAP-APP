@@ -1,10 +1,9 @@
 HAPApp::Application.routes.draw do
-  get "static_pages/login"
-
+  
+  get "maps/index"
+  get "sessions/new"
   get "static_pages/about"
-
   get "static_pages/contact"
-
   get "users/deleteuser"
   post "users/deleteuser"
 
@@ -14,18 +13,25 @@ HAPApp::Application.routes.draw do
   get "reviews/deleteReview"
   post "reviews/deleteReview"
 
-  root :to => 'StaticPages#login'
+  match "/signup", :to => "users#new"
+  match "/signin", :to => "sessions#new"
+  match "signout", :to => "sessions#destroy"
 
-  resources :users do
-    collection do
-      get :auth
-    end
-  end
-  
+  resources :locations
+
+  root :to => 'sessions#new'
+
+  resources :sessions, :only => [:new, :create, :destroy]
+  resources :users 
   resources :reviews
   resources :trails do
     resources :reviews
   end
+
+  resources :reviews do
+    resources :photos
+  end
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

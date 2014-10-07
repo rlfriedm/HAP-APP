@@ -8,7 +8,9 @@ gem 'rails', '3.2.19'
 gem 'sqlite3'
 
 gem 'sunspot_rails'
-
+gem 'sunspot_solr'
+gem 'gravatar_image_tag', '0.1.0'
+gem 'paperclip'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -28,7 +30,9 @@ group :test, :development do
 	gem 'sunspot_solr'
 end
 
-
+gem 'gon'
+gem 'geocoder'
+gem 'gmaps4rails'
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
