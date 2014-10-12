@@ -9,7 +9,7 @@ class SessionsController < ApplicationController
   		flash.now[:notice] = "Invalid email/password"
   		render 'new'
   	else
-  		sign_in user
+  		sign_in(user)
   		redirect_to user
   	end
   end		
