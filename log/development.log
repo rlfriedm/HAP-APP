@@ -72292,3 +72292,1052 @@ Served asset /bootstrap.min.js - 304 Not Modified (0ms)
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-07 19:18:12 -0400
 Served asset /application.js - 304 Not Modified (37ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/locations" for 127.0.0.1 at 2014-10-09 14:50:45 -0400
+Processing by LocationsController#index as HTML
+  [1m[36mLocation Load (12.5ms)[0m  [1mSELECT "locations".* FROM "locations" [0m
+  Rendered locations/index.html.erb within layouts/application (20.0ms)
+  [1m[35mUser Load (8.4ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 17 LIMIT 1
+  Rendered shared/_welcome.html.erb (0.4ms)
+Completed 200 OK in 867.3ms (Views: 795.0ms | ActiveRecord: 22.6ms | Solr: 0.0ms)
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2014-10-09 14:50:46 -0400
+Served asset /locations.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2014-10-09 14:50:46 -0400
+Served asset /reviews.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-10-09 14:50:46 -0400
+Served asset /sessions.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/photo.css?body=1" for 127.0.0.1 at 2014-10-09 14:50:46 -0400
+Served asset /photo.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-09 14:50:46 -0400
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2014-10-09 14:50:46 -0400
+Served asset /maps.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2014-10-09 14:50:46 -0400
+Served asset /static_pages.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-09 14:50:46 -0400
+Served asset /application.css - 304 Not Modified (52ms)
+
+
+Started GET "/assets/trails.css?body=1" for 127.0.0.1 at 2014-10-09 14:50:46 -0400
+Served asset /trails.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-10-09 14:50:46 -0400
+Served asset /bootstrap.min.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/global.css?body=1" for 127.0.0.1 at 2014-10-09 14:50:46 -0400
+Served asset /global.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-10-09 14:50:46 -0400
+Served asset /users.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-09 14:50:46 -0400
+Served asset /jquery.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-09 14:50:46 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2014-10-09 14:50:46 -0400
+Served asset /underscore.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/gmaps/base.js?body=1" for 127.0.0.1 at 2014-10-09 14:50:47 -0400
+Served asset /gmaps/base.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/gmaps/objects/null_clusterer.js?body=1" for 127.0.0.1 at 2014-10-09 14:50:47 -0400
+Served asset /gmaps/objects/null_clusterer.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/gmaps/objects/builder.js?body=1" for 127.0.0.1 at 2014-10-09 14:50:47 -0400
+Served asset /gmaps/objects/builder.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/gmaps/objects/base_builder.js?body=1" for 127.0.0.1 at 2014-10-09 14:50:47 -0400
+Served asset /gmaps/objects/base_builder.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/gmaps/objects/handler.js?body=1" for 127.0.0.1 at 2014-10-09 14:50:47 -0400
+Served asset /gmaps/objects/handler.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/gmaps/base/base.js?body=1" for 127.0.0.1 at 2014-10-09 14:50:47 -0400
+Served asset /gmaps/base/base.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/gmaps/google/objects/common.js?body=1" for 127.0.0.1 at 2014-10-09 14:50:47 -0400
+Served asset /gmaps/google/objects/common.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/gmaps/google/builders/bound.js?body=1" for 127.0.0.1 at 2014-10-09 14:50:47 -0400
+Served asset /gmaps/google/builders/bound.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/gmaps/google/builders/kml.js?body=1" for 127.0.0.1 at 2014-10-09 14:50:47 -0400
+Served asset /gmaps/google/builders/kml.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/gmaps/google/builders/circle.js?body=1" for 127.0.0.1 at 2014-10-09 14:50:47 -0400
+Served asset /gmaps/google/builders/circle.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/gmaps/google/builders/clusterer.js?body=1" for 127.0.0.1 at 2014-10-09 14:50:47 -0400
+Served asset /gmaps/google/builders/clusterer.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/gmaps/google/builders/map.js?body=1" for 127.0.0.1 at 2014-10-09 14:50:47 -0400
+Served asset /gmaps/google/builders/map.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/gmaps/google/builders/marker.js?body=1" for 127.0.0.1 at 2014-10-09 14:50:47 -0400
+Served asset /gmaps/google/builders/marker.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/gmaps/google/objects/circle.js?body=1" for 127.0.0.1 at 2014-10-09 14:50:47 -0400
+Served asset /gmaps/google/objects/circle.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/gmaps/google/objects/bound.js?body=1" for 127.0.0.1 at 2014-10-09 14:50:47 -0400
+Served asset /gmaps/google/objects/bound.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/gmaps/google/builders/polygon.js?body=1" for 127.0.0.1 at 2014-10-09 14:50:47 -0400
+Served asset /gmaps/google/builders/polygon.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/gmaps/google/objects/clusterer.js?body=1" for 127.0.0.1 at 2014-10-09 14:50:47 -0400
+Served asset /gmaps/google/objects/clusterer.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/gmaps/google/builders/polyline.js?body=1" for 127.0.0.1 at 2014-10-09 14:50:47 -0400
+Served asset /gmaps/google/builders/polyline.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/gmaps/google/objects/kml.js?body=1" for 127.0.0.1 at 2014-10-09 14:50:47 -0400
+Served asset /gmaps/google/objects/kml.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/gmaps/google/objects/map.js?body=1" for 127.0.0.1 at 2014-10-09 14:50:47 -0400
+Served asset /gmaps/google/objects/map.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/gmaps/google/objects/marker.js?body=1" for 127.0.0.1 at 2014-10-09 14:50:47 -0400
+Served asset /gmaps/google/objects/marker.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/gmaps/google/objects/polygon.js?body=1" for 127.0.0.1 at 2014-10-09 14:50:47 -0400
+Served asset /gmaps/google/objects/polygon.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/gmaps/google/objects/polyline.js?body=1" for 127.0.0.1 at 2014-10-09 14:50:47 -0400
+Served asset /gmaps/google/objects/polyline.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/gmaps/google/primitives.js?body=1" for 127.0.0.1 at 2014-10-09 14:50:47 -0400
+Served asset /gmaps/google/primitives.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js.orig?body=1" for 127.0.0.1 at 2014-10-09 14:50:47 -0400
+Served asset /application.js.orig - 304 Not Modified (62ms)
+
+
+Started GET "/assets/gmaps/google.js?body=1" for 127.0.0.1 at 2014-10-09 14:50:47 -0400
+Served asset /gmaps/google.js - 304 Not Modified (28ms)
+
+
+Started GET "/assets/locations.js?body=1" for 127.0.0.1 at 2014-10-09 14:50:47 -0400
+Served asset /locations.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/maps.js?body=1" for 127.0.0.1 at 2014-10-09 14:50:47 -0400
+Served asset /maps.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/photo.js?body=1" for 127.0.0.1 at 2014-10-09 14:50:47 -0400
+Served asset /photo.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2014-10-09 14:50:47 -0400
+Served asset /reviews.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-10-09 14:50:47 -0400
+Served asset /sessions.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/trails.js?body=1" for 127.0.0.1 at 2014-10-09 14:50:47 -0400
+Served asset /trails.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-10-09 14:50:47 -0400
+Served asset /users.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-10-09 14:50:47 -0400
+Served asset /bootstrap.min.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-09 14:50:47 -0400
+Served asset /application.js - 304 Not Modified (84ms)
+
+
+Started GET "/locations/new" for 127.0.0.1 at 2014-10-09 14:56:01 -0400
+Processing by LocationsController#new as HTML
+  Rendered locations/_form.html.erb (83.5ms)
+  Rendered locations/new.html.erb within layouts/application (85.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 17 LIMIT 1[0m
+  Rendered shared/_welcome.html.erb (0.0ms)
+Completed 200 OK in 110.0ms (Views: 109.3ms | ActiveRecord: 0.1ms | Solr: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-09 14:56:01 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/global.css?body=1" for 127.0.0.1 at 2014-10-09 14:56:01 -0400
+Served asset /global.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2014-10-09 14:56:01 -0400
+Served asset /maps.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-09 14:56:01 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2014-10-09 14:56:01 -0400
+Served asset /locations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photo.css?body=1" for 127.0.0.1 at 2014-10-09 14:56:01 -0400
+Served asset /photo.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2014-10-09 14:56:01 -0400
+Served asset /reviews.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-10-09 14:56:01 -0400
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trails.css?body=1" for 127.0.0.1 at 2014-10-09 14:56:01 -0400
+Served asset /trails.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2014-10-09 14:56:01 -0400
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-10-09 14:56:01 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-10-09 14:56:01 -0400
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-09 14:56:01 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-09 14:56:01 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2014-10-09 14:56:01 -0400
+Served asset /underscore.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gmaps/base.js?body=1" for 127.0.0.1 at 2014-10-09 14:56:01 -0400
+Served asset /gmaps/base.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gmaps/base/base.js?body=1" for 127.0.0.1 at 2014-10-09 14:56:01 -0400
+Served asset /gmaps/base/base.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gmaps/objects/base_builder.js?body=1" for 127.0.0.1 at 2014-10-09 14:56:01 -0400
+Served asset /gmaps/objects/base_builder.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gmaps/objects/builder.js?body=1" for 127.0.0.1 at 2014-10-09 14:56:01 -0400
+Served asset /gmaps/objects/builder.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gmaps/objects/handler.js?body=1" for 127.0.0.1 at 2014-10-09 14:56:01 -0400
+Served asset /gmaps/objects/handler.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gmaps/objects/null_clusterer.js?body=1" for 127.0.0.1 at 2014-10-09 14:56:01 -0400
+Served asset /gmaps/objects/null_clusterer.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gmaps/google/objects/common.js?body=1" for 127.0.0.1 at 2014-10-09 14:56:01 -0400
+Served asset /gmaps/google/objects/common.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gmaps/google/builders/bound.js?body=1" for 127.0.0.1 at 2014-10-09 14:56:01 -0400
+Served asset /gmaps/google/builders/bound.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gmaps/google/builders/circle.js?body=1" for 127.0.0.1 at 2014-10-09 14:56:01 -0400
+Served asset /gmaps/google/builders/circle.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gmaps/google/builders/clusterer.js?body=1" for 127.0.0.1 at 2014-10-09 14:56:01 -0400
+Served asset /gmaps/google/builders/clusterer.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gmaps/google/builders/kml.js?body=1" for 127.0.0.1 at 2014-10-09 14:56:01 -0400
+Served asset /gmaps/google/builders/kml.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gmaps/google/builders/map.js?body=1" for 127.0.0.1 at 2014-10-09 14:56:01 -0400
+Served asset /gmaps/google/builders/map.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gmaps/google/builders/marker.js?body=1" for 127.0.0.1 at 2014-10-09 14:56:01 -0400
+Served asset /gmaps/google/builders/marker.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gmaps/google/builders/polygon.js?body=1" for 127.0.0.1 at 2014-10-09 14:56:01 -0400
+Served asset /gmaps/google/builders/polygon.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gmaps/google/objects/bound.js?body=1" for 127.0.0.1 at 2014-10-09 14:56:01 -0400
+Served asset /gmaps/google/objects/bound.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gmaps/google/builders/polyline.js?body=1" for 127.0.0.1 at 2014-10-09 14:56:01 -0400
+Served asset /gmaps/google/builders/polyline.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gmaps/google/objects/circle.js?body=1" for 127.0.0.1 at 2014-10-09 14:56:02 -0400
+Served asset /gmaps/google/objects/circle.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gmaps/google/objects/clusterer.js?body=1" for 127.0.0.1 at 2014-10-09 14:56:02 -0400
+Served asset /gmaps/google/objects/clusterer.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gmaps/google/objects/kml.js?body=1" for 127.0.0.1 at 2014-10-09 14:56:02 -0400
+Served asset /gmaps/google/objects/kml.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gmaps/google/objects/map.js?body=1" for 127.0.0.1 at 2014-10-09 14:56:02 -0400
+Served asset /gmaps/google/objects/map.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gmaps/google/objects/marker.js?body=1" for 127.0.0.1 at 2014-10-09 14:56:02 -0400
+Served asset /gmaps/google/objects/marker.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gmaps/google/objects/polygon.js?body=1" for 127.0.0.1 at 2014-10-09 14:56:02 -0400
+Served asset /gmaps/google/objects/polygon.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gmaps/google/objects/polyline.js?body=1" for 127.0.0.1 at 2014-10-09 14:56:02 -0400
+Served asset /gmaps/google/objects/polyline.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gmaps/google/primitives.js?body=1" for 127.0.0.1 at 2014-10-09 14:56:02 -0400
+Served asset /gmaps/google/primitives.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gmaps/google.js?body=1" for 127.0.0.1 at 2014-10-09 14:56:02 -0400
+Served asset /gmaps/google.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js.orig?body=1" for 127.0.0.1 at 2014-10-09 14:56:02 -0400
+Served asset /application.js.orig - 304 Not Modified (0ms)
+
+
+Started GET "/assets/locations.js?body=1" for 127.0.0.1 at 2014-10-09 14:56:02 -0400
+Served asset /locations.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/maps.js?body=1" for 127.0.0.1 at 2014-10-09 14:56:02 -0400
+Served asset /maps.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photo.js?body=1" for 127.0.0.1 at 2014-10-09 14:56:02 -0400
+Served asset /photo.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2014-10-09 14:56:02 -0400
+Served asset /reviews.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-10-09 14:56:02 -0400
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trails.js?body=1" for 127.0.0.1 at 2014-10-09 14:56:02 -0400
+Served asset /trails.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-10-09 14:56:02 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-10-09 14:56:02 -0400
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-09 14:56:02 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2014-10-09 14:56:06 -0400
+Processing by LocationsController#index as HTML
+  [1m[35mLocation Load (0.2ms)[0m  SELECT "locations".* FROM "locations" 
+  Rendered locations/index.html.erb within layouts/application (1.2ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 17 LIMIT 1[0m
+  Rendered shared/_welcome.html.erb (0.0ms)
+Completed 200 OK in 22.6ms (Views: 20.8ms | ActiveRecord: 0.3ms | Solr: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-09 14:56:06 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/global.css?body=1" for 127.0.0.1 at 2014-10-09 14:56:06 -0400
+Served asset /global.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2014-10-09 14:56:06 -0400
+Served asset /locations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photo.css?body=1" for 127.0.0.1 at 2014-10-09 14:56:06 -0400
+Served asset /photo.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2014-10-09 14:56:06 -0400
+Served asset /maps.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2014-10-09 14:56:06 -0400
+Served asset /reviews.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2014-10-09 14:56:06 -0400
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-09 14:56:06 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-10-09 14:56:06 -0400
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trails.css?body=1" for 127.0.0.1 at 2014-10-09 14:56:06 -0400
+Served asset /trails.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-10-09 14:56:06 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-09 14:56:06 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-10-09 14:56:06 -0400
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2014-10-09 14:56:06 -0400
+Served asset /underscore.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-09 14:56:06 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gmaps/base.js?body=1" for 127.0.0.1 at 2014-10-09 14:56:06 -0400
+Served asset /gmaps/base.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gmaps/base/base.js?body=1" for 127.0.0.1 at 2014-10-09 14:56:06 -0400
+Served asset /gmaps/base/base.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gmaps/objects/base_builder.js?body=1" for 127.0.0.1 at 2014-10-09 14:56:06 -0400
+Served asset /gmaps/objects/base_builder.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gmaps/objects/builder.js?body=1" for 127.0.0.1 at 2014-10-09 14:56:06 -0400
+Served asset /gmaps/objects/builder.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gmaps/objects/handler.js?body=1" for 127.0.0.1 at 2014-10-09 14:56:06 -0400
+Served asset /gmaps/objects/handler.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gmaps/objects/null_clusterer.js?body=1" for 127.0.0.1 at 2014-10-09 14:56:06 -0400
+Served asset /gmaps/objects/null_clusterer.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gmaps/google/objects/common.js?body=1" for 127.0.0.1 at 2014-10-09 14:56:06 -0400
+Served asset /gmaps/google/objects/common.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gmaps/google/builders/bound.js?body=1" for 127.0.0.1 at 2014-10-09 14:56:06 -0400
+Served asset /gmaps/google/builders/bound.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gmaps/google/builders/clusterer.js?body=1" for 127.0.0.1 at 2014-10-09 14:56:06 -0400
+Served asset /gmaps/google/builders/clusterer.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gmaps/google/builders/circle.js?body=1" for 127.0.0.1 at 2014-10-09 14:56:06 -0400
+Served asset /gmaps/google/builders/circle.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gmaps/google/builders/kml.js?body=1" for 127.0.0.1 at 2014-10-09 14:56:06 -0400
+Served asset /gmaps/google/builders/kml.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gmaps/google/builders/map.js?body=1" for 127.0.0.1 at 2014-10-09 14:56:06 -0400
+Served asset /gmaps/google/builders/map.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gmaps/google/builders/marker.js?body=1" for 127.0.0.1 at 2014-10-09 14:56:06 -0400
+Served asset /gmaps/google/builders/marker.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gmaps/google/builders/polygon.js?body=1" for 127.0.0.1 at 2014-10-09 14:56:06 -0400
+Served asset /gmaps/google/builders/polygon.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gmaps/google/builders/polyline.js?body=1" for 127.0.0.1 at 2014-10-09 14:56:06 -0400
+Served asset /gmaps/google/builders/polyline.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gmaps/google/objects/bound.js?body=1" for 127.0.0.1 at 2014-10-09 14:56:06 -0400
+Served asset /gmaps/google/objects/bound.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gmaps/google/objects/circle.js?body=1" for 127.0.0.1 at 2014-10-09 14:56:06 -0400
+Served asset /gmaps/google/objects/circle.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gmaps/google/objects/clusterer.js?body=1" for 127.0.0.1 at 2014-10-09 14:56:06 -0400
+Served asset /gmaps/google/objects/clusterer.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gmaps/google/objects/kml.js?body=1" for 127.0.0.1 at 2014-10-09 14:56:06 -0400
+Served asset /gmaps/google/objects/kml.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gmaps/google/objects/marker.js?body=1" for 127.0.0.1 at 2014-10-09 14:56:06 -0400
+Served asset /gmaps/google/objects/marker.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gmaps/google/objects/map.js?body=1" for 127.0.0.1 at 2014-10-09 14:56:06 -0400
+Served asset /gmaps/google/objects/map.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gmaps/google/objects/polyline.js?body=1" for 127.0.0.1 at 2014-10-09 14:56:06 -0400
+Served asset /gmaps/google/objects/polyline.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gmaps/google/objects/polygon.js?body=1" for 127.0.0.1 at 2014-10-09 14:56:06 -0400
+Served asset /gmaps/google/objects/polygon.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gmaps/google/primitives.js?body=1" for 127.0.0.1 at 2014-10-09 14:56:06 -0400
+Served asset /gmaps/google/primitives.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gmaps/google.js?body=1" for 127.0.0.1 at 2014-10-09 14:56:06 -0400
+Served asset /gmaps/google.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js.orig?body=1" for 127.0.0.1 at 2014-10-09 14:56:06 -0400
+Served asset /application.js.orig - 304 Not Modified (0ms)
+
+
+Started GET "/assets/locations.js?body=1" for 127.0.0.1 at 2014-10-09 14:56:06 -0400
+Served asset /locations.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/maps.js?body=1" for 127.0.0.1 at 2014-10-09 14:56:06 -0400
+Served asset /maps.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2014-10-09 14:56:06 -0400
+Served asset /reviews.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photo.js?body=1" for 127.0.0.1 at 2014-10-09 14:56:06 -0400
+Served asset /photo.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-10-09 14:56:06 -0400
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trails.js?body=1" for 127.0.0.1 at 2014-10-09 14:56:06 -0400
+Served asset /trails.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-10-09 14:56:06 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-10-09 14:56:06 -0400
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-09 14:56:06 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/locations" for 127.0.0.1 at 2014-10-14 14:20:15 -0400
+Processing by LocationsController#index as HTML
+  [1m[36mLocation Load (9.1ms)[0m  [1mSELECT "locations".* FROM "locations" [0m
+  Rendered locations/index.html.erb within layouts/application (42.1ms)
+  [1m[35mUser Load (12.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 17 LIMIT 1
+  Rendered shared/_welcome.html.erb (0.4ms)
+Completed 200 OK in 1395.2ms (Views: 1320.7ms | ActiveRecord: 23.5ms | Solr: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-14 14:20:17 -0400
+Served asset /application.css - 304 Not Modified (24ms)
+
+
+Started GET "/assets/global.css?body=1" for 127.0.0.1 at 2014-10-14 14:20:17 -0400
+Served asset /global.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2014-10-14 14:20:17 -0400
+Served asset /locations.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2014-10-14 14:20:17 -0400
+Served asset /maps.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/photo.css?body=1" for 127.0.0.1 at 2014-10-14 14:20:17 -0400
+Served asset /photo.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-14 14:20:17 -0400
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2014-10-14 14:20:17 -0400
+Served asset /reviews.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-10-14 14:20:17 -0400
+Served asset /sessions.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2014-10-14 14:20:17 -0400
+Served asset /static_pages.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/trails.css?body=1" for 127.0.0.1 at 2014-10-14 14:20:17 -0400
+Served asset /trails.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-10-14 14:20:17 -0400
+Served asset /users.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-14 14:20:17 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (49ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-10-14 14:20:17 -0400
+Served asset /bootstrap.min.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2014-10-14 14:20:17 -0400
+Served asset /underscore.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-14 14:20:17 -0400
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/gmaps/base/base.js?body=1" for 127.0.0.1 at 2014-10-14 14:20:17 -0400
+Served asset /gmaps/base/base.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/gmaps/base.js?body=1" for 127.0.0.1 at 2014-10-14 14:20:17 -0400
+Served asset /gmaps/base.js - 304 Not Modified (19ms)
+
+
+Started GET "/assets/gmaps/objects/base_builder.js?body=1" for 127.0.0.1 at 2014-10-14 14:20:17 -0400
+Served asset /gmaps/objects/base_builder.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/gmaps/objects/handler.js?body=1" for 127.0.0.1 at 2014-10-14 14:20:17 -0400
+Served asset /gmaps/objects/handler.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/gmaps/objects/builder.js?body=1" for 127.0.0.1 at 2014-10-14 14:20:17 -0400
+Served asset /gmaps/objects/builder.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/gmaps/objects/null_clusterer.js?body=1" for 127.0.0.1 at 2014-10-14 14:20:17 -0400
+Served asset /gmaps/objects/null_clusterer.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/gmaps/google/objects/common.js?body=1" for 127.0.0.1 at 2014-10-14 14:20:17 -0400
+Served asset /gmaps/google/objects/common.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/gmaps/google/builders/bound.js?body=1" for 127.0.0.1 at 2014-10-14 14:20:17 -0400
+Served asset /gmaps/google/builders/bound.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/gmaps/google/builders/clusterer.js?body=1" for 127.0.0.1 at 2014-10-14 14:20:17 -0400
+Served asset /gmaps/google/builders/clusterer.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/gmaps/google/builders/circle.js?body=1" for 127.0.0.1 at 2014-10-14 14:20:17 -0400
+Served asset /gmaps/google/builders/circle.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/gmaps/google/builders/kml.js?body=1" for 127.0.0.1 at 2014-10-14 14:20:17 -0400
+Served asset /gmaps/google/builders/kml.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/gmaps/google/builders/polygon.js?body=1" for 127.0.0.1 at 2014-10-14 14:20:17 -0400
+Served asset /gmaps/google/builders/polygon.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/gmaps/google/builders/map.js?body=1" for 127.0.0.1 at 2014-10-14 14:20:17 -0400
+Served asset /gmaps/google/builders/map.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/gmaps/google/builders/polyline.js?body=1" for 127.0.0.1 at 2014-10-14 14:20:17 -0400
+Served asset /gmaps/google/builders/polyline.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/gmaps/google/builders/marker.js?body=1" for 127.0.0.1 at 2014-10-14 14:20:18 -0400
+Served asset /gmaps/google/builders/marker.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/gmaps/google/objects/bound.js?body=1" for 127.0.0.1 at 2014-10-14 14:20:18 -0400
+Served asset /gmaps/google/objects/bound.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/gmaps/google/objects/circle.js?body=1" for 127.0.0.1 at 2014-10-14 14:20:18 -0400
+Served asset /gmaps/google/objects/circle.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/gmaps/google/objects/clusterer.js?body=1" for 127.0.0.1 at 2014-10-14 14:20:18 -0400
+Served asset /gmaps/google/objects/clusterer.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/gmaps/google/objects/kml.js?body=1" for 127.0.0.1 at 2014-10-14 14:20:18 -0400
+Served asset /gmaps/google/objects/kml.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/gmaps/google/objects/map.js?body=1" for 127.0.0.1 at 2014-10-14 14:20:18 -0400
+Served asset /gmaps/google/objects/map.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/gmaps/google/objects/marker.js?body=1" for 127.0.0.1 at 2014-10-14 14:20:18 -0400
+Served asset /gmaps/google/objects/marker.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/gmaps/google/objects/polygon.js?body=1" for 127.0.0.1 at 2014-10-14 14:20:18 -0400
+Served asset /gmaps/google/objects/polygon.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/gmaps/google/objects/polyline.js?body=1" for 127.0.0.1 at 2014-10-14 14:20:18 -0400
+Served asset /gmaps/google/objects/polyline.js - 304 Not Modified (9ms)
+
+
+Started GET "/assets/gmaps/google/primitives.js?body=1" for 127.0.0.1 at 2014-10-14 14:20:18 -0400
+Served asset /gmaps/google/primitives.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/locations.js?body=1" for 127.0.0.1 at 2014-10-14 14:20:18 -0400
+Served asset /locations.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js.orig?body=1" for 127.0.0.1 at 2014-10-14 14:20:18 -0400
+Served asset /application.js.orig - 304 Not Modified (3ms)
+
+
+Started GET "/assets/gmaps/google.js?body=1" for 127.0.0.1 at 2014-10-14 14:20:18 -0400
+Served asset /gmaps/google.js - 304 Not Modified (27ms)
+
+
+Started GET "/assets/maps.js?body=1" for 127.0.0.1 at 2014-10-14 14:20:18 -0400
+Served asset /maps.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/photo.js?body=1" for 127.0.0.1 at 2014-10-14 14:20:18 -0400
+Served asset /photo.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2014-10-14 14:20:18 -0400
+Served asset /reviews.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-10-14 14:20:18 -0400
+Served asset /sessions.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/trails.js?body=1" for 127.0.0.1 at 2014-10-14 14:20:18 -0400
+Served asset /trails.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-10-14 14:20:18 -0400
+Served asset /users.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-10-14 14:20:18 -0400
+Served asset /bootstrap.min.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-14 14:20:18 -0400
+Served asset /application.js - 304 Not Modified (85ms)
+
+
+Started GET "/locations" for 127.0.0.1 at 2014-10-14 14:36:17 -0400
+Processing by LocationsController#index as HTML
+  [1m[36mLocation Load (0.2ms)[0m  [1mSELECT "locations".* FROM "locations" [0m
+  Rendered locations/index.html.erb within layouts/application (1.4ms)
+Compiled locations.js  (0ms)  (pid 14804)
+Compiled application.js  (16ms)  (pid 14804)
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 17 LIMIT 1
+  Rendered shared/_welcome.html.erb (0.0ms)
+Completed 200 OK in 213.2ms (Views: 211.7ms | ActiveRecord: 0.3ms | Solr: 0.0ms)
+
+
+Started GET "/assets/global.css?body=1" for 127.0.0.1 at 2014-10-14 14:36:18 -0400
+Served asset /global.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/locations.css?body=1" for 127.0.0.1 at 2014-10-14 14:36:18 -0400
+Served asset /locations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2014-10-14 14:36:18 -0400
+Served asset /reviews.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photo.css?body=1" for 127.0.0.1 at 2014-10-14 14:36:18 -0400
+Served asset /photo.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/maps.css?body=1" for 127.0.0.1 at 2014-10-14 14:36:18 -0400
+Served asset /maps.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2014-10-14 14:36:18 -0400
+Served asset /static_pages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-14 14:36:18 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trails.css?body=1" for 127.0.0.1 at 2014-10-14 14:36:18 -0400
+Served asset /trails.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-14 14:36:18 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2014-10-14 14:36:18 -0400
+Served asset /sessions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-10-14 14:36:18 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2014-10-14 14:36:18 -0400
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-14 14:36:18 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-14 14:36:18 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/underscore.js?body=1" for 127.0.0.1 at 2014-10-14 14:36:18 -0400
+Served asset /underscore.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gmaps/base.js?body=1" for 127.0.0.1 at 2014-10-14 14:36:18 -0400
+Served asset /gmaps/base.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gmaps/base/base.js?body=1" for 127.0.0.1 at 2014-10-14 14:36:18 -0400
+Served asset /gmaps/base/base.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gmaps/objects/base_builder.js?body=1" for 127.0.0.1 at 2014-10-14 14:36:18 -0400
+Served asset /gmaps/objects/base_builder.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gmaps/objects/builder.js?body=1" for 127.0.0.1 at 2014-10-14 14:36:18 -0400
+Served asset /gmaps/objects/builder.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gmaps/objects/handler.js?body=1" for 127.0.0.1 at 2014-10-14 14:36:18 -0400
+Served asset /gmaps/objects/handler.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gmaps/objects/null_clusterer.js?body=1" for 127.0.0.1 at 2014-10-14 14:36:18 -0400
+Served asset /gmaps/objects/null_clusterer.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gmaps/google/objects/common.js?body=1" for 127.0.0.1 at 2014-10-14 14:36:18 -0400
+Served asset /gmaps/google/objects/common.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gmaps/google/builders/circle.js?body=1" for 127.0.0.1 at 2014-10-14 14:36:18 -0400
+Served asset /gmaps/google/builders/circle.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gmaps/google/builders/bound.js?body=1" for 127.0.0.1 at 2014-10-14 14:36:18 -0400
+Served asset /gmaps/google/builders/bound.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gmaps/google/builders/kml.js?body=1" for 127.0.0.1 at 2014-10-14 14:36:18 -0400
+Served asset /gmaps/google/builders/kml.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gmaps/google/builders/clusterer.js?body=1" for 127.0.0.1 at 2014-10-14 14:36:18 -0400
+Served asset /gmaps/google/builders/clusterer.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gmaps/google/builders/map.js?body=1" for 127.0.0.1 at 2014-10-14 14:36:18 -0400
+Served asset /gmaps/google/builders/map.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gmaps/google/builders/marker.js?body=1" for 127.0.0.1 at 2014-10-14 14:36:18 -0400
+Served asset /gmaps/google/builders/marker.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gmaps/google/builders/polygon.js?body=1" for 127.0.0.1 at 2014-10-14 14:36:18 -0400
+Served asset /gmaps/google/builders/polygon.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gmaps/google/builders/polyline.js?body=1" for 127.0.0.1 at 2014-10-14 14:36:18 -0400
+Served asset /gmaps/google/builders/polyline.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gmaps/google/objects/bound.js?body=1" for 127.0.0.1 at 2014-10-14 14:36:18 -0400
+Served asset /gmaps/google/objects/bound.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gmaps/google/objects/circle.js?body=1" for 127.0.0.1 at 2014-10-14 14:36:18 -0400
+Served asset /gmaps/google/objects/circle.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gmaps/google/objects/clusterer.js?body=1" for 127.0.0.1 at 2014-10-14 14:36:18 -0400
+Served asset /gmaps/google/objects/clusterer.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gmaps/google/objects/kml.js?body=1" for 127.0.0.1 at 2014-10-14 14:36:18 -0400
+Served asset /gmaps/google/objects/kml.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gmaps/google/objects/map.js?body=1" for 127.0.0.1 at 2014-10-14 14:36:18 -0400
+Served asset /gmaps/google/objects/map.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gmaps/google/objects/marker.js?body=1" for 127.0.0.1 at 2014-10-14 14:36:18 -0400
+Served asset /gmaps/google/objects/marker.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gmaps/google/objects/polygon.js?body=1" for 127.0.0.1 at 2014-10-14 14:36:18 -0400
+Served asset /gmaps/google/objects/polygon.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gmaps/google/objects/polyline.js?body=1" for 127.0.0.1 at 2014-10-14 14:36:18 -0400
+Served asset /gmaps/google/objects/polyline.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gmaps/google/primitives.js?body=1" for 127.0.0.1 at 2014-10-14 14:36:18 -0400
+Served asset /gmaps/google/primitives.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/gmaps/google.js?body=1" for 127.0.0.1 at 2014-10-14 14:36:18 -0400
+Served asset /gmaps/google.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js.orig?body=1" for 127.0.0.1 at 2014-10-14 14:36:18 -0400
+Served asset /application.js.orig - 304 Not Modified (0ms)
+
+
+Started GET "/assets/locations.js?body=1" for 127.0.0.1 at 2014-10-14 14:36:18 -0400
+Served asset /locations.js - 200 OK (43ms)
+
+
+Started GET "/assets/maps.js?body=1" for 127.0.0.1 at 2014-10-14 14:36:18 -0400
+Served asset /maps.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2014-10-14 14:36:18 -0400
+Served asset /reviews.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/photo.js?body=1" for 127.0.0.1 at 2014-10-14 14:36:18 -0400
+Served asset /photo.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2014-10-14 14:36:18 -0400
+Served asset /sessions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/trails.js?body=1" for 127.0.0.1 at 2014-10-14 14:36:18 -0400
+Served asset /trails.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-10-14 14:36:18 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-10-14 14:36:18 -0400
+Served asset /bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-14 14:36:18 -0400
+Served asset /application.js - 304 Not Modified (32ms)

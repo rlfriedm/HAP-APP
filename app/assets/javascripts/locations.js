@@ -38,7 +38,8 @@ function initialize() {
           google.maps.drawing.OverlayType.MARKER,
           google.maps.drawing.OverlayType.POLYLINE
         ]
-    }
+    },
+    polylineOptions: { geodesic: true }
   });
   
 
