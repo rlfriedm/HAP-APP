@@ -4,7 +4,7 @@ class CreateReviews < ActiveRecord::Migration
       t.string :title
       t.text :bodyText
       t.integer :rating
-      t.trail_id :trail_id #added :trail_id symbol
+      #t.trail_id :trail_id #added :trail_id symbol
       t.timestamps
     end
   end

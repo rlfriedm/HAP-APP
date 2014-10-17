@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140925195550) do
+ActiveRecord::Schema.define(:version => 20140929042940) do
 
   create_table "locations", :force => true do |t|
     t.string   "name"
@@ -23,22 +23,31 @@ ActiveRecord::Schema.define(:version => 20140925195550) do
     t.datetime "updated_at", :null => false
   end
 
+  create_table "photos", :force => true do |t|
+    t.integer  "review_id"
+    t.datetime "created_at",         :null => false
+    t.datetime "updated_at",         :null => false
+    t.string   "image_file_name"
+    t.string   "image_content_type"
+    t.integer  "image_file_size"
+    t.datetime "image_updated_at"
+  end
+
+  create_table "reviews", :force => true do |t|
+    t.string   "title"
+    t.text     "bodyText"
+    t.integer  "rating"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+    t.integer  "trail_id"
+  end
+
   create_table "trails", :force => true do |t|
     t.string   "name"
     t.string   "description"
     t.integer  "rating",      :limit => 5
     t.datetime "created_at",               :null => false
     t.datetime "updated_at",               :null => false
-  end
-
-#added this cause we didn't know what it did....?
-
-  create_table "reviews", :force => true do |t|
-    t.string "title"
-    t.text "bodyText"
-    t.integer "rating"        :limit => 5
-    t.trail_id "trail_id"                   :null => false
-    t.timestamps "timestamps"
   end
 
   create_table "users", :force => true do |t|
