@@ -17,4 +17,14 @@ class Trail < ActiveRecord::Base
     	created_at.strftime("%B %Y")
   	end
 
+    def getRating
+        newRating = 0
+        numReviews = 0
+        self.reviews.each do |review| 
+            newRating += review.rating
+            numReviews += 1
+        end
+        rating = newRating / numReviews
+  end
+
 end

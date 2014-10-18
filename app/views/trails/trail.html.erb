@@ -1,4 +1,5 @@
-<h1><%=@trail.name %> Rating: <%=@trail.rating %></h1>
+<h1><%=@trail.name %> </h1>
+<h1> Rating: <%=@trail.rating = @trail.getRating %></h1>
 
 <h2> Reviews: </h2>
 <% if @trail.reviews.any? %>
@@ -12,7 +13,7 @@
 
     </p>
 
-	  <% unless review.photo.nil? %>
+	  <% unless review.photo.image_file_name.nil? %>
 	    	<%= link_to image_tag(review.photo.image, :size=> "64x64"), review.photo.image(:original), :popup=>['original_image', 'height=700', 'width=900'] %>
 
 	  <% end %>

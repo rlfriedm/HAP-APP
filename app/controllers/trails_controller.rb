@@ -23,5 +23,4 @@ class TrailsController < ApplicationController
   	id = params[:id]
   	@trail = Trail.find(id)
   end
-
 end
