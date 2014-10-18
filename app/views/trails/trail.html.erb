@@ -33,7 +33,8 @@
 	<%= f.text_area :bodyText %>
 	<br/>
 	<%= f.label :rating %>
-	<%= f.text_field :rating %>
+	<%= f.select :rating, [[1, 1],[2, 2],[3, 3] , [4, 4], [5, 5]] %>
+
 	<br/>
 
 	<%= f.hidden_field :trail_id, :value => @trail.id %>
