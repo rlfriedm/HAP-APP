@@ -19,12 +19,12 @@ class Trail < ActiveRecord::Base
 
     def getRating
         newRating = 0
-        numReviews = 0
+        numReviews = 0.0
         self.reviews.each do |review| 
             newRating += review.rating
             numReviews += 1
         end
-        rating = newRating / numReviews
+        rating = ((newRating / numReviews) * 2).round / 2.0
   end
 
 end
