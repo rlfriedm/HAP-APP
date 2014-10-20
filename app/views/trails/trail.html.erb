@@ -4,13 +4,12 @@
 <h2> Reviews: </h2>
 <% if @trail.reviews.any? %>
   <% @trail.reviews.each do |review| %>
+    <div class="fluid-container">
     <p>
 	  Title: <%= review.title %> </br>
 	  Review: <%= review.bodyText %> </br>
 	  Rating: <%= review.rating %> </br>
 	  Date: <%= review.created_at %>
-	  <%= button_to "Delete", { :controller => "reviews", :action => "deleteReview", :trail_id => @trail.id, :review_id => review.id} %>
-
     </p>
     <% if review.photos.any? %>
   	  <% review.photos.each do |photo| %>
@@ -19,12 +18,18 @@
 	  <% end %>
 	 <% end %>
 	<% end %>
+	<p>
+     <%= button_to "Delete", { :controller => "reviews", :action => "deleteReview", :trail_id => @trail.id, :review_id => review.id} %>
+     </p>
+	</div>
+
   <% end %>
 <% end %>
 
 <br/>
 <br/>
 
+<div class="fluid-container" style="border:2px solid blue">
 <h1>Add a Review</h1>
 <%= form_for Review.new, :html => {:multipart => true}  do |f| %>
 	<%= f.label :title %>
@@ -46,3 +51,4 @@
 	</br>
 	<%= f.submit %>
 <% end %>
+</div>
