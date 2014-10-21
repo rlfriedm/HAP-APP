@@ -12,7 +12,9 @@ class ReviewsController < ApplicationController
 		photos = params[:review][:photos]
 
 		@review = @trail.reviews.build(params[:review])
-	
+	#	render :text => current_user.reviews
+		current_user.reviews.build(params[:review])
+
 		if @review.save!
 			redirect_to :back
 		end

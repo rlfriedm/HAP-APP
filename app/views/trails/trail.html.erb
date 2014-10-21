@@ -9,7 +9,9 @@
 	  Title: <%= review.title %> </br>
 	  Review: <%= review.bodyText %> </br>
 	  Rating: <%= review.rating %> </br>
-	  Date: <%= review.created_at %>
+	  Date: <%= review.created_at %> </br>
+	  User: <%= link_to User.find(review.user_id).username, user_path(User.find(review.user_id)) %>
+
     </p>
     <% if review.photos.any? %>
   	  <% review.photos.each do |photo| %>
@@ -45,6 +47,8 @@
 	<br/>
 
 	<%= f.hidden_field :trail_id, :value => @trail.id %>
+	<%= f.hidden_field :user_id, :value => current_user.id %>
+
 
 	<%= f.label :photos %>
 	<%= f.file_field :photos, multiple: true %>

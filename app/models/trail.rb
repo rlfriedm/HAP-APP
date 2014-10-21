@@ -24,7 +24,10 @@ class Trail < ActiveRecord::Base
             newRating += review.rating
             numReviews += 1
         end
-        rating = ((newRating / numReviews) * 2).round / 2.0
+        if numReviews > 0
+            rating = ((newRating / numReviews) * 2).round / 2.0
+        end
+        rating = 0
   end
 
 end
