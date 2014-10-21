@@ -2,8 +2,17 @@ class ReviewsController < ApplicationController
 	def create
 		id = params[:review][:trail_id]
 		@trail = Trail.find(id)
-		params[:review][:photo] = Photo.new(:image => params[:review][:photo])
+		
+		if not params[:review][:photos].nil?
+			(params[:review][:photos]).each_with_index do |photo, i|
+				params[:review][:photos][i] = Photo.new(:image => photo)
+			end
+		end
+
+		photos = params[:review][:photos]
+
 		@review = @trail.reviews.build(params[:review])
+	
 		if @review.save!
 			redirect_to :back
 		end

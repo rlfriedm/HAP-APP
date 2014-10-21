@@ -1,29 +1,37 @@
-<h1><%=@trail.name %> Rating: <%=@trail.rating %></h1>
+<h1><%=@trail.name %> </h1>
+<h1> Rating: <%=@trail.rating = @trail.getRating %></h1>
 
 <h2> Reviews: </h2>
 <% if @trail.reviews.any? %>
   <% @trail.reviews.each do |review| %>
+    <div class="fluid-container">
     <p>
 	  Title: <%= review.title %> </br>
 	  Review: <%= review.bodyText %> </br>
 	  Rating: <%= review.rating %> </br>
 	  Date: <%= review.created_at %>
-	  <%= button_to "Delete", { :controller => "reviews", :action => "deleteReview", :trail_id => @trail.id, :review_id => review.id} %>
-
     </p>
-
-	  <% unless review.photo.nil? %>
-	    	<%= link_to image_tag(review.photo.image, :size=> "64x64"), review.photo.image(:original), :popup=>['original_image', 'height=700', 'width=900'] %>
-
+    <% if review.photos.any? %>
+  	  <% review.photos.each do |photo| %>
+	  <% unless photo.image_file_name.nil? %>
+	    	<%= link_to image_tag(photo.image, :size=> "64x64"), photo.image(:original), :popup=>['original_image', 'height=700', 'width=900'] %>
 	  <% end %>
+	 <% end %>
+	<% end %>
+	<p>
+     <%= button_to "Delete", { :controller => "reviews", :action => "deleteReview", :trail_id => @trail.id, :review_id => review.id} %>
+     </p>
+	</div>
+
   <% end %>
 <% end %>
 
 <br/>
 <br/>
 
+<div class="fluid-container" style="border:2px solid blue">
 <h1>Add a Review</h1>
-<%= form_for Review.new do |f| %>
+<%= form_for Review.new, :html => {:multipart => true}  do |f| %>
 	<%= f.label :title %>
 	<%= f.text_field :title %> 
 	<br/>
@@ -32,13 +40,15 @@
 	<%= f.text_area :bodyText %>
 	<br/>
 	<%= f.label :rating %>
-	<%= f.text_field :rating %>
+	<%= f.select :rating, [[1, 1],[2, 2],[3, 3] , [4, 4], [5, 5]] %>
+
 	<br/>
 
 	<%= f.hidden_field :trail_id, :value => @trail.id %>
 
-	<%= f.label :photo %>
-	<%= f.file_field :photo %>
+	<%= f.label :photos %>
+	<%= f.file_field :photos, multiple: true %>
 	</br>
 	<%= f.submit %>
 <% end %>
+</div>

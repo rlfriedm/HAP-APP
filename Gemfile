@@ -11,6 +11,8 @@ gem 'sunspot_rails'
 gem 'gravatar_image_tag', '0.1.0'
 gem 'paperclip'
 
+gem 'thin'
+
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
