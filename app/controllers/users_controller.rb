@@ -1,5 +1,8 @@
 class UsersController < ApplicationController
   def index
+    if (!signed_in?)
+      redirect_to root_path
+    end
   	@users = User.all
   end
   def show
