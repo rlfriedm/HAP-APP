@@ -1,6 +1,6 @@
 class Trail < ActiveRecord::Base
 	attr_accessible :description, :name, :rating, :created_at
-	has_many :reviews
+	has_many :reviews, :dependent => :destroy
 
 	searchable do
     	text :name, :boost => 5
