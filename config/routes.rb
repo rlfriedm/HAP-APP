@@ -24,6 +24,7 @@ HAPApp::Application.routes.draw do
   resources :sessions, :only => [:new, :create, :destroy]
   resources :users 
   resources :reviews
+  resources :comments
   resources :trails do
     resources :reviews
   end
