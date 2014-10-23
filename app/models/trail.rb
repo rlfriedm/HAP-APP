@@ -1,6 +1,6 @@
 class Trail < ActiveRecord::Base
 	attr_accessible :description, :name, :rating, :created_at
-	has_many :reviews
+	has_many :reviews, :dependent => :destroy
 
 	searchable do
     	text :name, :boost => 2, :stored => true
@@ -28,8 +28,9 @@ class Trail < ActiveRecord::Base
         end
         if numReviews > 0
             rating = ((newRating / numReviews) * 2).round / 2.0
+        else
+            rating = 0
         end
-        rating = 0
   end
 
 end
