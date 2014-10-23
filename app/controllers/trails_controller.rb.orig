@@ -32,6 +32,7 @@ class TrailsController < ApplicationController
     id = params[:id]
     @trail = Trail.find(id)
   end
+<<<<<<< HEAD
 
 private
   
@@ -42,4 +43,7 @@ private
   def sort_direction
     %w[asc desc].include?(params[:direction]) ? params[:direction] : "asc"
   end
+=======
+  
+>>>>>>> acc84413c75bf321f082f76ddd9844d82fa9b55d
 end
