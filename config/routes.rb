@@ -8,7 +8,7 @@ HAPApp::Application.routes.draw do
   post "users/deleteuser"
 
   get "trails/index"
-  get "trails/trail"
+  get "trails/show"
 
   get "reviews/deleteReview"
   post "reviews/deleteReview"

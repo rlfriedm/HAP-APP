@@ -19,8 +19,9 @@ class TrailsController < ApplicationController
 	  redirect_to action: 'index'
   end
 
-  def trail
-  	id = params[:id]
-  	@trail = Trail.find(id)
+  def show
+    id = params[:id]
+    @trail = Trail.find(id)
   end
+  
 end
