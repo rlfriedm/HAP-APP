@@ -719,3 +719,25 @@ Oct 23, 2014 3:34:59 PM org.apache.solr.core.SolrCore execute
 INFO: [development] webapp=/solr path=/select params={q=*:*&start=0&fq=type:Trail&sort=rating_i+asc&rows=2&wt=ruby} hits=4 status=0 QTime=0 
 Oct 23, 2014 3:35:00 PM org.apache.solr.core.SolrCore execute
 INFO: [development] webapp=/solr path=/select params={q=*:*&start=0&fq=type:Trail&sort=rating_i+desc&rows=2&wt=ruby} hits=4 status=0 QTime=0 
+Oct 23, 2014 4:16:03 PM org.apache.solr.search.SolrIndexSearcher <init>
+INFO: Opening Searcher@11cda909 realtime
+Oct 23, 2014 4:16:03 PM org.apache.solr.update.processor.LogUpdateProcessor finish
+INFO: [development] webapp=/solr path=/update params={wt=ruby} {deleteByQuery=type:Trail (-1482786459644592128)} 0 3
+Oct 23, 2014 4:16:08 PM org.apache.solr.update.DirectUpdateHandler2 commit
+INFO: start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=true,prepareCommit=false}
+Oct 23, 2014 4:16:08 PM org.apache.solr.search.SolrIndexSearcher <init>
+INFO: Opening Searcher@3c95f989 main
+Oct 23, 2014 4:16:08 PM org.apache.solr.update.DirectUpdateHandler2 commit
+INFO: end_commit_flush
+Oct 23, 2014 4:16:08 PM org.apache.solr.core.SolrCore registerSearcher
+INFO: [development] Registered new searcher Searcher@3c95f989 main{StandardDirectoryReader(segments_14:101:nrt)}
+Oct 23, 2014 4:16:18 PM org.apache.solr.update.DirectUpdateHandler2 commit
+INFO: start commit{,optimize=false,openSearcher=false,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+Oct 23, 2014 4:16:18 PM org.apache.solr.core.SolrDeletionPolicy onCommit
+INFO: SolrDeletionPolicy.onCommit: commits:num=2
+	commit{dir=NRTCachingDirectory(org.apache.lucene.store.NIOFSDirectory@/Users/judsonmartin/Desktop/HAP-APP/HAP-APP/solr/development/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@19aa307b; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_14,generation=40,filenames=[_r_Lucene41_0.doc, _r_Lucene41_0.tim, _r.fdt, segments_14, _r_Lucene41_0.pos, _s.nvd, _r.fdx, _s.fdx, _s.nvm, _s.fnm, _r_Lucene41_0.tip, _s_Lucene41_0.tip, _s_Lucene41_0.doc, _r.nvm, _r.fnm, _r.nvd, _s_Lucene41_0.pos, _s.fdt, _s_Lucene41_0.tim, _r.si, _s.si]
+	commit{dir=NRTCachingDirectory(org.apache.lucene.store.NIOFSDirectory@/Users/judsonmartin/Desktop/HAP-APP/HAP-APP/solr/development/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@19aa307b; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_15,generation=41,filenames=[segments_15]
+Oct 23, 2014 4:16:18 PM org.apache.solr.core.SolrDeletionPolicy updateCommits
+INFO: newest commit = 41[segments_15]
+Oct 23, 2014 4:16:18 PM org.apache.solr.update.DirectUpdateHandler2 commit
+INFO: end_commit_flush
