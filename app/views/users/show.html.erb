@@ -11,12 +11,12 @@
 </div>
 
 <div class="row">
-  	<div class="col-md-4 col-md-offset-5">Reviews</div>
+  	<div class="col-md-4 col-md-offset-5">Recent Reviews</div>
 </div>
 
 <% for review in @user.reviews %>
 	<div class="row">
-	  <div class="col-md-offset-5"><%= review.title %></div>
+	  <div class="col-md-offset-5"><%= link_to review.title, :controller => "trails", :action => "show", :id => review.trail_id %>, <%=review.rating%></div>
 	</div>
 <% end %>
 	
