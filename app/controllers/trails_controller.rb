@@ -1,16 +1,25 @@
 class TrailsController < ApplicationController
+
+  helper_method :sort_column, :sort_direction
+
   def index
 
     @search = Trail.search do
       fulltext params[:search]
-      with(:created_at).less_than(Time.zone.now)
-      facet(:publish_month)
-      if params[:month].present?
-        with(:publish_month, params[:month])
-      end
+      order_by(sort_column, sort_direction)
+#      with(:created_at).less_than(Time.zone.now)
+#      facet(:publish_month)
+#      if params[:month].present?
+#        with(:publish_month, params[:month])
+#      end
+      paginate(:per_page => 2, :page => params[:page])
     end
-    @trails = @search.results #.sort_by{|e| e[:created_at]}.reverse
+    @trails = @search.results
+#    @trails = Trail.order(sort_column + " " + sort_direction).paginate(:per_page => 2, :page => params[:page])
 
+#    @trails = @search.results.order_by(sort_column + " " + sort_direction).paginate(:per_page => 2, :page => params[:page])
+
+#    @trails = @temp.order(sort_column + " " + sort_direction).paginate(:per_page => 2, :page => params[:page])
 
   end
 
@@ -22,5 +31,15 @@ class TrailsController < ApplicationController
   def trail
   	id = params[:id]
   	@trail = Trail.find(id)
+  end
+
+private
+  
+  def sort_column
+    Trail.column_names.include?(params[:sort]) ? params[:sort] : "created_at"
+  end
+  
+  def sort_direction
+    %w[asc desc].include?(params[:direction]) ? params[:direction] : "asc"
   end
 end
