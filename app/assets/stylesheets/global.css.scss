@@ -2,6 +2,27 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+/* unvisited link */
+a:link.link-style {
+    color: #00A500;
+}
+
+/* visited link */
+a:visited.link-style  {
+    color: #00A500;
+}
+
+/* mouse over link */
+a:hover.link-style  {
+    color: #FF00FF;
+    background: none;
+}
+
+/* selected link */
+a:active.link-style  {
+    color: #0000FF;
+}
+
 div.error_explanation {
    width: 400px;
    border: 2px solid red;
