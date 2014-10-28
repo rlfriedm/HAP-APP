@@ -14,9 +14,10 @@ var polyLine;
 
 function initialize() {
   var mapOptions = {
-    zoom: 7,
+    zoom: 8,
     // Center the map on Chicago, USA.
-    center: new google.maps.LatLng(43.0512606, -75.40397089999999)
+    center: new google.maps.LatLng(43.9829194, -74.4593776),
+    mapTypeId: google.maps.MapTypeId.TERRAIN
   };
 
   map = new google.maps.Map(document.getElementById('map'), mapOptions);
