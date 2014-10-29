@@ -2,9 +2,27 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+
 /* unvisited link */
 a:link.link-style {
     color: #00A500;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    font-rendering: optimizedlegibility;
+}
+
+.well {
+  background-color: white;
+}
+
+.panel-heading{
+  background-color: #e7e7e7;
+}
+
+.well h2{
+  margin-top:0;
 }
 
 /* visited link */
@@ -60,3 +78,5 @@ div.error_list {
 .field_with_errors label {
    color: red;
 }
+
+/* zach's css ^^ -------------- */
