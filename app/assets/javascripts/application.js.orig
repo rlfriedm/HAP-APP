@@ -13,5 +13,10 @@
 //= require jquery
 //= require jquery_ujs
 //= require underscore
+<<<<<<< HEAD
 //= require_directory .
 //= require bootstrap.min
+=======
+//= require bootstrap.min
+//= require_tree .
+>>>>>>> 29853f178a52b3072e6a1f40230e3eb460c37701

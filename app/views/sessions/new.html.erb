@@ -9,6 +9,6 @@
 		<%= f.label :password%>
 		<%= f.password_field :password, :class => "form-control" %><br>
 		<%= f.submit "Sign in", :class => "btn btn-success" %>
-		<p class="form-control-static">New user? Please <%= link_to 'signup!', new_user_path%></p>
+		<p class="form-control-static">New user? Please <%= link_to 'signup!', new_user_path, :class => "link-style"%></p>
 	<% end %>  
 </body>

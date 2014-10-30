@@ -14,20 +14,26 @@ class LocationsController < ApplicationController
          "height"=> 36 ]
      end
     @latLngs = []
+    @paths = []
     @locations.each do |location|
-        latLng = [location.latitude, location.longitude]
-        @latLngs.push(latLng)
+        if location.latitude
+          latLng = [location.latitude, location.longitude]
+          @latLngs.push(latLng)
+        elsif location.startLat
+          @paths.push(location.path)
+        end
     end 
     
     #@json = @json.to_json
     gon.latLngs = @latLngs
+    gon.paths = @paths
     #render :text => gon.latLngs
     # #@json = Location.all.to_gmaps4rails
-  respond_to do |format|
+    respond_to do |format|
      #format.json { render :json => @json }
-     format.html # index.html.erb
+      format.html # index.html.erb
      
-  end
+    end
 #    render :text => @json 
   end
 
@@ -46,6 +52,21 @@ class LocationsController < ApplicationController
   # GET /locations/new.json
   def new
     @location = Location.new
+    @locations = Location.all
+    @latLngs = []
+    @paths = []
+    @locations.each do |location|
+        if location.latitude
+          latLng = [location.latitude, location.longitude]
+          @latLngs.push(latLng)
+        elsif location.path
+          @paths.push(location.path)
+        end
+    end 
+    
+    #@json = @json.to_json
+    gon.latLngs = @latLngs
+    gon.paths = @paths
 
     respond_to do |format|
       format.html # new.html.erb

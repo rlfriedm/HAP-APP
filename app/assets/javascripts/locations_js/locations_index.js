@@ -14,12 +14,13 @@ var polyLine;
 
 function initialize() {
   var mapOptions = {
-    zoom: 7,
+    zoom: 9,
     // Center the map on Chicago, USA.
-    center: new google.maps.LatLng(43.0512606, -75.40397089999999)
+    center: new google.maps.LatLng(43.9829194, -74.4593776),
+    mapTypeId: google.maps.MapTypeId.TERRAIN
   };
 
-  map = new google.maps.Map(document.getElementById('map'), mapOptions);
+  map = new google.maps.Map(document.getElementById('indexmap'), mapOptions);
   
   //alert(gon.latLngs);
   for (obj in gon.latLngs) {
@@ -30,6 +31,27 @@ function initialize() {
   		draggable : true
   	});
   }
+
+  var linepath;
+  var ary;
+  for (var i = 0; i < gon.paths.length; i++) {
+    linepath = [];
+    ary = JSON.parse(gon.paths[i]);
+    
+    for (var j = 0; j < ary.length; j++) {
+      //alert(gon.paths[i][j]);
+      linepath[linepath.length] = new google.maps.LatLng(ary[j][0], ary[j][1]); 
+    }
+    var line = new google.maps.Polyline({
+      path : linepath,
+      map : map,
+      strokeColor : '#006400'
+    });
+  }
+  
+  //alert(path);
+
+  
 
   var drawingManager = new google.maps.drawing.DrawingManager({
     drawingMode: google.maps.drawing.OverlayType.POLYLINE,
@@ -57,7 +79,7 @@ function initialize() {
 function movePolyLine(event) {
   //var line = event;
   //alert("click to continue!");
-  event.setOptions({strokeColor: '#0000FF'});
+  event.setOptions({strokeColor: '#006400'});
 //  event.visible = false;
   //strokeColor: '#0000FF');
 }
