@@ -3,38 +3,29 @@
 
 <% if @trails.size == 0 %>
 	<em>No trails were found matching your search</em>
+<% else %>
+
+  <table class="trails_table">
+    <col width="20%">
+    <col width="54%">
+    <col width="6%">
+    <col width="20%">
+    <tr>
+      <th style="text-align:center"><%= sortable "name", "Name" %></th>
+      <th style="text-align:center">Description</th>
+      <th style="text-align:center"><%= sortable "rating", "Rating" %></th>
+      <th style="text-align:center"><%= sortable "created_at", "Date Created" %></th>
+    </tr>
+    <% for t in @trails %>
+      <tr>
+        <td><%=link_to t.name, :action => "show", :id => t.id%></td>
+        <td><%=t.description%></td>
+        <td align="center"><%=t.getRating%></td>
+        <td><%=t.created_at.strftime("%B %e, %Y")%></td>
+      </tr>
+    <% end %>
+  </table>
+  <%= will_paginate @trails %>
+  <p><%= button_to "Create New Trail", new_trail_path, :class => "btn btn-default", :method => :get %></p>
+
 <% end %>
-
-
-<table id="trail_table">
-  <tr>
-    <th><%= sortable "name", "Name" %></th>
-    <th>Description</th>
-    <th><%= sortable "rating", "Rating" %></th>
-    <th><%= sortable "created_at", "Date Created" %></th>
-  </tr>
-  <% for t in @trails %>
-  <tr>
-    <td><%=link_to t.name, :action => "show", :id => t.id%></td>
-    <td><%=t.description%></td>
-    <td><%=t.rating%></td>
-    <td><%=t.created_at.strftime("%B %e, %Y")%></td>
-  </tr>
-  <% end %>
-</table>
-
-<%= will_paginate @trails %>
-
-
-<p><%= button_to "Create New Trail", new_trail_path, :class => "btn btn-default", :method => :get %></p>
-
-
-
-
-
-
-
-
-
-
-
