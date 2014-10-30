@@ -52,7 +52,7 @@ function initialize() {
   //alert(path);
 
   
-
+/*
   var drawingManager = new google.maps.drawing.DrawingManager({
     drawingMode: google.maps.drawing.OverlayType.POLYLINE,
     drawingControl: true,
@@ -71,7 +71,7 @@ function initialize() {
   drawingManager.setMap(map);
   
   google.maps.event.addListener(drawingManager, 'polylinecomplete', movePolyLine);
-  
+  */
   //google.maps.event.addListener(map, 'drag', drawPath);
 }
   
