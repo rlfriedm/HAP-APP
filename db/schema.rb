@@ -57,6 +57,7 @@ ActiveRecord::Schema.define(:version => 20141023191954) do
     t.integer  "rating",      :limit => 5
     t.datetime "created_at",               :null => false
     t.datetime "updated_at",               :null => false
+    t.string   "name_order"
   end
 
   create_table "users", :force => true do |t|

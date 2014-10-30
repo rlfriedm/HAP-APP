@@ -9,7 +9,7 @@
 	  Title: <%= review.title %> </br>
 	  Review: <%= review.bodyText %> </br>
 	  Rating: <%= review.rating %> </br>
-	  Date: <%= review.created_at %> </br>
+	  Date: <%= review.created_at.strftime("%B %e, %Y") %> </br>
 	  User: <%= link_to User.find(review.user_id).username, user_path(User.find(review.user_id)) %> </br>
 
 	  <% if review.comments.any? %>
@@ -31,7 +31,7 @@
 	  <% end %>
 	 <% end %>
 	<% end %>
-	
+
 	</br>
 	<%= form_for Comment.new do |f| %>
 		<%= f.label :comment %>
@@ -63,7 +63,7 @@
 <h1>Add a Review</h1>
 <%= form_for Review.new, :html => {:multipart => true}  do |f| %>
 	<%= f.label :title %>
-	<%= f.text_field :title %> 
+	<%= f.text_field :title %>
 	<br/>
 	<%= f.label :review %>
 	<br/>

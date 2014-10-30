@@ -1,21 +1,12 @@
 <h1>Trails</h1>
 
 
-<%= form_tag trails_path, :method => :get do %>
-    <%= hidden_field_tag :direction, params[:direction] %>
-    <%= hidden_field_tag :sort, params[:sort] %>
-  	<p>
-    	<%= text_field_tag :search, params[:search] %>
-    	<%= submit_tag "Search", :name => nil %>
-<% end %>
-
-
 <% if @trails.size == 0 %>
 	<em>No trails were found matching your search</em>
 <% end %>
 
 
-<table class="trail_table">
+<table id="trail_table">
   <tr>
     <th><%= sortable "name", "Name" %></th>
     <th>Description</th>
@@ -24,14 +15,26 @@
   </tr>
   <% for t in @trails %>
   <tr>
-    <td><%=link_to t.name, :action => "trail", :id => t.id%></td>
+    <td><%=link_to t.name, :action => "show", :id => t.id%></td>
     <td><%=t.description%></td>
     <td><%=t.rating%></td>
-    <td><%=t.created_at%></td>
+    <td><%=t.created_at.strftime("%B %e, %Y")%></td>
   </tr>
   <% end %>
 </table>
 
 <%= will_paginate @trails %>
 
-<p><%= link_to "Create Trail", new_trail_path %></p>
+
+<p><%= button_to "Create New Trail", new_trail_path, :class => "btn btn-default", :method => :get %></p>
+
+
+
+
+
+
+
+
+
+
+
