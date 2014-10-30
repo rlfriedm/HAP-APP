@@ -2,16 +2,20 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-img.image-center{
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
-}
-
 div.centered-div{
   margin-right: auto;
   margin-left: auto;
 }
+
+img{
+  vertical-align: top;
+}
+
+span div.panel{
+  display: inline-block;
+}
+
+
 
 /* unvisited link */
 a:link.link-style {

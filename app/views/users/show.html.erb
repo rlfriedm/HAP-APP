@@ -1,20 +1,20 @@
-<div><div class="row">
-  	<div class="col-md-6">
-  		<%= gravatar_for(@user, "image-center") %>
-  	</div>
+<div class="row">
 	<div class="col-md-6">
-		<div class="centered-div">
-			<div class="panel">
-	  		<div class="panel-heading">
-	  			<h3 class="panel-title"><%= @user.username %>'s info</h3>
-	  		</div>
-	  			<div class="list-group">
-	  				<a href="#" class="list-group-item">Email: <%= @user.email %></a>
-	  				<a href="#" class="list-group-item">Username: <%= @user.username %></a>
-	  		</div>
-		</div>
+		<span>
+  			<%= gravatar_for(@user, "img-thumbnail") %>
+
+		<div class="panel">
+	  			<div class="panel-heading">
+	  					<h3 class="panel-title"><%= @user.username %>'s info</h3>
+		  		</div>
+		  		<div class="list-group">
+		  				<a href="#" class="list-group-item">Email: <%= @user.email %></a>
+		  				<a href="#" class="list-group-item">Username: <%= @user.username %></a>
+		  		</div>
+		 </div>
+		</span>
 	</div>
-</div></div>
+</div>
 
 
 <div class="row" id="contributions">
@@ -28,7 +28,7 @@
 	  				<%= link_to review.title, { :controller => "trails", :action => "show", :id => review.trail_id }, { :class => "list-group-item", :id => "list-button" } %>
 	  			<% end %>
 	  		</div>
-	  			<%= link_to "See All", user_path, :class => "btn btn-success btn-block" %>
+	  			<%= link_to "See All", user_path, :class => "btn btn-success btn-block"%>
 	  	</div>
 	  </div>
 	  <div class="col-sm-4">
