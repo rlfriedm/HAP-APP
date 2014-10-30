@@ -101,12 +101,12 @@ function movePolyLine(event) {
     array[array.length] = [pathArray[i].lat(), pathArray[i].lng()];
 
   }
-  alert(array);
+  //alert(array);
   $('#location_startLat').val(start.lat());
   $('#location_startLng').val(start.lng());
   $('#location_endLat').val(end.lat());
   $('#location_endLng').val(end.lng());
-  alert(JSON.stringify(array));
+  //alert(JSON.stringify(array));
   $('#location_path').val(JSON.stringify(array));
   event.setOptions({strokeColor: '#006400'});
 //  event.visible = false;
