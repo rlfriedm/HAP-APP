@@ -33,6 +33,21 @@ function initialize() {
   }
 
   var linepath;
+  var ary;
+  for (var i = 0; i < gon.paths.length; i++) {
+    linepath = [];
+    ary = JSON.parse(gon.paths[i]);
+    
+    for (var j = 0; j < ary.length; j++) {
+      //alert(gon.paths[i][j]);
+      linepath[linepath.length] = new google.maps.LatLng(ary[j][0], ary[j][1]); 
+    }
+    var line = new google.maps.Polyline({
+      path : linepath,
+      map : map,
+      strokeColor : '#006400'
+    });
+  }
 /*
   for (var i = 0; i < gon.paths.length; i++) {
     linepath = [];

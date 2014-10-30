@@ -11,14 +11,14 @@
 <h1>Listing locations</h1>
 
 <table>
+    <col width = "100">
+    <col width = "250">
+    <col width = "250">
   <tr>
     <th>Name</th>
-    <th>Address</th>
-    <th>Latitude</th>
-    <th>Longitude</th>
     <th>Start</th>
     <th>End</th>
-    <th>Path</th>
+    
     <th></th>
     <th></th>
     <th></th>
@@ -27,12 +27,9 @@
 <% @locations.each do |location| %>
   <tr>
     <td><%= location.name %></td>
-    <td><%= location.address %></td>
-    <td><%= location.latitude %></td>
-    <td><%= location.longitude %></td>
     <td>(<%= location.startLat %>, <%= location.startLng %>)</td>
     <td>(<%= location.endLat %>, <%= location.endLng %>)</td>
-    <td><%= location.path %></td>
+    
     <td><%= link_to 'Show', location %></td>
     <td><%= link_to 'Edit', edit_location_path(location) %></td>
     <td><%= link_to 'Destroy', location, method: :delete, data: { confirm: 'Are you sure?' } %></td>

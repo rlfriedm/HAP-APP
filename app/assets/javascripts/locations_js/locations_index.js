@@ -37,7 +37,7 @@ function initialize() {
   for (var i = 0; i < gon.paths.length; i++) {
     linepath = [];
     ary = JSON.parse(gon.paths[i]);
-    alert(ary);
+    
     for (var j = 0; j < ary.length; j++) {
       //alert(gon.paths[i][j]);
       linepath[linepath.length] = new google.maps.LatLng(ary[j][0], ary[j][1]); 
