@@ -10,5 +10,18 @@
  *
  *= require_self
  *= require bootstrap.min
- *= require_tree .
  */
+
+.trails_table th .current {
+  padding-right: 12px;
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+.trails_table th .asc {
+  background-image: url("down-arrow.gif");
+}
+
+.trails_table th .desc {
+  background-image: url("up-arrow.gif");
+}

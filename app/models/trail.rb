@@ -3,21 +3,24 @@ class Trail < ActiveRecord::Base
 	has_many :reviews, :dependent => :destroy
 
 	searchable do
-    	text :name, :boost => 2, :stored => true
-    	text :description, :stored => true
-#    	text :publish_month
+    	string :name
+        text :search_name, :boost => 2
+    	text :description
+        integer :rating
+    	text :publish_month
     	text :reviews do
     		reviews.map(&:bodyText)
     	end
-        string :name
-        integer :rating
     	time :created_at
-#    	string :publish_month
   	end
 
-#	def publish_month
-#    	created_at.strftime("%B %Y")
-#  	end
+	def publish_month
+    	created_at.strftime("%B %Y")
+  	end
+
+    def search_name
+        name.downcase
+    end
 
     def getRating
         newRating = 0
@@ -31,6 +34,6 @@ class Trail < ActiveRecord::Base
         else
             rating = 0
         end
-  end
+    end
 
 end
