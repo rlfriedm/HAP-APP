@@ -18,11 +18,15 @@
         <li><%= link_to "About", static_pages_about_path %></li>
         <li><%= link_to "Contact", static_pages_contact_path %></li>
       </ul>
-      <form class="navbar-form navbar-left" role="search">
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Search">
+      <form class="navbar-form navbar-left" role="search" accept-charset="UTF-8" action="/trails" method="get">
+        <div>
+          <input name="utf8" type="hidden" value="&#x2713;"/>
         </div>
-        <button type="submit" class="btn btn-default">Submit</button>
+        <input id="direction" name="direction" type="hidden" />
+        <input id="sort" name="sort" type="hidden" />
+        <p>
+          <input id="search" name="search" type="text" class="form-control" placeholder="Search" />
+          <button type="submit" class="btn btn-default" value="Search">Submit</button>
       </form>
       <ul class="nav navbar-nav navbar-right">
         <li><%= link_to "Welcome #{current_user.username}!", user_path(current_user)%></li>

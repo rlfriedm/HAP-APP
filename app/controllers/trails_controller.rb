@@ -12,7 +12,7 @@ class TrailsController < ApplicationController
 #      if params[:month].present?
 #        with(:publish_month, params[:month])
 #      end
-      paginate(:per_page => 2, :page => params[:page])
+      paginate(:per_page => 5, :page => params[:page])
     end
     @trails = @search.results
 #    @trails = Trail.order(sort_column + " " + sort_direction).paginate(:per_page => 2, :page => params[:page])
@@ -40,6 +40,6 @@ private
   end
   
   def sort_direction
-    %w[asc desc].include?(params[:direction]) ? params[:direction] : "asc"
+    %w[asc desc].include?(params[:direction]) ? params[:direction] : "desc"
   end
 end

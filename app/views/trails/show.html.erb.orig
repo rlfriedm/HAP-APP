@@ -1,0 +1,107 @@
+<<<<<<< Updated upstream
+<center><h1><%=@trail.name %> </h1></center>
+<center><h1> Rating: <%=@trail.rating = @trail.getRating %></h1></center>
+</br>
+=======
+<h1><%=@trail.name %> </h1>
+<h2> Rating: <%=@trail.rating = @trail.getRating %></h2>
+<h2> Description: </h2>
+<p><%= @trail.description %></p>
+
+
+>>>>>>> Stashed changes
+<h2> Reviews: </h2>
+<% if @trail.reviews.any? %>
+  <% @trail.reviews.each do |review| %>
+    <div class="fluid-container">
+    <p>
+	  <center><h2>Title: <%= review.title %></h2></center> </br>
+	  Review: <%= review.bodyText %> </br>
+	  Rating: <%= review.rating %> </br>
+	  Date: <%= review.created_at.strftime("%B %e, %Y") %> </br>
+	  User: <%= link_to User.find(review.user_id).username, user_path(User.find(review.user_id)) %> </br>
+
+	  <% if review.comments.any? %>
+	  	<h3> Comments: </h3> 
+	 	<% review.comments.each do |comment| %>
+	 		</br>
+	 		<div class="fluid-container" style="border:4px solid #428bca">
+
+	 		<%= comment.text %> </br>
+	 		User: <%= link_to User.find(comment.user_id).username, user_path(User.find(comment.user_id)) %> </br>
+	 		Date: <%= comment.created_at.strftime("%B %e, %Y") %>
+	 		</br>
+	 		</div>
+
+	 	<% end %>
+	 <% end %>
+
+	  <% if review.photos.any? %>
+  	  <% review.photos.each do |photo| %>
+	  <% unless photo.image_file_name.nil? %>
+	   <%= image_tag photo.image.url(:small), class: "img-square"%>
+	    	<%= link_to image_tag(photo.image, :size=> "64x64"), photo.image(:original), :popup=>['original_image', 'height=700', 'width=900'] %>
+	  <% end %>
+	 <% end %>
+	<% end %>
+
+	</br>
+	<%= form_for Comment.new do |f| %>
+		<%= f.label :Leave_a_comment %>
+		<br/>
+<<<<<<< Updated upstream
+		<%= f.text_area :text, class: "form-control" %>
+=======
+		<%= f.text_area :text, :rows => 3 %>
+>>>>>>> Stashed changes
+		<br/>
+
+		<%= f.hidden_field :review_id, :value => review.id %>
+		<%= f.hidden_field :user_id, :value => current_user.id %>
+		<%= f.submit class: "btn btn-success"%>
+	<% end %>
+
+
+
+    </p>
+
+	<p>
+     <%= button_to "Delete Review", { :controller => "reviews", :action => "deleteReview", :trail_id => @trail.id, :review_id => review.id}, class: "btn btn-danger" %>
+     </p>
+	</div>
+
+  <% end %>
+<% end %>
+
+<br/>
+<br/>
+
+<div class="fluid-container" style="border:4px solid grey">
+<center><h1>Add a Review</h1></center>
+<%= form_for Review.new, :html => {:multipart => true}  do |f| %>
+	<%= f.label :title %>
+<<<<<<< HEAD
+	<%= f.text_field :title %>
+=======
+	<%= f.text_field :title, class: "form-control" %> 
+>>>>>>> 3c0eb49109cf563f85b4b40f4efdf893f18a6491
+	<br/>
+	<%= f.label :review %>
+	<br/>
+	<%= f.text_area :bodyText, class: "form-control" %>
+	<br/>
+	<%= f.label :rating %>
+	<%= f.select :rating, [[1, 1],[2, 2],[3, 3] , [4, 4], [5, 5]], class: "form-control" %>
+
+	<br/>
+
+	<%= f.hidden_field :trail_id, :value => @trail.id %>
+	<%= f.hidden_field :user_id, :value => current_user.id %>
+
+
+	<%= f.label :photos %>
+	<%= f.file_field :photos, multiple: true %>
+	</br>
+	<%= f.submit class: "btn btn-success" %>
+<% end %>
+</div>

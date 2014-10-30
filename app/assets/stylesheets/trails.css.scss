@@ -3,10 +3,23 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 div.fluid-container {
-   border: 2px solid green;
+   border: 4px;
+   border-color: #5cb85c;
+   border-style: solid;
    padding: 7px;
    padding-bottom: 12px;
    margin-bottom:20px;
 
 }
 
+
+table {
+    width: 100%;
+}
+th {
+    height: 30px;
+    color: black;
+}
+td {
+	height: 25px;
+}
