@@ -4,6 +4,7 @@ class User < ActiveRecord::Base
 
   has_many :reviews
   has_many :comments
+  has_many :trails
   email_regex = /.+@hamilton.edu/i
   validates :username, 	:presence => true,
   						:length => {:maximum => 15}, 
