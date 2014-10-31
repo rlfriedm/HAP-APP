@@ -10,5 +10,7 @@
 			<td><%= f.text_area :description, :rows => 7 %></td>
 		</tr>
 	</table>
+    <%= f.hidden_field :user_id, :value => current_user.id %>
+
 	<%= f.submit :class => "btn btn-default" %>
 <% end %>
