@@ -1,13 +1,24 @@
 <div class="row">
-  	<div class="col-md-2"><%= gravatar_for(@user) %></div>
-</div>
-  	
-<div class="row">
-	<div class="col-md-3">Email: <%= @user.email %></div>
+	<div class="col-md-6">
+		<span>
+  			<%= gravatar_for(@user, "img-thumbnail") %>
+
+		<div class="panel">
+	  			<div class="panel-heading">
+	  					<h3 class="panel-title"><%= @user.username %>'s info</h3>
+		  		</div>
+		  		<div class="list-group">
+		  			<div class="list-group-item">Email: <%= @user.email %></div>
+		  			<div class="list-group-item">Username: <%= @user.username %></div>
+		  		</div>
+		 </div>
+		</span>
+	</div>
 </div>
 
 <div class="row">
-  	<div class="col-md-3">Username: <%= @user.username %></div>
+   <div class="col-md-12">
+	<h3 style="text-align:center;"><%=@user.username%>'s Contributions</h3>
 </div>
 
 
@@ -15,11 +26,24 @@
 	  <div class="col-sm-4">
 	  	<div class="panel">
 	  		<div class="panel-heading">
-	  			<h3 class="panel-title"><%= @user.username %>'s reviews</h3>
+	  			<h3 class="panel-title">Reviews</h3>
 	  		</div>
 	  			<div class="list-group">
 	  			<% for review in @user.reviews %>
 	  				<%= link_to review.title, { :controller => "trails", :action => "show", :id => review.trail_id }, { :class => "list-group-item", :id => "list-button" } %>
+	  			<% end %>
+	  		</div>
+	  			<%= link_to "See All", user_path, :class => "btn btn-success btn-block"%>
+	  	</div>
+	  </div>
+	  <div class="col-sm-4">
+	  	<div class="panel">
+	  		<div class="panel-heading">
+	  			<h3 class="panel-title">Comments</h3>
+	  		</div>
+	  			<div class="list-group">
+	  			<% for comment in @user.comments %>
+	  				<%= link_to Trail.find(Review.find(comment.review_id).trail_id).name, { :controller => "trails", :action => "show", :id => Review.find(comment.review_id).trail_id }, { :class => "list-group-item", :id => "list-button" } %>
 	  			<% end %>
 	  		</div>
 	  			<%= link_to "See All", user_path, :class => "btn btn-success btn-block" %>

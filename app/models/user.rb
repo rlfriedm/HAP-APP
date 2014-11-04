@@ -3,6 +3,8 @@ class User < ActiveRecord::Base
   attr_accessible :email, :username, :password, :password_confirmation
 
   has_many :reviews
+  has_many :comments
+  has_many :trails
   email_regex = /.+@hamilton.edu/i
   validates :username, 	:presence => true,
   						:length => {:maximum => 15}, 
