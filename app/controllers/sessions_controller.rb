@@ -9,7 +9,7 @@ class SessionsController < ApplicationController
   	user = User.authenticate(params[:session][:email], 
   							params[:session][:password])
   	if user.nil?
-  		flash.now[:notice] = "Invalid email/password"
+  		flash.now[:error] = "Invalid email/password"
   		render 'new'
   	else
   		sign_in(user)
