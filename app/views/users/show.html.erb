@@ -23,10 +23,25 @@
 
 
 <div class="row" id="contributions">
+
+	<div class="col-sm-4">
+	  	<div class="panel">
+	  		<div class="panel-heading">
+	  			<h3 class="panel-title">Trails Created</h3>
+	  		</div>
+	  			<div class="list-group">
+	  			<% for t in @user.trails %>
+	  				<%= link_to t.name, { :controller => "trails", :action => "show", :id => t.id }, { :class => "list-group-item", :id => "list-button" } %>
+	  			<% end %>
+	  		</div>
+	  			<%= link_to "See All", user_path, :class => "btn btn-success btn-block"%>
+	  	</div>
+	  </div>
+
 	  <div class="col-sm-4">
 	  	<div class="panel">
 	  		<div class="panel-heading">
-	  			<h3 class="panel-title">Reviews</h3>
+	  			<h3 class="panel-title">Reviews Created</h3>
 	  		</div>
 	  			<div class="list-group">
 	  			<% for review in @user.reviews %>
@@ -36,19 +51,23 @@
 	  			<%= link_to "See All", user_path, :class => "btn btn-success btn-block"%>
 	  	</div>
 	  </div>
+
 	  <div class="col-sm-4">
 	  	<div class="panel">
 	  		<div class="panel-heading">
-	  			<h3 class="panel-title">Comments</h3>
+	  			<h3 class="panel-title">Other Reviews Commented On</h3>
 	  		</div>
 	  			<div class="list-group">
 	  			<% for comment in @user.comments %>
-	  				<%= link_to Trail.find(Review.find(comment.review_id).trail_id).name, { :controller => "trails", :action => "show", :id => Review.find(comment.review_id).trail_id }, { :class => "list-group-item", :id => "list-button" } %>
+		  				<% if current_user != User.find(Review.find(comment.review_id).user_id)%>
+		  				<%= link_to Trail.find(Review.find(comment.review_id).trail_id).name, { :controller => "trails", :action => "show", :id => Review.find(comment.review_id).trail_id }, { :class => "list-group-item", :id => "list-button" } %>
+	  				<% end %>
 	  			<% end %>
 	  		</div>
 	  			<%= link_to "See All", user_path, :class => "btn btn-success btn-block" %>
 	  	</div>
 	  </div>
+
 </div>
 <script src="/assets/javascripts/users.js"/>
 

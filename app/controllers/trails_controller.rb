@@ -15,11 +15,6 @@ class TrailsController < ApplicationController
       paginate(:per_page => 5, :page => params[:page])
     end
     @trails = @search.results
-#    @trails = Trail.order(sort_column + " " + sort_direction).paginate(:per_page => 2, :page => params[:page])
-
-#    @trails = @search.results.order_by(sort_column + " " + sort_direction).paginate(:per_page => 2, :page => params[:page])
-
-#    @trails = @temp.order(sort_column + " " + sort_direction).paginate(:per_page => 2, :page => params[:page])
 
   end
 

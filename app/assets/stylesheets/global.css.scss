@@ -7,8 +7,38 @@ div.centered-div{
   margin-left: auto;
 }
 
-img{
-  vertical-align: top;
+div.image-fill{
+  margin-right: 0;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+  border-color: black;
+  border-width: thick;
+  background-color: white;
+}
+
+.container-fluid {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: white;
+  border-radius: 0;
+  border-width: 50px;
+}
+
+.navbar {
+position: relative;
+min-height: 50px;
+margin-bottom: 20px;
+border: 2px solid;
+border-top:0px;
+border-radius:0;
+border-color: black;
+}
+
+.well{
+  margin-top:0px;
 }
 
 span div.panel{
