@@ -21,6 +21,7 @@ class ReviewsController < ApplicationController
 
 	end
 
+
 	def deleteReview
   		reviews = Trail.find(params[:trail_id]).reviews
   		review = reviews.find(params[:review_id])

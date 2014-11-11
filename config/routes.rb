@@ -25,6 +25,7 @@ HAPApp::Application.routes.draw do
   resources :users 
   resources :reviews
   resources :comments
+  resources :edits
   resources :trails do
     resources :reviews
   end
