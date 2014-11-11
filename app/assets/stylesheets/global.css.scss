@@ -7,6 +7,21 @@ div.centered-div{
   margin-left: auto;
 }
 
+.img-thumbnail{
+vertical-align: top;
+}
+
+.welcome-img{
+  margin-bottom: 20px;
+}
+
+.container-fluid {
+  
+  background-color: white;
+
+}
+
+/*
 div.image-fill{
   margin-right: 0;
 }
@@ -27,6 +42,7 @@ div.image-fill{
   border-width: 50px;
 }
 
+
 .navbar {
 position: relative;
 min-height: 50px;
@@ -40,12 +56,10 @@ border-color: black;
 .well{
   margin-top:0px;
 }
-
+*/
 span div.panel{
   display: inline-block;
 }
-
-
 
 /* unvisited link */
 a:link.link-style {
