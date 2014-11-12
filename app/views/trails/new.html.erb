@@ -1,16 +1,12 @@
 <h1>Add a Trail</h1>
 <%= form_for Trail.new do |f| %>
-	<table class="new_table">
-		<tr>
-			<th>Name</th>
-			<td><%= f.text_field :name %></td>
-		</tr>
-		<tr>
-			<th>Description</th>
-			<td><%= f.text_area :description, :rows => 7 %></td>
-		</tr>
-	</table>
+	<%= f.label :name %>
+	<%= f.text_field :name, class: "form-control" %> 
+	<br/>
+	<%= f.label :description %>
+	<br/>
+	<%= f.text_area :description, class: "form-control", :rows => "7" %>
+	<br/>
     <%= f.hidden_field :user_id, :value => current_user.id %>
-
 	<%= f.submit :class => "btn btn-default" %>
 <% end %>
