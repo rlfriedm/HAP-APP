@@ -5,6 +5,7 @@ class Location < ActiveRecord::Base
   after_validation :geocode 
   serialize :path, JSON
   before_save :setPath
+  belongs_to :trail
 
 
   def setPath

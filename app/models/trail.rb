@@ -2,6 +2,8 @@ class Trail < ActiveRecord::Base
 	attr_accessible :description, :name, :rating, :created_at, :user_id
 	has_many :reviews, :dependent => :destroy
     belongs_to :user
+    has_one :location, autosave: true
+    accepts_nested_attributes_for :location
 
 	searchable do
     	string :name

@@ -19,13 +19,25 @@ class TrailsController < ApplicationController
   end
 
   def create
-  	Trail.create params[:trail]
+    puts params[:trail][:location_attributes]
+    @name = params[:trail][:location_attributes]
+  	@trail = Trail.create params[:trail].except!(:location_attributes)
+    puts "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+    
+    if @trail.save
+      @trail.build_location
+    end
+    @trail.location = Location.new(@name)
+
 	  redirect_to action: 'index'
   end
 
   def show
     id = params[:id]
     @trail = Trail.find(id)
+
+    @location = Location.find_by_trail_id(id)
+    gon.path = @location.path
   end
 
 private
