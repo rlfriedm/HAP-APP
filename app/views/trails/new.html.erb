@@ -20,10 +20,7 @@
     <%= f.hidden_field :user_id, :value => current_user.id %>
 
 	<%= f.fields_for :location, Location.new do |l| %>
-		<div class="field">
-	    <%= l.label :name %><br />
-	    <%= l.text_field :name %>
-	  	</div>
+
 	  	<div class="field">
 	    <%= l.hidden_field :startLat %>
 	  	</div>

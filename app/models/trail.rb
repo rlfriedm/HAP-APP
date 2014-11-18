@@ -35,7 +35,7 @@ class Trail < ActiveRecord::Base
         if numReviews > 0
             rating = ((newRating / numReviews) * 2).round / 2.0
         else
-            rating = 0
+            rating = "N/A"
         end
     end
 
