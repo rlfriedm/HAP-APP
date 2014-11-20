@@ -45,14 +45,14 @@
 	  		</div>
 	  			<div class="list-group">
 	  			<% for review in @user.reviews %>
-	  				<%= link_to review.title, { :controller => "trails", :action => "show", :id => review.trail_id }, { :class => "list-group-item", :id => "list-button" } %>
+	  				<%= link_to review.title, root_path, :id => 'userReviews', :class => "list-group-item"%>
 	  			<% end %>
 	  		</div>
 	  			<%= link_to "See All", user_path, :class => "btn btn-success btn-block"%>
 	  	</div>
 	  </div>
 
-	  <div class="col-sm-4">
+	  <div id="reviewComments" class="col-sm-4">
 	  	<div class="panel">
 	  		<div class="panel-heading">
 	  			<h3 class="panel-title">Other Reviews Commented On</h3>

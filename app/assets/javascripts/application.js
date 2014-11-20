@@ -15,3 +15,13 @@
 //= require underscore
 //= require_directory .
 //= require bootstrap.min
+
+
+
+$(document).ready(function(){
+  $("#userReviews").click(function(){
+  	$(this).toggleClass("active"); 	
+    $("#reviewComments").slideToggle();
+    	event.preventDefault();
+  });
+});
