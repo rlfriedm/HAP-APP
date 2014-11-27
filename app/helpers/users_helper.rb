@@ -4,4 +4,15 @@ module UsersHelper
 												:class => gClass,
 												:gravatar => options)
 	end
+
+	def getRevComments(user, revId)
+		comments = user.comments
+		result=[]
+		for comment in comments 
+			if (comment.review_id == revId)
+				result.append(comment)
+			end	
+		end
+		return result
+	end
 end

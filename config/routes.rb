@@ -5,6 +5,7 @@ HAPApp::Application.routes.draw do
   get "static_pages/about"
   get "static_pages/contact"
   get "users/deleteuser"
+  get "users/shower"
   post "users/deleteuser"
 
   get "trails/index"

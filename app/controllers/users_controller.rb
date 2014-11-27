@@ -8,6 +8,10 @@ class UsersController < ApplicationController
   def show
    @user = User.find(params[:id])
   end
+  def shower
+    @user = User.find(params[:id])
+    @revId =  User.find(params[:revId])
+  end
   def new
     @user = User.new
   end
