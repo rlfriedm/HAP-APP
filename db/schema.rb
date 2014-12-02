@@ -12,7 +12,7 @@
 # It's strongly recommended to check this file into your version control system.
 
 
-ActiveRecord::Schema.define(:version => 20141111041759) do
+ActiveRecord::Schema.define(:version => 20141117174509) do
 
   create_table "comments", :force => true do |t|
     t.text     "text"
@@ -43,6 +43,7 @@ ActiveRecord::Schema.define(:version => 20141111041759) do
     t.float    "endLat"
     t.float    "endLng"
     t.text     "path"
+    t.integer  "trail_id"
   end
 
   create_table "photos", :force => true do |t|

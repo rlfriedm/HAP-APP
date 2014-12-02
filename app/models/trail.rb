@@ -2,6 +2,8 @@ class Trail < ActiveRecord::Base
 	attr_accessible :description, :name, :rating, :created_at, :user_id
 	has_many :reviews, :dependent => :destroy
     belongs_to :user
+    has_one :location, autosave: true
+    accepts_nested_attributes_for :location
 
 	searchable do
     	string :name
@@ -33,7 +35,7 @@ class Trail < ActiveRecord::Base
         if numReviews > 0
             rating = ((newRating / numReviews) * 2).round / 2.0
         else
-            rating = 0
+            rating = "N/A"
         end
     end
 

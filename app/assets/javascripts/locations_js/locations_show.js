@@ -11,7 +11,7 @@
 
 var map;
 var polyLine;
-
+var line;
 function initialize() {
   var mapOptions = {
     zoom: 9,
@@ -20,45 +20,30 @@ function initialize() {
     mapTypeId: google.maps.MapTypeId.TERRAIN
   };
 
-  map = new google.maps.Map(document.getElementById('newmap'), mapOptions);
+  map = new google.maps.Map(document.getElementById('showmap'), mapOptions);
   
   //alert(gon.latLngs);
-  /*
-  for (obj in gon.latLngs) {
-  	//alert(gon.latLngs[obj]);
-  	var marker = new google.maps.Marker({
-  		position : new google.maps.LatLng(gon.latLngs[obj][0], gon.latLngs[obj][1]),
-  		map : map,
-  		draggable : true
-  	});
-  }
-
-  var linepath;
-  var ary;
-  for (var i = 0; i < gon.paths.length; i++) {
-    linepath = [];
-    ary = JSON.parse(gon.paths[i]);
-    
-    for (var j = 0; j < ary.length; j++) {
-      //alert(gon.paths[i][j]);
-      linepath[linepath.length] = new google.maps.LatLng(ary[j][0], ary[j][1]); 
-    }
-    var line = new google.maps.Polyline({
-      path : linepath,
-      map : map,
-      strokeColor : '#006400'
-    });
-  }
   
-*/
+
+  var linepath = [];
+  var ary = JSON.parse(gon.path);
+  //alert(ary);
+  for (var j = 0; j < ary.length; j++) {
+      //alert(gon.paths[i][j]);
+    linepath[linepath.length] = new google.maps.LatLng(ary[j][0], ary[j][1]); 
+  }
+  line = new google.maps.Polyline({
+    path : linepath,
+    map : map,
+    strokeColor : '#006400',
+    editable : false
+  });
+  /*
   var drawingManager = new google.maps.drawing.DrawingManager({
-    drawingMode: google.maps.drawing.OverlayType.POLYLINE,
     drawingControl: true,
     drawingControlOptions: {
         position: google.maps.ControlPosition.TOP_CENTER,
         drawingModes: [
-          //google.maps.drawing.OverlayType.MARKER,
-          google.maps.drawing.OverlayType.POLYLINE
         ]
     },
     polylineOptions: { geodesic: true,
@@ -67,17 +52,24 @@ function initialize() {
   
 
   drawingManager.setMap(map);
-  
-  google.maps.event.addListener(drawingManager, 'polylinecomplete', movePolyLine);
+
+  google.maps.event.addListener(line.getPath(), 'set_at', movePolyLine); //function() //{
+  google.maps.event.addListener(line.getPath(), 'insert_at', movePolyLine); //function() //{ 
+//    google.maps.event.addListener(line.getPath(), 'set_at', movePolyLine);
+  //  google.maps.event.addListener(line.getPath(), 'insert_at', movePolyLine);
+  //});
   
   //google.maps.event.addListener(map, 'drag', drawPath);
+  */
 }
   
 
 function movePolyLine(event) {
   //var line = event;
   //alert("click to continue!");
-  var pathArray = event.getPath().getArray();
+  //alert(event);
+  //alert(line.getPath().getArray());
+  var pathArray = line.getPath().getArray();
   var start = pathArray[0];
   var end = pathArray[pathArray.length-1];
 
@@ -87,13 +79,14 @@ function movePolyLine(event) {
 
   }
   //alert(array);
-  $('#trail_location_attributes_startLat').val(start.lat());
-  $('#trail_location_attributes_startLng').val(start.lng());
-  $('#trail_location_attributes_endLat').val(end.lat());
-  $('#trail_location_attributes_endLng').val(end.lng());
+  
+  $('#trail_location_startLat').val(start.lat());
+  $('#trail_location_startLng').val(start.lng());
+  $('#trail_location_endLat').val(end.lat());
+  $('#trail_location_endLng').val(end.lng());
   //alert(JSON.stringify(array));
-  $('#trail_location_attributes_path').val(JSON.stringify(array));
-  event.setOptions({strokeColor: '#006400'});
+  $('#trail_location_path').val(JSON.stringify(array));
+  
 //  event.visible = false;
   //strokeColor: '#0000FF');
 }
