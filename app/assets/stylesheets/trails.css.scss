@@ -27,6 +27,10 @@ div.fluid-container {
 }
 
 
+.trails_table tr:nth-child(even) {background: #CCC}
+.trails_table tr:nth-child(odd) {background: #FFF}
+
+
 table {
     width: 100%;
 }

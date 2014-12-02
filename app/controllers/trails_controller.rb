@@ -4,17 +4,18 @@ class TrailsController < ApplicationController
 
   def index
 
-    @search = Trail.search do
-      fulltext params[:search]
-      order_by(sort_column, sort_direction)
-#      with(:created_at).less_than(Time.zone.now)
-#      facet(:publish_month)
-#      if params[:month].present?
-#        with(:publish_month, params[:month])
-#      end
-      paginate(:per_page => 5, :page => params[:page])
-    end
-    @trails = @search.results
+#    @search = Trail.search do
+#      fulltext params[:search]
+#      order_by(sort_column, sort_direction)
+##      with(:created_at).less_than(Time.zone.now)
+##      facet(:publish_month)
+##      if params[:month].present?
+##        with(:publish_month, params[:month])
+##      end
+#      paginate(:per_page => 10, :page => params[:page])
+#    end
+#    @trails = @search.results
+    @trails = Trail.all
 
   end
 
