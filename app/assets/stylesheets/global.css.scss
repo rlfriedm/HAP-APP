@@ -73,10 +73,15 @@ body {
 
 .well {
   background-color: white;
+  border-color:rgba(69, 69, 69, 0.26);
 }
 
 .panel-heading{
-  background-color: #e7e7e7;
+  background-color: rgba(69, 69, 69, 0.26);
+}
+
+.navbar{
+border-color: rgba(69, 69, 69, 0.26);
 }
 
 .well h2{
