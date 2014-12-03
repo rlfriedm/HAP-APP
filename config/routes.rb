@@ -2,6 +2,7 @@ HAPApp::Application.routes.draw do
   
   get "maps/index"
   get "sessions/new"
+  get "static_pages/home"
   get "static_pages/about"
   get "static_pages/contact"
   get "users/deleteuser"
