@@ -11,6 +11,7 @@
 
 var map;
 var polyLine;
+var currentWindow;
 
 function initialize() {
   var mapOptions = {
@@ -23,14 +24,15 @@ function initialize() {
   map = new google.maps.Map(document.getElementById('indexmap'), mapOptions);
   
   //alert(gon.latLngs);
-  for (obj in gon.latLngs) {
+  /*for (obj in gon.latLngs) {
   	//alert(gon.latLngs[obj]);
   	var marker = new google.maps.Marker({
   		position : new google.maps.LatLng(gon.latLngs[obj][0], gon.latLngs[obj][1]),
   		map : map,
   		draggable : true
   	});
-  }
+  }*/
+  currentWindow = null;
 
   var linepath;
   var ary;
@@ -42,13 +44,64 @@ function initialize() {
       //alert(gon.paths[i][j]);
       linepath[linepath.length] = new google.maps.LatLng(ary[j][0], ary[j][1]); 
     }
+
     var line = new google.maps.Polyline({
       path : linepath,
       map : map,
-      strokeColor : '#006400'
+      strokeColor : '#006400',
+      strokeWeight : 3
     });
+
+    //alert(gon.infos[i]["trail_id"]);
+
+    var name = gon.infos[i]["name"],
+    rating = (gon.infos[i]["rating"] === null ? "N/A" : gon.infos[i]["rating"].toString()),
+    description = gon.infos[i]["description"],
+    trail_id = gon.infos[i]["trail_id"].toString();
+
+
+    var contentString = '<div id="content">' +
+      '<h1 id="trailName"><a href="/trails/' + trail_id + '">' + name + '</a></h1>' +
+      '<h2 id="trailRating">Rating: ' + rating + '</h2>' +
+      '<div id="trailDescription">' +
+      '<p>' + description + '</p>' +
+      '<a href="/trails/' + trail_id + '">Go to trail page</a>' +
+      '</div>' + 
+      '</div>';
+
+    var infowindow = new google.maps.InfoWindow({
+      position : linepath[0],
+      content : contentString
+    });
+
+    addListeners(line, infowindow);
+    
   }
   
+
+  function addListeners(line, infowindow) {
+
+    google.maps.event.addListener(line, 'mouseover', function() {
+      //infowindow.open(map);
+      line.setOptions({strokeWeight: 5});
+    });
+
+    google.maps.event.addListener(line, 'mouseout', function() {
+      //infowindow.close();
+      line.setOptions({strokeWeight: 3});
+    });
+
+    google.maps.event.addListener(line, 'click', function() {
+      if (currentWindow !== null) currentWindow.close();
+
+      infowindow.open(map);
+      currentWindow = infowindow;
+    });
+
+    google.maps.event.addListener(infowindow, 'closeclick', function() {
+      currentWindow = null;
+    });
+  }
   //alert(path);
 
   
