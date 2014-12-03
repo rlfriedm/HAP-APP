@@ -13,6 +13,6 @@ module UsersHelper
 				result.append(comment)
 			end	
 		end
-		return result
+		return comments #fix!
 	end
 end

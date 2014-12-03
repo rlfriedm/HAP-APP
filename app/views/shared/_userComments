@@ -5,7 +5,7 @@
 	  		</div>
 	  			<div class="list-group">
 	  			<% for comment in getRevComments(@user, @revId)%>
-		  				<% if current_user == User.find(Review.find(comment.review_id).user_id)%>
+		  			<% if @user == User.find(Review.find(comment.review_id).user_id)%>
 		  				<%= link_to comment.text[0..10] + "...", root_path, { :class => "list-group-item", :id => "list-button" } %>
 	  				<% end %>
 	  			<% end %>
