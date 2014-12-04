@@ -71,7 +71,8 @@ function initialize() {
 
     var infowindow = new google.maps.InfoWindow({
       position : linepath[0],
-      content : contentString
+      content : contentString,
+      maxWidth : 200
     });
 
     addListeners(line, infowindow);
