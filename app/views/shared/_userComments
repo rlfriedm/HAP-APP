@@ -5,12 +5,12 @@
 	  		</div>
 	  			<div class="list-group">
 	  			<% for comment in getRevComments(@user, @revId)%>
-		  			<% if @user == User.find(Review.find(comment.review_id).user_id)%>
-		  				<%= link_to comment.text[0..10] + "...", root_path, { :class => "list-group-item", :id => "list-button" } %>
-	  				<% end %>
+		  			
+		  			<%= link_to comment[0..5] + "...", root_path, { :class => "list-group-item", :id => "list-button" } %>
+	  				
 	  			<% end %>
 	  		</div>
-	  			<%= link_to "See More", root_path, :class => "btn btn-success btn-block" %>
+	  			<%= link_to "See Trail", {:controller => "trails", :action => "show", :id => getTrail(@revId).id}, :class => "btn btn-success btn-block" %>
 	  		</div>
 	 	</div>	
 </div>

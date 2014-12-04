@@ -7,12 +7,43 @@ module UsersHelper
 
 	def getRevComments(user, revId)
 		comments = user.comments
-		result=[]
+		result = Array.new
 		for comment in comments 
-			if (comment.review_id == revId)
-				result.append(comment)
+			if (comment.review_id == revId.to_i)
+				result.push(comment.text)
 			end	
 		end
-		return comments #fix!
+		return result #fix!
 	end
+
+	def getRevCommentsB(user, revId)
+		comments = user.comments
+		result = Array.new
+		for comment in comments 
+			if (comment.review_id == revId.to_i)
+				result.push(comment)
+			end	
+		end
+		return result #fix!
+	end
+
+	def getTrail(revId)
+		rev = Review.find(revId)
+		trail = Trail.find(rev.trail_id)
+		return trail
+	end
+
+	def contributedReviews(user)
+		reviews = user.reviews
+		allRevs = reviews.all
+		for rev in allRevs
+			for comment in getRevCommentsB(user, rev.id)
+				if comment.user_id == user.id	
+					reviews.push(rev)
+					break
+				end	
+			end
+		end
+		return reviews
+	end	
 end

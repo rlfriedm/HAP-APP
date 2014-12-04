@@ -34,22 +34,21 @@
 	  				<%= link_to t.name, { :controller => "trails", :action => "show", :id => t.id }, { :class => "list-group-item", :id => "list-button" } %>
 	  			<% end %>
 	  		</div>
-	  			<%= link_to "See All", user_path, :class => "btn btn-success btn-block"%>
+	  			<%= link_to "See All", {:controller => "trails", :action => "index"}, :class => "btn btn-success btn-block"%>
 	  	</div>
 	  </div>
 
 	  <div class="col-sm-4" id="review_block">
 	  	<div class="panel">
 	  		<div class="panel-heading">
-	  			<h3 class="panel-title">Reviews Created</h3>
+	  			<h3 class="panel-title">Reviews Contributed to</h3>
 	  		</div>
 	  			<div class="list-group">
-	  			<% for review in @user.reviews %>
+	  			<% for review in contributedReviews(@user) %>
 	  				<%= link_to review.title,{:controller => "users", :action => "shower", :id => @user.id, :revId => review.id}, 
 	  				{:class => "list-group-item", remote:true}%>
 	  			<% end %>
 	  		</div>
-	  			<%= link_to "See All", user_path, :class => "btn btn-success btn-block"%>
 	  	</div>
 	  </div>
 

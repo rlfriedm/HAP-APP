@@ -10,7 +10,7 @@ class UsersController < ApplicationController
   end
   def shower
     @user = User.find(params[:id])
-    @revId =  Review.find(params[:revId])
+    @revId = params[:revId]
   end
   def new
     @user = User.new
