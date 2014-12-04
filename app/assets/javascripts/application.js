@@ -11,9 +11,12 @@
 // GO AFTER THE REQUIRES BELOW.
 //
 //= require jquery
+//= require fancybox
 //= require jquery_ujs
 //= require underscore
 //= require_directory .
 //= require bootstrap.min
-
+$(document).ready(function() {
+  $("a.fancybox").fancybox();
+});
 
