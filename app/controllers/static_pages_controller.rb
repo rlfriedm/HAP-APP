@@ -18,7 +18,7 @@ class StaticPagesController < ApplicationController
 
       @info.push({:name => trail.name, 
                   :description => trail.description, 
-                  :rating => trail.rating,
+                  :rating => trail.getRating,
                   :trail_id => trail.id})
 
       @loc = Location.find_by_trail_id(trail.id)
