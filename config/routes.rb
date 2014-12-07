@@ -1,5 +1,7 @@
 HAPApp::Application.routes.draw do
   
+  get "password_resets/new"
+
   get "maps/index"
   get "sessions/new"
   get "static_pages/home"
@@ -7,6 +9,8 @@ HAPApp::Application.routes.draw do
   get "static_pages/contact"
   get "users/deleteuser"
   get "users/shower"
+  get  "static_pages/forgot"
+  post "static_pages/forgotten_password_confirmation"
   post "users/deleteuser"
 
   get "trails/index"
