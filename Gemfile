@@ -5,7 +5,8 @@ gem 'rails', '3.2.19'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3'
+gem 'pg'
+gem 'rails_12factor', group: :production
 
 gem 'will_paginate', '~> 3.0.4'
 
@@ -27,6 +28,10 @@ end
 
 gem 'jquery-rails'
 
+#group :development, :test do
+#	gem 'sqlite3'
+#end
+
 group :test, :development do
   	gem 'turn'
   	gem 'rspec-rails', '2.4.1'
@@ -38,6 +43,7 @@ end
 gem 'gon'
 gem 'geocoder'
 gem 'gmaps4rails'
+
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
