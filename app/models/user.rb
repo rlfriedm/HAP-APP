@@ -22,6 +22,7 @@ class User < ActiveRecord::Base
                        :length => {:maximum => 50}, 
                        :length => {:minimum => 5}
 
+
   before_save :encrypt_password
 
   def User.authenticate(email, submitted_password)

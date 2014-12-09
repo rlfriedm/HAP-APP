@@ -1,4 +1,20 @@
 class StaticPagesController < ApplicationController
+  def forgotten_password_confirmation
+    email = params[:static_page][:email]
+
+    @user = User.find_by_email(email)
+    if @user
+      UserMailer.forgot_password(@user).deliver
+    else
+      flash.now[:error] = "The email address \"" + email + "\"" + " does not appear to ne assosciated with an account"
+      render :action => "forgot"
+    end
+
+  end
+
+  def forgot
+  end
+
   def login
   end
 

@@ -1,0 +1,14 @@
+<h2>Please enter your email to get a reminder about your password:</h2><br>
+<%= form_for(:static_page, :url => {:controller => "static_pages", :action => "forgotten_password_confirmation"}) do |f| %>
+		<%= f.label :email%>
+		<%= f.text_field :email, :class => "form-control" %><br>
+		
+		<%= f.submit "Send Email", :class => "btn btn-success" %>
+		<div class-"row">
+		<div class-"col-md-3">
+			<p class="form-control-static">
+				Remember your password? Return and <%= link_to "sign in.", new_session_path, :class => "link-style"%>
+			</p>
+		</div>
+		</div>
+<% end %>

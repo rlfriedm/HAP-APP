@@ -10,5 +10,6 @@
 		<%= f.password_field :password, :class => "form-control" %><br>
 		<%= f.submit "Sign in", :class => "btn btn-success" %>
 		<p class="form-control-static">New user? Please <%= link_to 'signup!', new_user_path, :class => "link-style"%></p>
+		<p class="form-control-static">Forgot your password? <%= link_to 'get a reminder!', {:controller => "static_pages", :action => "forgot"}, :class => "link-style"%></p>
 	<% end %>  
 </body>
