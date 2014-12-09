@@ -6,4 +6,13 @@ class Review < ActiveRecord::Base
   has_many :comments, :dependent => :destroy
   has_many :edits, :dependent => :destroy
   accepts_nested_attributes_for :photos
+
+  validates :bodyText, 	:presence => true,
+  						:length => {:maximum => 1000}, 
+  						:length => {:minimum => 50}
+  					
+  validates :title, :presence => true,
+  					:length => {:maximum => 50}
+
+ 
 end

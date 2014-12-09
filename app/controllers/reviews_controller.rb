@@ -11,13 +11,20 @@ class ReviewsController < ApplicationController
 
 		photos = params[:review][:photos]
 
+		thereview = Review.new(params[:review])
+		if (!thereview.valid?)
+			render "trails/show" , :locals => {:@review => thereview}
+		end
 		@review = @trail.reviews.build(params[:review])
+                @trail.setReview @review
+              
 	#	render :text => current_user.reviews
 		current_user.reviews.build(params[:review])
-
-		if @review.save!
+            #    @review.save!
+		if @review.save
 			redirect_to :back
-		end
+        end
+	#	end
 
 	end
 

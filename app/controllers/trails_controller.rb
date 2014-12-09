@@ -42,7 +42,7 @@ class TrailsController < ApplicationController
   end
 
 private
-  
+
   def sort_column
     Trail.column_names.include?(params[:sort]) ? params[:sort] : "created_at"
   end

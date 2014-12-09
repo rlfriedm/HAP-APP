@@ -1,0 +1,16 @@
+<% if @review.errors.any?%>
+	<div class="alert alert-danger">
+		<button class="close" data-dismiss="alert">x</button>
+		<%= pluralize(@review.errors.count, "error") %>
+		prohibited this review from being saved:
+	</div>
+	<div class="alert alert-danger">
+		<button class="close" data-dismiss="alert">x</button>
+		<p> There were the following errors:</p>
+		<ul>
+			<% @review.errors.full_messages.each do |e| %>
+				<li><%= e %></li>
+			<% end %>
+		</ul>
+	</div>
+<% end %>

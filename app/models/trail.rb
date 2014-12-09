@@ -39,4 +39,7 @@ class Trail < ActiveRecord::Base
         end
     end
 
+    def setReview (review)
+      @review = review
+    end
 end
