@@ -5,7 +5,7 @@ gem 'rails', '3.2.19'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'pg'
+gem 'pg', group: :production
 gem 'rails_12factor', group: :production
 
 gem 'will_paginate', '~> 3.0.4'
@@ -28,9 +28,9 @@ end
 
 gem 'jquery-rails'
 
-#group :development, :test do
-#	gem 'sqlite3'
-#end
+group :development, :test do
+	gem 'sqlite3'
+end
 
 group :test, :development do
   	gem 'turn'
