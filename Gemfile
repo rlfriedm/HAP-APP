@@ -28,6 +28,10 @@ end
 
 gem 'jquery-rails'
 
+group :production do
+	ruby '2.0.0'
+end
+
 group :development, :test do
 	gem 'sqlite3'
 end
@@ -43,6 +47,7 @@ end
 gem 'gon'
 gem 'geocoder'
 gem 'gmaps4rails'
+
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
