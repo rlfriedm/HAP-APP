@@ -2,13 +2,27 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-div.fluid-container {
-   border: 4px;
-   border-color: #5cb85c;
+div.reviews-fluid-container {
+   border: 1px;
+   //border-color: #5cb85c;
    border-style: solid;
    padding: 7px;
    padding-bottom: 12px;
    margin-bottom:20px;
+   //background-color: #BCA9F5
+
+}
+
+div.comments-fluid-container {
+   border: 0px;
+   //border-color: #5cb85c;
+   border-style: solid;
+   padding: 3px;
+   padding-bottom: 3px;
+   margin-bottom:0px;
+   margin-top:0px;  
+   margin-left: 15px;
+   background-color: #CEE3F6;
 
 }
 
@@ -40,4 +54,99 @@ th {
 }
 td {
 	height: 25px;
+  //width: 100%;
+}
+
+#comment {
+  display: table;
+  width: 100%; 
+  margin-bottom: 5px;
+  margin-top: 0px;
+  padding: 0px;
+  //float: left;
+
+}
+
+#review_body {
+  background-color: #CEE3F6; //#A9DOF5;
+
+}
+
+#review_title {
+  background-color: #CEE3F6; //#A9DOF5;
+
+}
+
+
+#comment_user_name {
+  text-align: left;
+  font-size: 100%;
+  width: 50px;
+}
+
+#comment_user {
+  display: table-cell;
+  width: 50px;
+}
+
+#comment_body {
+  text-align: left;
+  font-size: 100%;
+  padding: 5px;
+  //width: 100%;
+  display: table-row;
+}
+
+#date_and_text {
+  display: inline-table;
+  width: 100%;
+  padding: 15px; 
+  //float: left;
+
+}
+date_and_text_wrapper {
+  display: table-cell;
+  width: 100%; 
+  padding: 7px;
+  //float: left;
+
+}
+
+//table#comment {
+ // width: 100%; 
+  //padding: 5px;
+  
+//}
+
+td#review_user {
+  text-align: left;
+  font-size: 100%;
+}
+
+td#review_title {
+  text-align: center;
+  //line-height: 500%;
+  vertical-align: -40000%;
+  font-size: 150%;
+}
+
+td#review_rating {
+  text-align: center;
+  //line-height: 500%;
+  vertical-align: -40000%;
+  font-size: 100%;
+}
+
+
+
+
+
+#date_created_display {
+  text-align: right;
+  vertical-align: top;
+  color: #848484;
+  font-style: italic;
+  //width: 100%;
+  padding: 5px;
+  display: table-cell;
 }

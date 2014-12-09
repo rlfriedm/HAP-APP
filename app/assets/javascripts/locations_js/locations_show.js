@@ -15,7 +15,7 @@ var line;
 function initialize() {
   var mapOptions = {
     zoom: 9,
-    // Center the map on Chicago, USA.
+    // Center the map on the Adirondaks
     center: new google.maps.LatLng(43.9829194, -74.4593776),
     mapTypeId: google.maps.MapTypeId.TERRAIN
   };
@@ -24,7 +24,7 @@ function initialize() {
   
   //alert(gon.latLngs);
   
-
+  //var northmost = , southmost, eastmost
   var linepath = [];
   var ary = JSON.parse(gon.path);
   //alert(ary);
@@ -38,6 +38,8 @@ function initialize() {
     strokeColor : '#006400',
     editable : false
   });
+
+  //map.panToBounds(linepath[0], linepath[])  
   /*
   var drawingManager = new google.maps.drawing.DrawingManager({
     drawingControl: true,
