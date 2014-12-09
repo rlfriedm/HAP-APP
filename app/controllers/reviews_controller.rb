@@ -13,18 +13,24 @@ class ReviewsController < ApplicationController
 
 		thereview = Review.new(params[:review])
 		if (!thereview.valid?)
-			render "trails/show" , :locals => {:@review => thereview}
+			#redirect_to @trail.show(:params => params[:trail_id]), :locals => {:@review => thereview}
+			errorLst = []
+			thereview.errors.full_messages.each do |message|
+				errorLst << message
+			end
+			redirect_to :controller => "trails", :action => "show", :id => id, :problemReview => errorLst
+	#		render "trails/show" , :locals => {:@review => thereview}
+			
 		end
-		@review = @trail.reviews.build(params[:review])
-                @trail.setReview @review
+		review = @trail.reviews.build(params[:review])
               
 	#	render :text => current_user.reviews
 		current_user.reviews.build(params[:review])
             #    @review.save!
-		if @review.save
-			redirect_to :back
+        #review.save
+		if review.save
+			redirect_to :controller => "trails", :action => "show", :id => id
         end
-	#	end
 
 	end
 

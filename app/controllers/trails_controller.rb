@@ -34,11 +34,22 @@ class TrailsController < ApplicationController
   end
 
   def show
-    id = params[:id]
-    @trail = Trail.find(id)
+  #  render :text => params[:problemReview]
 
+   id = params[:id]
+   @trail = Trail.find(id)
+
+   @review = Review.new
+   errorMessages = params[:problemReview]
+   if errorMessages != nil
+    errorMessages.each do |error|
+      @review.errors[:base] << error
+    end
+  end
+
+  # @review.errors = params[:problemReview]
     @location = Location.find_by_trail_id(id)
-    gon.path = @location.path
+   gon.path = @location.path
   end
 
 private
