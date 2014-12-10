@@ -6,7 +6,7 @@ class Trail < ActiveRecord::Base
     accepts_nested_attributes_for :location
 
 	searchable do
-    	string :name
+    	#string :name
         text :search_name, :boost => 2
     	text :description
         integer :rating

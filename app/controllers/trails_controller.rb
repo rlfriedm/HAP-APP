@@ -7,7 +7,7 @@ class TrailsController < ApplicationController
     @search = Trail.search do
       fulltext params[:search]
       with(:created_at).less_than(Time.zone.now)
-      #paginate(:per_page => 10, :page => params[:page])
+      #paginate(:per_page => 5, :page => params[:page])
     end
     @temp = @search.results
 

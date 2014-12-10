@@ -4,6 +4,9 @@
 <% if @trails.size == 0 %>
 	<em>No trails were found matching your search</em>
 <% else %>
+<% if params.has_key?(:search) %>
+  Showing results for search: <%= params[:search] %>
+<% end %>
 
   <table class="trails_table">
     <col width="20%">
