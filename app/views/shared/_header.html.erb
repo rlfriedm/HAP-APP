@@ -22,11 +22,13 @@
         <div>
           <input name="utf8" type="hidden" value="&#x2713;"/>
         </div>
+        <!--
         <input id="direction" name="direction" type="hidden" />
         <input id="sort" name="sort" type="hidden" />
         <p>
           <input id="search" name="search" type="text" class="form-control" placeholder="Search for trails" />
           <button type="submit" class="btn btn-default" value="Search">Go!</button>
+        -->
       </form>
       <ul class="nav navbar-nav navbar-right">
         <li><%= link_to "Welcome #{current_user.username}!", user_path(current_user)%></li>
