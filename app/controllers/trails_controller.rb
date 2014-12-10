@@ -4,41 +4,35 @@ class TrailsController < ApplicationController
 
   def index
 
-#    @search = Trail.search do
-#      fulltext params[:search]
-#      order_by(sort_column, sort_direction)
-##      with(:created_at).less_than(Time.zone.now)
-##      facet(:publish_month)
-##      if params[:month].present?
-##        with(:publish_month, params[:month])
-##      end
-#      paginate(:per_page => 10, :page => params[:page])
-#    end
-#    @trails = @search.results
-    #@trails = Trail.order(sort_column + ' ' + sort_direction)
-    #render :text => sort_column + ' ' + sort_direction
+    @search = Trail.search do
+      fulltext params[:search]
+      with(:created_at).less_than(Time.zone.now)
+      #paginate(:per_page => 10, :page => params[:page])
+    end
+    @temp = @search.results
+
     if sort_column == "rating"
       if sort_direction == "asc"
-        @trails = Trail.all.sort_by { |t| t.getRating }
+        @trails = @temp.sort_by { |t| t.getRating }
       end
       if sort_direction == "desc"
-        @trails = Trail.all.sort_by { |t| t.getRating }.reverse!
-      end
-    end
+       @trails = @temp.sort_by { |t| t.getRating }.reverse!
+     end
+   end
     if sort_column == "name"
       if sort_direction == "asc"
-        @trails = Trail.all.sort_by { |t| t.name }
+        @trails = @temp.sort_by { |t| t.name }
       end
       if sort_direction == "desc"
-        @trails = Trail.all.sort_by { |t| t.name }.reverse!
+        @trails = @temp.sort_by { |t| t.name }.reverse!
       end
     end
     if sort_column == "created_at"
       if sort_direction == "asc"
-        @trails = Trail.all.sort_by { |t| t.created_at }
+        @trails = @temp.sort_by { |t| t.created_at }
       end
       if sort_direction == "desc"
-        @trails = Trail.all.sort_by { |t| t.created_at }.reverse!
+        @trails = @temp.sort_by { |t| t.created_at }.reverse!
       end
     end
   end
