@@ -2,7 +2,30 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+div.trail-heading-fluid-container {
+   border: 1px;
+   //border-color: #5cb85c;
+   border-style: transparent;
+   padding: 7px;
+   padding-bottom: 12px;
+   margin-bottom:20px;
+   //background-color: #BCA9F5
+
+}
+
+
 div.reviews-fluid-container {
+   border: 1px;
+   //border-color: #5cb85c;
+   border-style: solid;
+   padding: 7px;
+   padding-bottom: 12px;
+   margin-bottom:20px;
+   //background-color: #BCA9F5
+
+}
+
+div.new-review-fluid-container {
    border: 1px;
    //border-color: #5cb85c;
    border-style: solid;
@@ -57,6 +80,16 @@ td {
   //width: 100%;
 }
 
+#trail-heading-description {
+  font-size: 125%;
+  
+}
+
+#trail-heading-creator {
+  font-size: 100%;
+  color: #848484;
+}
+
 #comment {
   display: table;
   width: 100%; 
@@ -72,7 +105,7 @@ td {
 
 }
 
-#review_title {
+#existing_review_title {
   background-color: #CEE3F6; //#A9DOF5;
 
 }

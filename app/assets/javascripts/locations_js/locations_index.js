@@ -15,7 +15,7 @@ var currentWindow;
 
 function initialize() {
   var mapOptions = {
-    zoom: 9,
+    zoom: 10,
     // Center the map on Chicago, USA.
     center: new google.maps.LatLng(43.9829194, -74.4593776),
     mapTypeId: google.maps.MapTypeId.TERRAIN
@@ -36,14 +36,58 @@ function initialize() {
 
   var linepath;
   var ary;
+
+  /*
+  var northmost = ary[0][0];
+  var southmost = ary[0][0]; 
+  var eastmost = ary[0][1];
+  var westmost = ary[0][1];
+
+  var sw = new google.maps.LatLng(southmost, westmost);
+    var ne = new google.maps.LatLng(northmost, eastmost);
+*/
+  var bounds = new google.maps.LatLngBounds();
+  var northmost, southmost, eastmost, westmost, sw, ne;
   for (var i = 0; i < gon.paths.length; i++) {
     linepath = [];
     ary = JSON.parse(gon.paths[i]);
     
+    northmost = ary[0][0];
+    southmost = ary[0][0]; 
+    eastmost = ary[0][1];
+    westmost = ary[0][1];
+
+    sw = new google.maps.LatLng(southmost, westmost);
+    ne = new google.maps.LatLng(northmost, eastmost);
+    //if (bounds.isEmpty())
+      //bounds = new google.maps.LatLngBounds(sw, ne);
+
     for (var j = 0; j < ary.length; j++) {
       //alert(gon.paths[i][j]);
+
+      var lat = ary[j][0];
+      var lang = ary[j][1];
+
+      if (lat > northmost)
+        northmost = lat;
+      if (lat < southmost)
+        southmost = lat;
+
+      if (lang < westmost)
+        westmost = lang;
+      if (lang > eastmost)
+        eastmost = lang;
+      bounds.extend(new google.maps.LatLng(ary[j][0], ary[j][1]));
       linepath[linepath.length] = new google.maps.LatLng(ary[j][0], ary[j][1]); 
+
+      
     }
+
+    sw = new google.maps.LatLng(southmost, westmost);
+    ne = new google.maps.LatLng(northmost, eastmost);
+    //alert(bounds.toUrlValue())
+    //bounds = bounds.union(new google.maps.LatLngBounds(sw, ne)); 
+    
 
     var line = new google.maps.Polyline({
       path : linepath,
@@ -78,7 +122,10 @@ function initialize() {
     addListeners(line, infowindow);
     
   }
-  
+  //alert(bounds.toUrlValue());
+  map.fitBounds(bounds);
+}
+
 
   function addListeners(line, infowindow) {
 
@@ -127,7 +174,7 @@ function initialize() {
   google.maps.event.addListener(drawingManager, 'polylinecomplete', movePolyLine);
   */
   //google.maps.event.addListener(map, 'drag', drawPath);
-}
+
   
 
 function movePolyLine(event) {

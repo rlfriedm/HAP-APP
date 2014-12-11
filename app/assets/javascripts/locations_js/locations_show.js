@@ -23,13 +23,30 @@ function initialize() {
   map = new google.maps.Map(document.getElementById('showmap'), mapOptions);
   
   //alert(gon.latLngs);
-  
-  //var northmost = , southmost, eastmost
+ 
   var linepath = [];
   var ary = JSON.parse(gon.path);
   //alert(ary);
+  var northmost = ary[0][0];
+  var southmost = ary[0][0]; 
+  var eastmost = ary[0][1];
+  var westmost = ary[0][1];
+
   for (var j = 0; j < ary.length; j++) {
       //alert(gon.paths[i][j]);
+      var lat = ary[j][0];
+      var lang = ary[j][1];
+
+    if (lat > northmost)
+      northmost = lat;
+    if (lat < southmost)
+      southmost = lat;
+
+    if (lang < westmost)
+      westmost = lang;
+    if (lang > eastmost)
+      eastmost = lang;
+
     linepath[linepath.length] = new google.maps.LatLng(ary[j][0], ary[j][1]); 
   }
   line = new google.maps.Polyline({
@@ -39,7 +56,10 @@ function initialize() {
     editable : false
   });
 
-  //map.panToBounds(linepath[0], linepath[])  
+  var sw = new google.maps.LatLng(southmost, westmost);
+  var ne = new google.maps.LatLng(northmost, eastmost);
+
+  map.fitBounds(new google.maps.LatLngBounds(sw, ne));  
   /*
   var drawingManager = new google.maps.drawing.DrawingManager({
     drawingControl: true,
