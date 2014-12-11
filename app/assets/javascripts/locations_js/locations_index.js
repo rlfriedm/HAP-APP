@@ -123,7 +123,11 @@ function initialize() {
 function addDomListeners(trail_id, line, infowindow) {
 
     //alert("trail_" + trail_id);
+
     var trailRow = document.getElementById("trail_" + trail_id);
+    var color = window.getComputedStyle(trailRow, null).getPropertyValue("background-color");
+    trailRow.style.backgroundColor = color;
+    //alert(color);
     trailRow.addEventListener('mouseenter', function() {
       //infowindow.open(map);
       line.setOptions({strokeWeight: 5});
@@ -132,12 +136,16 @@ function addDomListeners(trail_id, line, infowindow) {
 
       infowindow.open(map);
       currentWindow = infowindow;
+      trailRow.style.backgroundColor = "DarkGreen";
+      trailRow.style.color = 'white';
     });
 
     trailRow.addEventListener('mouseleave', function() {
       currentWindow.close();
       line.setOptions({strokeWeight: 3});
       currentWindow = null;
+      trailRow.style.backgroundColor = color;
+      trailRow.style.color = 'black';
     });
 }
 
