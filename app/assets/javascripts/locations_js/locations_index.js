@@ -37,17 +37,9 @@ function initialize() {
   var linepath;
   var ary;
 
-  /*
-  var northmost = ary[0][0];
-  var southmost = ary[0][0]; 
-  var eastmost = ary[0][1];
-  var westmost = ary[0][1];
-
-  var sw = new google.maps.LatLng(southmost, westmost);
-    var ne = new google.maps.LatLng(northmost, eastmost);
-*/
   var bounds = new google.maps.LatLngBounds();
   var northmost, southmost, eastmost, westmost, sw, ne;
+
   for (var i = 0; i < gon.paths.length; i++) {
     linepath = [];
     ary = JSON.parse(gon.paths[i]);
@@ -120,6 +112,7 @@ function initialize() {
     });
 
     addListeners(line, infowindow);
+    addDomListeners(trail_id, line, infowindow);
     
   }
   //alert(bounds.toUrlValue());
@@ -127,29 +120,50 @@ function initialize() {
 }
 
 
-  function addListeners(line, infowindow) {
+function addDomListeners(trail_id, line, infowindow) {
 
-    google.maps.event.addListener(line, 'mouseover', function() {
+    //alert("trail_" + trail_id);
+    var trailRow = document.getElementById("trail_" + trail_id);
+    trailRow.addEventListener('mouseenter', function() {
       //infowindow.open(map);
       line.setOptions({strokeWeight: 5});
-    });
 
-    google.maps.event.addListener(line, 'mouseout', function() {
-      //infowindow.close();
-      line.setOptions({strokeWeight: 3});
-    });
-
-    google.maps.event.addListener(line, 'click', function() {
       if (currentWindow !== null) currentWindow.close();
 
       infowindow.open(map);
       currentWindow = infowindow;
     });
 
-    google.maps.event.addListener(infowindow, 'closeclick', function() {
+    trailRow.addEventListener('mouseleave', function() {
+      currentWindow.close();
+      line.setOptions({strokeWeight: 3});
       currentWindow = null;
     });
-  }
+}
+
+function addListeners(line, infowindow) {
+
+  google.maps.event.addListener(line, 'mouseover', function() {
+    //infowindow.open(map);
+    line.setOptions({strokeWeight: 5});
+  });
+
+  google.maps.event.addListener(line, 'mouseout', function() {
+    //infowindow.close();
+    line.setOptions({strokeWeight: 3});
+  });
+
+  google.maps.event.addListener(line, 'click', function() {
+    if (currentWindow !== null) currentWindow.close();
+
+    infowindow.open(map);
+    currentWindow = infowindow;
+  });
+
+  google.maps.event.addListener(infowindow, 'closeclick', function() {
+    currentWindow = null;
+  });
+}
   //alert(path);
 
   
