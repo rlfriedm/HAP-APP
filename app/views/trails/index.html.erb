@@ -11,17 +11,17 @@
 
 <div class="fluid-map-container" id="indexmap" ></div>
 
-<!--
-<%# if @trails.size == 0 %>
-  <%# if params.has_key?(:search) %>
-    There are no results for search: <%#= params[:search] %>
-  <%# else %>
+
+<% if @trails.size == 0 %>
+  <% if params.has_key?(:search) %>
+    There are no results for search: <%= params[:search] %>
+  <% else %>
     There are currently no trails in the database
-  <%# end %>
-<%# elsif params.has_key?(:search) %>
-  Showing results for search: <%#= params[:search] %>
-<%# end %>
--->
+  <% end %>
+<% elsif params.has_key?(:search) %>
+  Showing results for search: <%= params[:search] %>
+<% end %>
+
 <% if @trails.size != 0 %>
 
   <table class="trails_table">
