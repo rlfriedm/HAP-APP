@@ -1,12 +1,16 @@
 <h1>Trails</h1>
-
-
-<% if @trails.size == 0 %>
-	<em>No trails were found matching your search</em>
-<% else %>
-<% if params.has_key?(:search) %>
-  Showing results for search: <%= params[:search] %>
-<% end %>
+<!--
+<%# if @trails.size == 0 %>
+  <%# if params.has_key?(:search) %>
+    There are no results for search: <%#= params[:search] %>
+  <%# else %>
+    There are currently no trails in the database
+  <%# end %>
+<%# elsif params.has_key?(:search) %>
+  Showing results for search: <%#= params[:search] %>
+<%# end %>
+-->
+<% if @trails.size != 0 %>
 
   <table class="trails_table">
     <col width="20%">
