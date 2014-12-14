@@ -10,6 +10,7 @@ HAPApp::Application.routes.draw do
   get "users/deleteuser"
   get "users/shower"
   get  "static_pages/forgot"
+  get  "static_pages/signup"
   post "static_pages/forgotten_password_confirmation"
   post "users/deleteuser"
 

@@ -12,6 +12,11 @@ class StaticPagesController < ApplicationController
 
   end
 
+  def signup
+     id = params[:id]
+     @user = User.find(id)
+  end
+
   def forgot
   end
 
@@ -59,9 +64,6 @@ class StaticPagesController < ApplicationController
   end
 
   def about
-  end
-
-  def signup
   end
 
   def contact
