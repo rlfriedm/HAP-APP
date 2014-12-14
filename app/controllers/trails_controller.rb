@@ -4,12 +4,12 @@ class TrailsController < ApplicationController
 
   def index
 
-    @search = Trail.search do
-      fulltext params[:search]
-      with(:created_at).less_than(Time.zone.now)
-      #paginate(:per_page => 5, :page => params[:page])
-    end
-    @temp = @search.results
+#    @search = Trail.search do
+#      fulltext params[:search]
+#      with(:created_at).less_than(Time.zone.now)
+#    end
+#   @temp = @search.results
+    @temp = Trail.all
 
     if sort_column == "rating"
       if sort_direction == "asc"
