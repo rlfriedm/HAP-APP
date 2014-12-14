@@ -15,7 +15,7 @@ var currentWindow;
 
 function initialize() {
   var mapOptions = {
-    zoom: 10,
+    zoom: 9,
     // Center the map on Chicago, USA.
     center: new google.maps.LatLng(43.9829194, -74.4593776),
     mapTypeId: google.maps.MapTypeId.TERRAIN
@@ -39,7 +39,7 @@ function initialize() {
 
   var bounds = new google.maps.LatLngBounds();
   var northmost, southmost, eastmost, westmost, sw, ne;
-
+  
   for (var i = 0; i < gon.paths.length; i++) {
     linepath = [];
     ary = JSON.parse(gon.paths[i]);
@@ -116,7 +116,8 @@ function initialize() {
     
   }
   //alert(bounds.toUrlValue());
-  map.fitBounds(bounds);
+  if (gon.paths.length > 0)
+    map.fitBounds(bounds);
 }
 
 
