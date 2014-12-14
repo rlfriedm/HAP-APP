@@ -5,17 +5,8 @@ class Trail < ActiveRecord::Base
     has_one :location, autosave: true
     accepts_nested_attributes_for :location
 
-#	searchable do
-#    	#string :name
-#        text :search_name, :boost => 2
-#    	text :description
-#        integer :rating
-#    	text :publish_month
-#   	    text :reviews do
-#   		reviews.map(&:bodyText)
-#    	end
-#    	time :created_at
-#  	end
+    include Tire::Model::Search
+    include Tire::Model::Callbacks
 
 	def publish_month
     	created_at.strftime("%B %Y")

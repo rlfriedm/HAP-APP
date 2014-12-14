@@ -20,10 +20,44 @@ vertical-align: top;
   margin-bottom: 20px;
 }
 
-.container-fluid {
-  
-  background-color: white;
+.inline-block{
+  display: inline-block;
+}
 
+.center{
+  text-align: center;
+}
+
+.row li {
+  float: left;
+  list-style-type: none;
+}
+
+.row ul {
+  width: 100%;
+  padding-left: 0px;
+  //margin-left: 0;
+  //padding-right: 0;
+  //margin-right: 0;
+}
+
+.row li, #left-part{
+  width: 25%;
+}
+.row li, #right-part{
+  width: 75%;
+}
+
+img {
+  border: 0 none;
+  display: inline-blocks;
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.container-fluid {
+  background-color: white;
 }
 
 /*
