@@ -32,11 +32,18 @@ function initialize() {
   var eastmost = ary[0][1];
   var westmost = ary[0][1];
 
+  var sw = new google.maps.LatLng(southmost, westmost);
+  var ne = new google.maps.LatLng(northmost, eastmost);
+
+  var bounds = new google.maps.LatLngBounds(sw, ne);
+  map.fitBounds(bounds);
+  //alert(ary);
+
   for (var j = 0; j < ary.length; j++) {
       //alert(gon.paths[i][j]);
-      var lat = ary[j][0];
-      var lang = ary[j][1];
-
+    var lat = ary[j][0];
+    var lang = ary[j][1];
+/*
     if (lat > northmost)
       northmost = lat;
     if (lat < southmost)
@@ -46,8 +53,12 @@ function initialize() {
       westmost = lang;
     if (lang > eastmost)
       eastmost = lang;
-
+*/
     linepath[linepath.length] = new google.maps.LatLng(ary[j][0], ary[j][1]); 
+    sw = new google.maps.LatLng(southmost, westmost);
+    ne = new google.maps.LatLng(northmost, eastmost);
+
+    bounds.extend(new google.maps.LatLng(lat, lang));
   }
   line = new google.maps.Polyline({
     path : linepath,
@@ -56,10 +67,12 @@ function initialize() {
     editable : false
   });
 
-  var sw = new google.maps.LatLng(southmost, westmost);
-  var ne = new google.maps.LatLng(northmost, eastmost);
+  //alert(southmost);
+  //alert(northmost);
+  //var sw = new google.maps.LatLng(southmost, westmost);
+  //var ne = new google.maps.LatLng(northmost, eastmost);
 
-  map.fitBounds(new google.maps.LatLngBounds(sw, ne));  
+  //map.fitBounds();  
   /*
   var drawingManager = new google.maps.drawing.DrawingManager({
     drawingControl: true,
