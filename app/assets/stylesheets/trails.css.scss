@@ -26,13 +26,14 @@ div.reviews-fluid-container {
 }
 
 div.new-review-fluid-container {
-   border: 1px;
+   border: 0px;
    //border-color: #5cb85c;
-   border-style: solid;
-   padding: 7px;
+   border-style: transparent;
+   padding: 20px;
    padding-bottom: 12px;
    margin-bottom:20px;
-   //background-color: #BCA9F5
+   background-color: #99C299;
+   border-radius: 10px;
 
 }
 
