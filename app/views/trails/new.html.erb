@@ -42,6 +42,40 @@
 
 	<% end %>
 
+	<%= f.fields_for :review, Review.new, :html => {:multipart => true } do|r| %>
+
+		<div class="field">
+			<%= r.label :review_title %>
+			<%= r.text_field :title, class: "form-control" %> 
+		</div>
+
+  	<div class="field">
+		<%= r.label :review %>
+		<%= r.text_area :bodyText, class: "form-control" %>
+	</div>
+
+	<div class="field">
+		<%= r.label :rating %>
+		<%= r.select :rating, [[1, 1],[2, 2],[3, 3] , [4, 4], [5, 5]], class: "form-control" %>
+	</div>
+
+	<div class="field">
+		<%= r.hidden_field :trail_id, :value => 0%>
+	</div>
+
+	<div class="field">
+		<%= r.hidden_field :user_id, :value => current_user.id %>
+	</div>
+
+	<div class="field">
+		<%= r.label :photos %>
+	</div>
+  	<div class="field">
+		<%= r.file_field :photos, multiple: true %>
+	</div>
+
+	<% end %>
+
 	<%= f.submit :class => "btn btn-default" %>
 
 <% end %>
