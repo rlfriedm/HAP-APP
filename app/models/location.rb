@@ -6,7 +6,7 @@ class Location < ActiveRecord::Base
   serialize :path, JSON
   before_save :setPath
   belongs_to :trail
-
+  validates :path,   :presence => true
 
   def setPath
   	if path
