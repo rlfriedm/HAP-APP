@@ -10,7 +10,7 @@ module UsersHelper
 		result = Array.new
 		for comment in comments 
 			if (comment.review_id == revId.to_i)
-				result.push(comment.text)
+				result.push(comment.id)
 			end	
 		end
 		return result #fix!

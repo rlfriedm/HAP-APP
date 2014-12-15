@@ -76,14 +76,17 @@ class TrailsController < ApplicationController
   end
 
   def create
-    puts params[:trail][:location_attributes]
+    puts params[:trail][:review]
     @name = params[:trail][:location_attributes]
-  	@trail = Trail.create params[:trail].except!(:location_attributes)
-    puts "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+    review = params[:trail][:review]
+  	@trail = Trail.create params[:trail].except!(:location_attributes, :review)
     
     if @trail.save
       @trail.build_location
     end
+
+    review[:trail_id] = @trail.id
+    newReview = Review.create(review)
     @trail.location = Location.new(@name)
 
 	  redirect_to action: 'index'
