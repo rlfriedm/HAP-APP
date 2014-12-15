@@ -81,13 +81,39 @@ div.comments-wrapper-fluid-container {
 
 }
 
+img.review-star {
+  height: 2%;
+  width: 2%;
+  display:inline;
+}
+
+img.trail-star {
+  height: 4%;
+  width: 4%;
+  display:inline;
+}
+
+img.trails-star {
+  height: 15px;
+  width: 15px;
+  display:inline;
+}
+
+img.infoWin-star {
+  height: 15px;
+  width: 15px;
+  display:inline;
+}
+
 #review-panel {
   border-radius: 20px;
+  display:inline;
 }
 
 #review-panel-heading {
   background-color: #000066;
   color: white;
+  //display:inline;
 }
 
 #comment-panel {
@@ -98,6 +124,8 @@ div.comments-wrapper-fluid-container {
 #comment-panel-heading {
   background-color: #808080;
   color: white;
+  padding: 5px;
+  padding-left: 10px;
   font-size: 80%;
 }
 
@@ -136,13 +164,21 @@ th {
     color: black;
 }
 td {
-	height: 25px;
+	height: 30px;
+  padding-left: 7px;
   //width: 100%;
 }
 
 #trail-heading-description {
   font-size: 125%;
   
+}
+
+#trail-heading-stars {
+  font-size: 125%;
+  //text-align: center;
+  //float: middle;
+  padding-bottom: 10px;
 }
 
 #trail-heading-creator {
@@ -245,11 +281,12 @@ td#review_user {
   font-size: 100%;
 }
 
-#review_title {
-  text-align: center;
+#review-title {
+  //text-align: center;
   //line-height: 500%;
-  padding: 5px;
-  font-size: 150%;
+  //padding: 5px;
+  font-size: 120%;
+  display:inline;
 }
 
 #review_rating {
@@ -257,15 +294,22 @@ td#review_user {
   //line-height: 500%;
   padding-bottom: 5px;
   font-size: 100%;
+  display:inline;
 }
 
 
+#trailName {
+  width: 200px;
 
+}
 
+.review-panel#date_created_display {
+  font-size:60%;
+}
 
 #date_created_display {
   text-align: right;
-  //vertical-align: top;
+  vertical-align: middle;
   color: #848484;
   font-style: italic;
   //width: 100%;

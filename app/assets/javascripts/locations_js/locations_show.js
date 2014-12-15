@@ -24,6 +24,8 @@ function initialize() {
   
   //alert(gon.latLngs);
  
+  var start;
+
   var linepath = [];
   var ary = JSON.parse(gon.path);
   //alert(ary);
@@ -32,8 +34,12 @@ function initialize() {
   var eastmost = ary[0][1];
   var westmost = ary[0][1];
 
+
+
   var sw = new google.maps.LatLng(southmost, westmost);
   var ne = new google.maps.LatLng(northmost, eastmost);
+
+  start = sw;
 
   var bounds = new google.maps.LatLngBounds(sw, ne);
   map.fitBounds(bounds);
@@ -67,6 +73,33 @@ function initialize() {
     editable : false
   });
 
+  //var beginArrow = new google.maps.
+
+  var end = new google.maps.LatLng(ary[ary.length-1][0], ary[ary.length-1][1]);
+
+  var endMarker = new google.maps.Marker({
+    position : end,
+    map : map,
+    icon : "/assets/EndArrow.png"
+  });
+
+  var startMarker = new google.maps.Marker({
+    position : start,
+    map : map,
+    icon : "/assets/BeginArrow.png"
+  });
+
+  google.maps.event.addListener(startMarker, 'mouseover', function() {
+    //infowindow.open(map);
+    startMarker.setZIndex(1);
+    endMarker.setZIndex(0);
+  });
+
+  google.maps.event.addListener(endMarker, 'mouseover', function() {
+    //infowindow.open(map);
+    endMarker.setZIndex(1);
+    startMarker.setZIndex(0);
+  });
   //alert(southmost);
   //alert(northmost);
   //var sw = new google.maps.LatLng(southmost, westmost);

@@ -95,12 +95,16 @@ function initialize() {
     description = gon.infos[i]["description"],
     trail_id = gon.infos[i]["trail_id"].toString();
 
+    var starString = '';
+
+    for (n = 0; n < rating; n++)
+      starString += '<img src="/assets/Star.png" class="infoWin-star"></img>'
 
     var contentString = '<div id="content">' +
       '<h1 id="trailName"><a href="/trails/' + trail_id + '">' + name + '</a></h1>' +
-      '<h2 id="trailRating">Rating: ' + rating + '</h2>' +
+      '<h2 id="trailRating"><center>' + starString + '</center></h2>' +
       '<div id="trailDescription">' +
-      '<p>' + description + '</p>' +
+      '<p>"' + description + '"</p>' +
       '<a href="/trails/' + trail_id + '">Go to trail page</a>' +
       '</div>' + 
       '</div>';

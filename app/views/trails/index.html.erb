@@ -26,8 +26,8 @@
 
   <table class="trails_table">
     <col width="20%">
-    <col width="54%">
-    <col width="6%">
+    <col width="50%">
+    <col width="10%">
     <col width="20%">
     <tr>
       <th style="text-align:center"><%= sortable "name", "Name" %></th>
@@ -36,19 +36,25 @@
       <th style="text-align:center"><%= sortable "created_at", "Date Created" %></th>
     </tr>
     <% for t in @trails %>
+      
       <%= content_tag_for(:tr, t) do %>
-        <td><%=link_to t.name, :action => "show", :id => t.id%></td>
+        
+       <!-- <td><%=link_to t.name, :action => "show", :id => t.id%></td> -->
+        <td style:"color:white"><a href="/trails/<%=t.id%>"><%=t.name%></a>
         <td><%=t.description%></td>
         <td align="center">
+          <% t.getRating.to_i.times do |x| %>
+              <img src="/assets/Star.png" class="img-responsive trails-star" alt="Responsive image" ></img> 
+          <%end%> 
           <% if t.getRating == 0 %>
             <%= "N/A" %>
           <% end %>
-          <% if t.getRating != 0 %>
-            <%= t.getRating %>
-          <% end %>
+          
         </td>
-        <td><%=t.created_at.strftime("%B %e, %Y")%></td>
-      <% end %>
+        <td><center><%=t.created_at.strftime("%B %e, %Y")%></center></td>
+        </a>
+      <% end %> 
+    
     <% end %>
   </table>
   <%#= will_paginate @trails %>

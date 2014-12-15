@@ -11,6 +11,7 @@
 
 var map;
 var polyLine;
+var drawingManager;
 
 function initialize() {
   var mapOptions = {
@@ -51,16 +52,16 @@ function initialize() {
   }
   
 */
-  var drawingManager = new google.maps.drawing.DrawingManager({
+  drawingManager = new google.maps.drawing.DrawingManager({
     drawingMode: google.maps.drawing.OverlayType.POLYLINE,
-    drawingControl: true,
-    drawingControlOptions: {
-        position: google.maps.ControlPosition.TOP_CENTER,
-        drawingModes: [
+    drawingControl: false,
+    //drawingControlOptions: {
+      //  position: google.maps.ControlPosition.TOP_CENTER,
+        //drawingModes: [
           //google.maps.drawing.OverlayType.MARKER,
-          google.maps.drawing.OverlayType.POLYLINE
-        ]
-    },
+          //google.maps.drawing.OverlayType.POLYLINE
+        //]
+    //},
     polylineOptions: { geodesic: true,
                        editable: true }
   });
@@ -68,15 +69,16 @@ function initialize() {
 
   drawingManager.setMap(map);
   
-  google.maps.event.addListener(drawingManager, 'polylinecomplete', movePolyLine);
+  google.maps.event.addListener(drawingManager, 'polylinecomplete', savePolyLine);
   
   //google.maps.event.addListener(map, 'drag', drawPath);
 }
   
 
-function movePolyLine(event) {
+function savePolyLine(event) {
   //var line = event;
   //alert("click to continue!");
+
   var pathArray = event.getPath().getArray();
   var start = pathArray[0];
   var end = pathArray[pathArray.length-1];
@@ -96,6 +98,7 @@ function movePolyLine(event) {
   event.setOptions({strokeColor: '#006400'});
 //  event.visible = false;
   //strokeColor: '#0000FF');
+  drawingManager.setOptions({ drawingMode: null });
 }
 
 
