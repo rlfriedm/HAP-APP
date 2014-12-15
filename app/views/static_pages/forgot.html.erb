@@ -1,4 +1,4 @@
-<h2>Please enter your email to get a reminder about your password:</h2><br>
+<div class="page-header"><h1 style="text-align:center;"><small>Please enter your email to get a reminder about your password:</small></h1></div>
 <%= form_for(:static_page, :url => {:controller => "static_pages", :action => "forgotten_password_confirmation"}) do |f| %>
 		<%= f.label :email%>
 		<%= f.text_field :email, :class => "form-control" %><br>
