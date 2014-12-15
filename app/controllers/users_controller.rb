@@ -18,12 +18,13 @@ class UsersController < ApplicationController
   end
   def create
   	@user = User.new(params[:user])
-    tmp = SecureRandom.urlsafe_base64
-    other = tmp[0..10]
-    @user.password = other
+    # tmp = SecureRandom.urlsafe_base64
+    # other = tmp[0..10]
+    # @user.password = other
     if @user.save
-     UserMailer.forgot_password(@user).deliver
-  	 redirect_to controller: 'static_pages', action: 'signup', :id => @user.id
+     # UserMailer.forgot_password(@user).deliver
+  	 redirect_to controller: 'users', action: 'show', :id => @user.id
+     sign_in(@user)
     else
      render 'new'
     end

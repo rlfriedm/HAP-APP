@@ -7,7 +7,7 @@ class StaticPagesController < ApplicationController
     if @user
       UserMailer.forgot_password(@user).deliver
     else
-      flash.now[:error] = "The email address \"" + email + "\"" + " does not appear to ne assosciated with an account"
+      flash.now[:error] = "The email address \"" + email + "\"" + " does not appear to be a registered account"
       render :action => "forgot"
     end
 
