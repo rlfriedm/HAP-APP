@@ -35,7 +35,7 @@ module UsersHelper
 
 	def contributedReviews(user)
 		reviews = user.reviews
-		allRevs = reviews.all
+		allRevs = Review.all
 		for rev in allRevs
 			for comment in getRevCommentsB(user, rev.id)
 				if comment.user_id == user.id	
