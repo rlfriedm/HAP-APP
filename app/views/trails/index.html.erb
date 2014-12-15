@@ -40,7 +40,7 @@
       <%= content_tag_for(:tr, t) do %>
         
        <!-- <td><%=link_to t.name, :action => "show", :id => t.id%></td> -->
-        <td style:"color:white"><a href="/trails/<%=t.id%>"><%=t.name%></a>
+        <td><%=t.name%></td>
         <td><%=t.description%></td>
         <td align="center">
           <% t.getRating.to_i.times do |x| %>

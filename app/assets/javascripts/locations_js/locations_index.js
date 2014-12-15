@@ -154,7 +154,8 @@ function addDomListeners(trail_id, line, infowindow) {
     });
 
     trailRow.addEventListener('click', function() {
-      $.get("/trails/" + trail_id);
+      //$.get("/trails/" + trail_id);
+      window.location.href=("/trails/"+trail_id);
     });
 }
 
