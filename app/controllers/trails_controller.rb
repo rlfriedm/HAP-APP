@@ -75,6 +75,20 @@ class TrailsController < ApplicationController
 
   end
 
+  def new
+    puts params
+    @review = Review.new
+
+   errorMessages = params[:problemReview]
+   if errorMessages != nil
+    errorMessages.each do |error|
+      @review.errors[:base] << error
+    end
+  end
+
+
+  end
+
   def create
     puts params[:trail][:review]
     @name = params[:trail][:location_attributes]
@@ -88,8 +102,23 @@ class TrailsController < ApplicationController
     review[:trail_id] = @trail.id
     newReview = Review.create(review)
     @trail.location = Location.new(@name)
-
-	  redirect_to action: 'index'
+    @review = newReview
+    if (!newReview.valid? or !@trail.valid?)
+      #redirect_to @trail.show(:params => params[:trail_id]), :locals => {:@review => thereview}
+      errorLst = []
+      newReview.errors.full_messages.each do |message|
+        errorLst << message
+      end
+      @trail.errors.full_messages.each do |message|
+        errorLst << message
+      end
+      redirect_to :controller => "trails", :action => "new", :problemReview => errorLst
+  #   render "trails/show" , :locals => {:@review => thereview}
+      
+    end
+    if (@trail.save and @review.save)
+	   redirect_to action: 'index'
+    end
   end
 
   def show
