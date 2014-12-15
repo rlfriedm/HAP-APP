@@ -35,20 +35,15 @@ module UsersHelper
 
 	def contributedReviews(user)
 		reviews = user.reviews
-		allRevs = reviews.all
-		result = Array.new
+		allRevs = Review.all
 		for rev in allRevs
-			for cid in getRevComments(user, rev.id)
-				if (Comment.find(cid).user_id == user.id and rev.user_id != user.id	)
-					result.push(rev.id)
+			for comment in getRevCommentsB(user, rev.id)
+				if comment.user_id == user.id	
+					reviews.push(rev)
 					break
 				end	
 			end
 		end
-
-		for thing in reviews
-			result.push(thing.id)
-		end
-		return result
+		return reviews
 	end	
 end
