@@ -5,6 +5,14 @@ class Trail < ActiveRecord::Base
     has_one :location, autosave: true
     accepts_nested_attributes_for :location
 
+
+  validates :name,  :presence => true,
+                        :length => {:maximum => 20}, 
+                        :length => {:minimum => 3}
+                    
+  validates :description, :presence => true,
+                    :length => {:maximum => 20},
+                    :length => {:minimum => 5}
 #	searchable do
 #    	#string :name
 #        text :search_name, :boost => 2
