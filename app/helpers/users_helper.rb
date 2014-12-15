@@ -10,7 +10,7 @@ module UsersHelper
 		result = Array.new
 		for comment in comments 
 			if (comment.review_id == revId.to_i)
-				result.push(comment.text)
+				result.push(comment.id)
 			end	
 		end
 		return result #fix!
@@ -35,7 +35,7 @@ module UsersHelper
 
 	def contributedReviews(user)
 		reviews = user.reviews
-		allRevs = reviews.all
+		allRevs = Review.all
 		for rev in allRevs
 			for comment in getRevCommentsB(user, rev.id)
 				if comment.user_id == user.id	

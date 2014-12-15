@@ -1,4 +1,5 @@
 class StaticPagesController < ApplicationController
+  skip_before_filter :require_login, only: [:forgotten_password_confirmation, :forgot, :signup]
   def forgotten_password_confirmation
     email = params[:static_page][:email]
 

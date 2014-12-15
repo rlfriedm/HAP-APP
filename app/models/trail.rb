@@ -5,12 +5,19 @@ class Trail < ActiveRecord::Base
     has_one :location, autosave: true
     accepts_nested_attributes_for :location
 
-    include Tire::Model::Search
-    include Tire::Model::Callbacks
 
-	def publish_month
-    	created_at.strftime("%B %Y")
-  	end
+    #include Tire::Model::Search
+    #include Tire::Model::Callbacks
+
+
+  validates :name,  :presence => true,
+                        :length => {:maximum => 20}, 
+                        :length => {:minimum => 3}
+                    
+  validates :description, :presence => true,
+                    :length => {:maximum => 20},
+                    :length => {:minimum => 5}
+
 
     def getRating
         newRating = 0

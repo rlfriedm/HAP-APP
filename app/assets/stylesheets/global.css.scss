@@ -2,6 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/s
 
+
 input.form-control{
   margin-bottom: 10px;
 
@@ -13,7 +14,7 @@ div.centered-div{
 }
 
 .img-thumbnail{
-vertical-align: top;
+  vertical-align: top;
 }
 
 .welcome-img{
@@ -108,10 +109,11 @@ a:link.link-style {
 body {
     -webkit-font-smoothing: antialiased;
     font-rendering: optimizedlegibility;
+    background-color: red;
 }
 
 .well {
-  background-color: white;
+  //background-color: white;
   border-color:rgba(69, 69, 69, 0.26);
 }
 
@@ -186,11 +188,12 @@ div.error_list {
 
 
 div.fluid-map-container {
-   border: 2px;
+   border: 1px;
    //border-color: #5cb85c;
    border-style: solid;
    padding: 7px;
    padding-bottom: 400px;
    margin-bottom: 40px;
+   border-radius: 10px;
 
 }
