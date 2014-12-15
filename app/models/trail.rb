@@ -6,8 +6,8 @@ class Trail < ActiveRecord::Base
     accepts_nested_attributes_for :location
 
 
-    #include Tire::Model::Search
-    #include Tire::Model::Callbacks
+    include Tire::Model::Search
+    include Tire::Model::Callbacks
 
 
   validates :name,  :presence => true,
