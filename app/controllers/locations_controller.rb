@@ -50,27 +50,29 @@ class LocationsController < ApplicationController
 
   # GET /locations/new
   # GET /locations/new.json
-  def new
+  def create
     @location = Location.new
-    @locations = Location.all
-    @latLngs = []
-    @paths = []
-    @locations.each do |location|
-        if location.latitude
-          latLng = [location.latitude, location.longitude]
-          @latLngs.push(latLng)
-        elsif location.path
-          @paths.push(location.path)
-        end
-    end 
-    
-    #@json = @json.to_json
-    gon.latLngs = @latLngs
-    gon.paths = @paths
+      if @location.valid?
+      @locations = Location.all
+      @latLngs = []
+      @paths = []
+      @locations.each do |location|
+          if location.latitude
+            latLng = [location.latitude, location.longitude]
+            @latLngs.push(latLng)
+          elsif location.path
+            @paths.push(location.path)
+          end
+      end 
+      
+      #@json = @json.to_json
+      gon.latLngs = @latLngs
+      gon.paths = @paths
 
-    respond_to do |format|
-      format.html # new.html.erb
-      format.json { render json: @location }
+      respond_to do |format|
+        format.html # new.html.erb
+        format.json { render json: @location }
+      end
     end
   end
 
@@ -82,19 +84,19 @@ class LocationsController < ApplicationController
 
   # POST /locations
   # POST /locations.json
-  def create
-    @location = Location.new(params[:location])
+#  def create
+ #   @location = Location.new(params[:location])
 
-    respond_to do |format|
-      if @location.save
-        format.html { redirect_to @location, notice: 'Location was successfully created.' }
-        format.json { render json: @location, status: :created, location: @location }
-      else
-        format.html { render action: "new" }
-        format.json { render json: @location.errors, status: :unprocessable_entity }
-      end
-    end
-  end
+#    respond_to do |format|
+ #     if @location.save
+ #       format.html { redirect_to @location, notice: 'Location was successfully created.' }
+ #       format.json { render json: @location, status: :created, location: @location }
+  #    else
+ #       format.html { render action: "new" }
+   #     format.json { render json: @location.errors, status: :unprocessable_entity }
+   #   end
+   # end
+ # end
 
   # PUT /locations/1
   # PUT /locations/1.json

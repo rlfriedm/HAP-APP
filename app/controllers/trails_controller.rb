@@ -75,25 +75,63 @@ class TrailsController < ApplicationController
 
   end
 
+  def new
+    puts params
+    @review = Review.new
+
+   errorMessages = params[:problemReview]
+   if errorMessages != nil
+    errorMessages.each do |error|
+      @review.errors[:base] << error
+    end
+  end
+
+
+  end
+
   def create
     puts params[:trail][:review]
     @name = params[:trail][:location_attributes]
     review = params[:trail][:review]
-  	@trail = Trail.create params[:trail].except!(:location_attributes, :review)
-    
-    if @trail.save
-      @trail.build_location
-    end
+  	@trail = Trail.new params[:trail].except!(:location_attributes, :review)
 
     review[:trail_id] = @trail.id
     newReview = Review.create(review)
-    @trail.location = Location.new(@name)
+    newLoc = Location.create(@name)
 
+    @review = newReview
+
+    if newLoc.valid?
+      @trail.location = newLoc
+    end
+
+    if (!newReview.valid? or !@trail.valid? or !newLoc.valid?)
+      errorLst = []
+      newReview.errors.full_messages.each do |message|
+        message.sub! "Bodytext", "Review text"
+        errorLst << message
+      end
+      @trail.errors.full_messages.each do |message|
+        message.sub!"Location", "Trail path"
+        errorLst << message
+      end
+      newLoc.errors.full_messages.each do |message|
+        errorLst << message
+      end
+      redirect_to :controller => "trails", :action => "new", :problemReview => errorLst      
+
+  else 
+    @trail = Trail.create params[:trail].except!(:location_attributes, :review)
+
+    @trail.reviews.build(review)
+    @trail.location = newLoc
+    @trail.save
 	  redirect_to action: 'index'
+
+    end
   end
 
   def show
-  #  render :text => params[:problemReview]
 
    id = params[:id]
    @trail = Trail.find(id)
