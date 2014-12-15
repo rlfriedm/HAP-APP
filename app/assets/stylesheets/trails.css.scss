@@ -10,18 +10,32 @@ div.trail-heading-fluid-container {
    padding-bottom: 12px;
    margin-bottom:20px;
    //background-color: #BCA9F5
+   border-radius: 10px;
 
 }
 
+div.review-wrapper-fluid-container {
+   border: 0px;
+   //border-color: #5cb85c;
+   border-style: transparent;
+   padding: 7px;
+   padding-bottom: 12px;
+   margin-bottom:20px;
+   //background-color: #BCA9F5
+   border-radius: 10px;
+
+}
 
 div.reviews-fluid-container {
    border: 1px;
    //border-color: #5cb85c;
    border-style: solid;
-   padding: 7px;
+   padding: 10px;
+   padding-left: 20px;
    padding-bottom: 12px;
-   margin-bottom:20px;
-   //background-color: #BCA9F5
+   margin-bottom:0px;
+   background-color: #EBF5F0;
+   border-radius: 10px;
 
 }
 
@@ -47,7 +61,25 @@ div.comments-fluid-container {
    margin-top:0px;  
    margin-left: 15px;
    background-color: #CEE3F6;
+   border-radius: 10px;
 
+}
+
+.panel {
+  border-radius: 20px;
+}
+
+.panel-heading {
+  background-color: #000066;
+  color: white;
+}
+
+div.edit-review-container {
+  padding-left: 40px;
+}
+
+div.leave-comment-container {
+  padding-left: 40px;
 }
 
 .trails_table th .current {
@@ -87,8 +119,22 @@ td {
 }
 
 #trail-heading-creator {
-  font-size: 100%;
+  font-size: 120%;
   color: #848484;
+  float: right;
+
+}
+
+#trail-heading-created-by-block {
+  float: right;
+  text-align: right;
+}
+
+#trail-heading-created-by {
+  font-size: 100%;
+  font-style: italic;
+  color: #848484;
+  float: right;
 }
 
 #comment {
@@ -101,8 +147,16 @@ td {
 
 }
 
+#review-creator-wrapper {
+  vertical-align: middle;
+  //padding-top: 15px;
+}
+
 #review_body {
-  background-color: #CEE3F6; //#A9DOF5;
+  background-color: white; //#CEE3F6; //#A9DOF5;
+  //border-radius: 10px;
+  padding: 10px;
+  //text-align: center;
 
 }
 
@@ -157,17 +211,17 @@ td#review_user {
   font-size: 100%;
 }
 
-td#review_title {
+#review_title {
   text-align: center;
   //line-height: 500%;
-  vertical-align: -40000%;
+  padding: 5px;
   font-size: 150%;
 }
 
-td#review_rating {
+#review_rating {
   text-align: center;
   //line-height: 500%;
-  vertical-align: -40000%;
+  padding-bottom: 5px;
   font-size: 100%;
 }
 
@@ -177,10 +231,10 @@ td#review_rating {
 
 #date_created_display {
   text-align: right;
-  vertical-align: top;
+  //vertical-align: top;
   color: #848484;
   font-style: italic;
   //width: 100%;
-  padding: 5px;
-  display: table-cell;
+  //padding: 5px;
+  //display: table-cell;
 }
