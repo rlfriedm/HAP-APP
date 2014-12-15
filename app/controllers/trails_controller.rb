@@ -4,13 +4,13 @@ class TrailsController < ApplicationController
 
   def index
 
-#    @search = Trail.search do
-#      fulltext params[:search]
-#      with(:created_at).less_than(Time.zone.now)
+#    if params.has_key?(:search)
+#      @temp = Trail.search(params[:search], load: true)
+#    else
+#      @temp = Trail.all
 #    end
-#   @temp = @search.results
-    @temp = Trail.all
 
+    @temp = Trail.all
     if sort_column == "rating"
       if sort_direction == "asc"
         @trails = @temp.sort_by { |t| t.getRating }

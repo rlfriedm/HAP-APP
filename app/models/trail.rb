@@ -6,6 +6,10 @@ class Trail < ActiveRecord::Base
     accepts_nested_attributes_for :location
 
 
+    #include Tire::Model::Search
+    #include Tire::Model::Callbacks
+
+
   validates :name,  :presence => true,
                         :length => {:maximum => 20}, 
                         :length => {:minimum => 3},
@@ -13,24 +17,7 @@ class Trail < ActiveRecord::Base
                     
   validates :description, :presence => true,
                     :length => {:maximum => 20, :minimum => 5}
-                 
 
-
-#	searchable do
-#    	#string :name
-#        text :search_name, :boost => 2
-#    	text :description
-#        integer :rating
-#    	text :publish_month
-#   	    text :reviews do
-#   		reviews.map(&:bodyText)
-#    	end
-#    	time :created_at
-#  	end
-
-	def publish_month
-    	created_at.strftime("%B %Y")
-  	end
 
     def getRating
         newRating = 0

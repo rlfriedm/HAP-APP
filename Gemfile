@@ -8,13 +8,12 @@ gem 'rails', '3.2.19'
 gem 'pg', group: :production
 gem 'rails_12factor', group: :production
 
-gem 'will_paginate', '~> 3.0.4'
-
-gem 'sunspot_rails'
 gem 'gravatar_image_tag', '0.1.0'
 gem 'paperclip'
 
 gem 'thin'
+
+gem 'tire'
 
 gem 'fancybox-rails'
 
