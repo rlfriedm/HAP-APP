@@ -1,5 +1,5 @@
 class UserMailer < ActionMailer::Base
-  default :from => "hamcoladkp@gmail.com"
+  default :from => "hamdackhelp@gmail.com"
   def forgot_password(user)
   		tmp = SecureRandom.urlsafe_base64
   		@other = tmp[0..10]
