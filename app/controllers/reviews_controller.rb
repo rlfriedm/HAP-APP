@@ -22,6 +22,7 @@ class ReviewsController < ApplicationController
 	#		render "trails/show" , :locals => {:@review => thereview}
 			
 		end
+
 		review = @trail.reviews.build(params[:review])
               
 	#	render :text => current_user.reviews
