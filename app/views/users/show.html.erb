@@ -5,7 +5,7 @@
 
 		<div class="panel">
 	  			<div class="panel-heading">
-	  					<h3 class="panel-title"><%= @user.username %>'s info</h3>
+	  					<h3 class="panel-title">General Information</h3>
 		  		</div>
 		  		<div class="list-group">
 		  			<div class="list-group-item">Email: <%= @user.email %></div>
@@ -47,7 +47,7 @@
 	  <div class="col-sm-4" id="review_block">
 	  	<div class="panel">
 	  		<div class="panel-heading">
-	  			<h3 class="panel-title">Reviews Contributed to</h3>
+	  			<h3 class="panel-title">Review Contributions</h3>
 	  		</div>
 	  			<div class="list-group">
 	  			<% for review in contributedReviews(@user) %>
