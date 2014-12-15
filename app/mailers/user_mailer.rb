@@ -5,6 +5,6 @@ class UserMailer < ActionMailer::Base
   		@other = tmp[0..10]
   		user.password = @other
   		user.save
-  		mail(:to => user.email, :subject => "Forgotten Password")
+  		mail(:to => user.email, :subject => "Password")
   end
 end
