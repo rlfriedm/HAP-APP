@@ -152,6 +152,10 @@ function addDomListeners(trail_id, line, infowindow) {
       trailRow.style.backgroundColor = color;
       trailRow.style.color = 'black';
     });
+
+    trailRow.addEventListener('click', function() {
+      $.get("/trails/" + trail_id);
+    });
 }
 
 function addListeners(line, infowindow) {
